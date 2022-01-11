@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="reset.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="./assets/img/favicon.ico" type="image/png" sizes="48x48">
     <title>Portfolio</title>
@@ -11,52 +12,89 @@
 <body>
  
         
-            <header>
+            <header class="header">
                 <div class="container">
-
+                    <div class="header-wrapper">
+                    <img class="logo" src="./assets/svg/logo.svg" alt="logo" width="50px" height="40px">
+                    <nav class="nav-list">
+                        <ul class="menu">
+                            <li class="menu-li">
+                                <a class="header_link" href="#part1">Skills</a>
+                             </li>
+                            <li class="menu-li">
+                                <a class="header_link" href="#part2">Portfolio</a>
+                            </li>
+                            <li class="menu-li">
+                                <a class="header_link" href="#part3">Video</a>
+                            </li>
+                            <li class="menu-li">
+                                <a class="header_link" href="#part4">Price</a>
+                            </li>
+                            <li class="menu-li">
+                                <a class="header_link" href="#part5">Contact me</a>
+                            </li>
+                            <li class="menu-li_en">
+                                <a id="header_link_en" class="header_link ">en</a>
+                            </li>
+                            <li class="menu-li_slash">
+                                <a class="header_link">/</a>
+                            </li>
+                            <li class="menu-li">
+                                <a class="header_link">ru</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 </div>
             </header>
         
 
-            <main>
+            <main class="main">
                 <div class="container">
-                    <section class="section">
+                    <section class="intro">
                         <h1>Alexa Rise</h1>
-
+                        <div class="about">
+                            <p>Save sincere emotions, romantic feelings and<br> happy moments of life together with professional<br> photographer Alexa RiseS</p>
+                        </div>
+                        <form>
+                            <button>
+                                <span class="hire_me">Hire me</span>
+                            </button>
+                          </form>
                     </section> 
                 
 
                 
                     <section class="section">
-                        <h2 class="section-title">Skills</h2>
+                        <h2 id="part1" class="section-title">Skills</h2>
 
                     </section>
                 
 
                 
                     <section class="section">
-                        <h2 class="section-title">Portfolio</h2>
-
-                    </section>
-                
-            
-                
-                    <section class="section">
-                        <h2 class="section-title">Video</h2>
+                        <h2 id="part2" class="section-title">Portfolio</h2>
 
                     </section>
                 
             
                 
                     <section class="section">
-                        <h2 class="section-title">Price</h2>
+                        <h2 id="part3" class="section-title">Video</h2>
+
+                    </section>
+                
+            
+                
+                    <section class="section">
+                        <h2 id="part4" class="section-title">Price</h2>
 
                     </section>
                 
 
                 
                     <section class="section">
-                        <h2 class="section-title">Contact me</h2>
+                        <h2 id="part5" class="section-title">Contact me</h2>
 
                     </section>
                 </div>
