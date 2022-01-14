@@ -42,7 +42,7 @@ ul {
   overflow: hidden;
   width: max-content;
   width: 100%;
-  height: 910px;
+  height: 90px;
 }
 
 .flex-header {
@@ -82,9 +82,16 @@ ul {
 .nav-list {
 	width: 38.5%;
 }
-/* slfdsjkflkdsfjldsljfljkdsf */
 
-h1 {
+.hero-container {
+  background: url(../Portfolio1/assets/img/bg.jpg) no-repeat;
+  background-position: center -90px;
+  background-repeat: no-repeat;
+  height: 820px;
+  padding-left: 4.3%;
+}
+
+.hero-heading {
   left: 0%;
   right: 0%;
   top: 0px;
@@ -94,11 +101,14 @@ h1 {
   font-size: 60px;
   line-height: 120px;
   color: #ffffff;
-  margin-left: 5.5%;
-  margin-top: 15.3%;
+  /* margin-left: 5.5%; */
   width: 500px;
   height: 120px;
+  padding-top: 12%;
 }
+/* slfdsjkflkdsfjldsljfljkdsf */
+
+
 
 .about {
   /* position: absolute; */
@@ -113,8 +123,7 @@ h1 {
   line-height: 40px;
   /* or 200% */
   color: #ffffff;
-  margin-left: 5.5%;
-  margin-top: 1%;
+padding-top: 0.8%;
 }
 
 button {
@@ -131,8 +140,7 @@ button {
 }
 
 form {
-  margin-top: 2.5%;
-  margin-left: 5.5%;
+  padding-top: 1.8%;
 }
 
 .hire_me {
@@ -155,82 +163,37 @@ form {
 .section-skills {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  justify-content:space-between;
+  padding-top: 4.5%;
 }
 .flex-item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* -----------------------SECTION HERO--END----------------- */
 
-/* -----------------------SECTION SKILLS--START------------------ */
-
-.section-title {
-  content: "-";
-  /* position: absolute; */
-  width: 112px;
-  height: 80px;
-  left: calc(50% - 112px / 2);
-  top: 0px;
-  font-family: Merriweather;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 80px;
-  /* identical to box height, or 200% */
-  text-align: center;
-  color: #bdae82;
-  background-image: linear-gradient(
-    to top,
-    #000 39px,
-    #bdae82 39px,
-    #bdae82 41px,
-    #000 41px
-  );
-  margin-top: 100px;
-  margin-left: 664px;
+.camera-one {
+padding-left: 14%;
 }
 
-.section-title::after {
-  /* content: '-';  */
-  width: 350px;
-  height: 2px;
-}
-
-.section-title::before {
-  /* content: '-';  */
-  width: 350px;
-  height: 2px;
-}
-
-.flex_item {
-  justify-content: space-around;
-}
-
-.skills_title {
-  /* position: absolute; */
-  width: 280px;
-  height: 40px;
-  left: calc(50% - 280px / 2);
-  top: 100px;
+.title-camera {
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 40px;
   /* identical to box height, or 200% */
-  text-align: center;
+  padding-top: 18%;
+  padding-left: 14%;
   color: #ffffff;
-  /* margin-top: 340px; */
 }
 
-.skills_text {
+.text-camera {
   /* position: absolute; */
   width: 280px;
   height: 72px;
-  left: calc(50% - 280px / 2);
+  /* left: calc(50% - 280px / 2); */
   top: 160px;
   font-family: Inter;
   font-style: normal;
@@ -240,17 +203,169 @@ form {
   /* or 200% */
   text-align: center;
   color: #ffffff;
+  padding-top: 7%;
+  padding-left: 14%
 }
 
-/* .video_one {
-  margin-top: 239.99px;
-	margin-left: 509.99px;
-} */
+.video-one {
+  padding-left: 5%;
+}
 
-/* .camera_one {
-	  margin-top: 248.73px;
-	  margin-left: 149px;
-  } */
+.title-video {
+  width: 280px;
+/* height: 40px;
+left: calc(50% - 280px/2);
+top: 100px; */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  /* identical to box height, or 200% */
+  padding-top: 18%;
+  padding-left: 53%;
+  color: #ffffff;
+}
+
+.text-video {
+  /* position: absolute; */
+  width: 280px;
+  height: 72px;
+  /* left: calc(50% - 280px / 2); */
+  top: 160px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  /* or 200% */
+  text-align: center;
+  color: #ffffff;
+  padding-top: 7%;
+  padding-left: 4%;
+}
+
+.image-one {
+  padding-right: 4%;
+}
+
+.title-image {
+  width: 280px;
+/* height: 40px;
+left: calc(50% - 280px/2);
+top: 100px; */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  /* identical to box height, or 200% */
+  padding-top: 18%;
+  padding-left: 66%;
+  color: #ffffff;
+}
+
+.text-image {
+  width: 280px;
+  height: 72px;
+  /* left: calc(50% - 280px / 2); */
+  top: 160px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  /* or 200% */
+  text-align: center;
+  color: #ffffff;
+  padding-top: 7%;
+  padding-right: 4%;
+  
+}
+
+.mic-one {
+  padding-right: 14%;
+}
+
+.title-mic {
+  width: 280px;
+/* height: 40px;
+left: calc(50% - 280px/2);
+top: 100px; */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  /* identical to box height, or 200% */
+  padding-top: 18%;
+  padding-left: 65%;
+  color: #ffffff;
+}
+
+.text-mic {
+  width: 280px;
+  height: 72px;
+  /* left: calc(50% - 280px / 2); */
+  top: 160px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  /* or 200% */
+  text-align: center;
+  color: #ffffff;
+  padding-top: 7%;
+  padding-right: 15%;
+  
+}
+
+.line {
+  width: 50%;
+  margin: auto;
+  /* overflow-x: hidden; */
+  background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+/* text-align: center; */
+
+}
+
+.section-title {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  /* identical to box height, or 200% */
+  text-align: center;
+  color: #BDAE82;  
+}
+
+.header-line {
+  background:#000;
+  width: fit-content;
+  margin: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+
+
+/* -----------------------SECTION HERO--END----------------- */
+
+/* -----------------------SECTION SKILLS--START------------------ */
+
+
+
+.flex_item {
+  justify-content: space-around;
+}
+
+
+
+
+
+
 
 /* todo think how to change */
 main > div {
