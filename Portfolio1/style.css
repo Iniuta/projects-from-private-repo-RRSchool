@@ -125,33 +125,31 @@ ul {
 }
 
 button {
-  /* position: absolute; */
   height: 55px;
   width: 220px;
-  left: 0%;
-  right: 0%;
-  top: 0px;
   background: #bdae82;
-  border-radius: 0px;
   border: 0;
   cursor: pointer;
 }
 
-.buttom-hire-me {
+.button-hire-me {
   padding-top: 1.8%;
 }
 
+.button-radius:hover {
+  border-radius: 90%;
+  transition-delay: 0.5s ease;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
 .hire_me {
-  /* position: absolute; */
-  width: 75px;
-  height: 40px;
-  left: calc(50% - 75px / 2 + 0.5px);
-  top: 8px;
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 40px;
   /* identical to box height, or 200% */
   text-align: center;
   color: #000000;
@@ -285,6 +283,14 @@ footer > div {
   box-sizing: border-box;
 }
 
+.button-seasons:hover {
+  background-color: #bdae82;
+}
+
+.button-seasons:hover span {
+  color: #000;
+}
+
 .section-title-portfolio {
   font-family: Merriweather;
   font-style: normal;
@@ -339,6 +345,11 @@ footer > div {
 
 .video-player-button {
   position: absolute;
+}
+
+.video-button {
+  background-color: transparent;
+  height: 130px;
 }
 
 .section-title-price {
@@ -543,6 +554,12 @@ textarea {
   padding-left: 1%;
 }
 
+.button-contact-style:hover {
+  box-shadow: 1px 1px #536415, 2px 2px #bdae81, 3px 3px #bdae82, 4px 4px #bdae82,
+    5px 5px #bdae84, 6px 6px #536415, 7px 7px #464d0d;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+}
 
 /* ///////////////////FOOTER///////////////////////////////// */
 
@@ -558,21 +575,44 @@ footer > div {
   flex-direction: row;
   align-items: center;
   gap: 23px;
-  padding-top: 4.5%;
+  padding-top: 3.7%;
 }
 
 .item-socials {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  padding-top: 2%;
+  gap: 19.8px;
+  padding-top: 3.7%;
 }
 
-.item-img {
-  padding-left: 1.3%;
-  padding-top: 4.9%;
+.item-rss {
+  font-family: Inter;
+  font-size: 20px;
+  /* identical to box height, or 250% */
+  color: #ffffff;
+  padding-left: 18px;
+  padding-top: 3.8%;
 }
 
 .padding-footer-icons {
-  padding-bottom: 5%;
+  padding-bottom: 3.6%;
+}
+
+.github {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  /* identical to box height, or 250% */
+  color: #ffffff;
+}
+
+.github:hover,
+.item-rss:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
 }
