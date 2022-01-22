@@ -1,3 +1,13 @@
+:root {
+  --button-hire-me-padding-top: 1.8%;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --button-hire-me-padding-top: 15.8%;
+  }
+}
+
 @font-face {
   font-family: "Merriweather";
   src: url("assets/fonts/Merriweather/Merriweather-Bold.ttf");
@@ -21,12 +31,22 @@ html {
 html,
 body {
   height: 100%;
+  background-color: black;
 }
+
 
 ul {
   list-style-type: none;
 }
 
+.logo {
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  fill:red;
+}
 /* -----------------------SECTION HERO--START------------------ */
 
 .container {
@@ -34,6 +54,7 @@ ul {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
+  opacity: 100%;
 }
 
 .header {
@@ -88,7 +109,8 @@ ul {
   background-position: center -90px;
   background-repeat: no-repeat;
   height: 820px;
-  padding-left: 4.3%;
+  margin: 0 -20px;
+  padding-left: 5.7%;
 }
 
 .hero-heading {
@@ -104,7 +126,7 @@ ul {
   /* margin-left: 5.5%; */
   width: 500px;
   height: 120px;
-  padding-top: 12%;
+  padding-top: 11.7%;
 }
 /* slfdsjkflkdsfjldsljfljkdsf */
 
@@ -133,7 +155,7 @@ button {
 }
 
 .button-hire-me {
-  padding-top: 1.8%;
+  padding-top: var(--button-hire-me-padding-top);
 }
 
 .button-radius:hover {
@@ -352,6 +374,11 @@ footer > div {
   height: 130px;
 }
 
+.video {
+  height: 100%;
+width: 100%;
+}
+
 .section-title-price {
   font-family: Merriweather;
   font-style: normal;
@@ -372,6 +399,7 @@ footer > div {
   gap: 25px;
   padding-top: 4.3%;
   padding-bottom: 7.1%;
+  flex-wrap: wrap;
 }
 
 h3 {
@@ -616,3 +644,4 @@ footer > div {
 a {
   text-decoration: none;
 }
+
