@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js"></script>
     <link href="reset.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="./assets/img/favicon.ico" type="image/png" sizes="48x48">
@@ -35,17 +34,18 @@
                             <a class="header-link" href="#part5">Contacts</a>
                         </li>
                     </ul>
+                    <div class="header-lang">
+                        <span class="active icon-en">en</span>
+                        <span class="icon-slash">/</span>
+                        <span class="icon-ru">ru</span>
+                    </div>
+                    <div class="hamburger" id="hamburger-1">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
                 </nav>
-                <div class="header-lang" >
-                            <span class="active icon-en">en</span>
-                            <span class="icon-slash">/</span>
-                            <span class="icon-ru">ru</span>
-                </div>
-                <div class="hamburger" id="hamburger-1">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
+
             </div>
         </div>
     </header>
@@ -131,14 +131,14 @@
                 <div class="flex-video-player">
                     <picture>
                         <source media="(max-width: 768px)" srcset="./assets/img/small-video-player.jpg">
-                    <img class="video" src="./assets/img/video-player.jpg" alt="video">
-                </picture>
+                        <img class="video" src="./assets/img/video-player.jpg" alt="video">
+                    </picture>
                     <div class="video-player-button">
                         <button class="video-button">
                             <picture>
-                            <source media="(max-width: 768px)" srcset="./assets/video/small-play-btn.png">
-                            <img src="./assets/video/Play_hover.png" alt="video">
-                        </picture>
+                                <source media="(max-width: 768px)" srcset="./assets/video/small-play-btn.png">
+                                <img src="./assets/video/Play_hover.png" alt="video">
+                            </picture>
                         </button>
                     </div>
                 </div>
@@ -241,6 +241,7 @@
             </ul>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
