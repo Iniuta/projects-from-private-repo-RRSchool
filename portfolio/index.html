@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js"></script>
     <link href="reset.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="./assets/img/favicon.ico" type="image/png" sizes="48x48">
@@ -16,7 +15,7 @@
     <header class="header">
         <div class="container">
             <div class="flex-header">
-                <img src="./assets/svg/logo.svg" alt="logo">
+                <img class="logo" src="./assets/svg/logo.svg" alt="logo">
                 <nav class="nav-list">
                     <ul class="flex-menu">
                         <li class="menu-li">
@@ -34,17 +33,19 @@
                         <li class="menu-li">
                             <a class="header-link" href="#part5">Contacts</a>
                         </li>
-                        <li class="menu-li-en">
-                            <a id="header-link-en" class="header-link ">en</a>
-                        </li>
-                        <li class="menu-li-slash">
-                            <a class="header-link">/</a>
-                        </li>
-                        <li>
-                            <a class="header-link">ru</a>
-                        </li>
                     </ul>
+                    <div class="header-lang">
+                        <span class="active icon-en">en</span>
+                        <span class="icon-slash">/</span>
+                        <span class="icon-ru">ru</span>
+                    </div>
+                    <div class="hamburger" id="hamburger-1">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
                 </nav>
+
             </div>
         </div>
     </header>
@@ -53,8 +54,8 @@
         <div class="container">
             <section class="hero-container">
                 <h1 class="hero-heading">Alexa Rise</h1>
-                <p class="about">Save sincere emotions, romantic feelings and<br> happy moments of life together with
-                    professional<br> photographer Alexa Rise</p>
+                <p class="about">Save sincere emotions, romantic feelings and happy moments of life together with
+                    professional photographer Alexa Rise</p>
                 <form class="button-hire-me">
                     <button class="button-radius">
                         <span class="hire_me">Hire me</span>
@@ -62,7 +63,7 @@
                 </form>
             </section>
             <section>
-                <div class="line">
+                <div class="line-heading">
                     <h2 id="part1" class="section-title header-line">Skills</h2>
                 </div>
                 <div class="section-skills">
@@ -89,8 +90,8 @@
                 </div>
             </section>
             <section class="section">
-                <div class="line">
-                    <h2 id="part2" class="section-title-portfolio  header-line">Portfolio</h2>
+                <div class="line-heading">
+                    <h2 id="part2" class="section-title-portfolio  header-line-portfolio">Portfolio</h2>
                 </div>
                 <div class="flex-item-seasons">
                     <form>
@@ -124,19 +125,27 @@
                 </div>
             </section>
             <section class="section">
-                <div class="line">
-                    <h2 id="part3" class="section-title-video header-line">Video</h2>
+                <div class="line-heading">
+                    <h2 id="part3" class="section-title-video header-line-video">Video</h2>
                 </div>
                 <div class="flex-video-player">
-                    <img src="./assets/img/video-player.jpg" alt="video">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./assets/img/small-video-player.jpg">
+                        <img class="video" src="./assets/img/video-player.jpg" alt="video">
+                    </picture>
                     <div class="video-player-button">
-                        <button class="video-button"><img src="./assets/video/Play_hover.png" alt="video"></button>
+                        <button class="video-button">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="./assets/video/small-play-btn.png">
+                                <img src="./assets/video/Play_hover.png" alt="video">
+                            </picture>
+                        </button>
                     </div>
                 </div>
             </section>
             <section class="section">
-                <div class="line">
-                    <h2 id="part4" class="section-title-price header-line">Price</h2>
+                <div class="line-heading">
+                    <h2 id="part4" class="section-title-price header-line-price">Price</h2>
                 </div>
                 <div class="flex-price">
                     <div class="flex-item-price">
@@ -232,6 +241,7 @@
             </ul>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
