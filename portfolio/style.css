@@ -35,7 +35,6 @@ html {
 
 html,
 body {
-  height: 100%;
   background-color: black;
 }
 
@@ -620,9 +619,9 @@ button {
 }
 
 /* todo think how to change */
-main > div {
+/* main > div {
   background: #000000;
-}
+} */
 
 /* -----------------------SECTION SKILLS--END------------------ */
 
@@ -652,28 +651,28 @@ main > div {
   }
 }
 
-.button-seasons-text {
-  width: 62px;
-  height: 40px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 40px;
-  /* identical to box height, or 200% */
-  text-align: center;
-  color: #bdae82;
-}
-
 .button-seasons {
   border: 2px solid;
   color: #bdae82;
   background-color: black;
   box-sizing: border-box;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
 }
+
+.active.button-seasons {
+  background-color: #bdae82;
+  color: #000;
+}
+
 
 .button-seasons:hover {
   background-color: #bdae82;
+  color: #000;
 }
 
 .button-seasons:hover span {

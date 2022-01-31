@@ -27,3 +27,18 @@ window.addEventListener('resize', function(event){
 });
 
 console.log('Вёрстка соответствует макету. Ширина экрана 768px +48\nНи на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15\nНа ширине экрана 768рх и меньше реализовано адаптивное меню +22.\n75 баллов.');
+
+const portfolioImages = document.querySelectorAll('.portfolio-image');
+const flexItemSeasons = document.querySelector('.flex-item-seasons');
+const buttonSeason = document.querySelectorAll('.button-seasons');
+
+function changeImage(event) {
+  if (event.target.classList.contains('btn-portfolio')) {
+    const dataSeason = event.target.getAttribute('data-season');
+    portfolioImages.forEach((img, index) => img.src = `./assets/img/${dataSeason}/${index + 1}.jpg`);
+    buttonSeason.forEach((button) => button.classList.remove('active')); 
+    event.target.classList.add('active');
+  }
+}   
+
+flexItemSeasons.addEventListener('click', (event) => changeImage(event));
