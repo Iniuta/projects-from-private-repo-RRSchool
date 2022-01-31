@@ -89,6 +89,14 @@ h3.light-theme {
   color: white;
 }
 
+.light-theme.title-skills {
+  color: black;
+}
+
+.light-theme.text-skills {
+  color: black;
+}
+
 /* ////////////////BRIGHT///////////////// */
 /* ////////////////BRIGHT///////////////// */
 /* ////////////////BRIGHT///////////////// */
@@ -148,7 +156,9 @@ ul {
     padding-left: 37%;
   }
 }
-
+#buttonSun.is-active {
+  display: none;
+}
 .logo {
   transition: all 0.5s ease;
   cursor: pointer;
@@ -219,7 +229,6 @@ ul {
 .icon-en {
   width: 25px;
   height: 50px;
-  color: #bdae82;
   cursor: pointer;
   font-family: Inter;
   font-style: normal;
@@ -228,6 +237,7 @@ ul {
   line-height: 50px;
   text-align: center;
   padding-right: 19%;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -261,7 +271,7 @@ ul {
   height: 50px;
   font-family: Inter;
   font-style: normal;
-  /* font-weight: bold; */
+  cursor: pointer;
   font-size: 20px;
   line-height: 50px;
   text-align: center;
@@ -272,6 +282,14 @@ ul {
   .icon-ru {
     padding-right: 17%;
   }
+}
+
+.icon-en.active {
+  color: #bdae81;
+}
+
+.icon-ru.active {
+  color: #bdae81;
 }
 
 .header-link {
@@ -291,9 +309,17 @@ ul {
   }
 }
 
+.is-active .header-link.light-theme {
+  color: #000;
+}
+
 .nav-list {
   display: flex;
   width: 42.5%;
+}
+
+.nav-list.ru {
+  width: 50%;
 }
 
 @media (max-width: 768px) {
@@ -339,6 +365,10 @@ ul {
   }
 }
 
+.nav-list.is-active.light-theme {
+  background-color: white;
+}
+
 .is-active.header-lang {
   display: none;
 }
@@ -377,6 +407,10 @@ ul {
     height: 2.3px;
     margin: 11px auto;
   }
+}
+
+.hamburger .line.light-theme {
+  background-color: #000;
 }
 
 #hamburger-1.is-active .line:nth-child(1) {
