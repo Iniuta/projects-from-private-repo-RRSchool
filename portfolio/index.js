@@ -42,3 +42,12 @@ function changeImage(event) {
 }   
 
 flexItemSeasons.addEventListener('click', (event) => changeImage(event));
+
+
+const lightTheme = document.querySelectorAll('.changeTheme');
+const buttonSun = document.querySelector('#buttonSun');
+
+buttonSun.onclick = () => {
+  lightTheme.forEach(e => {e.classList.toggle('light-theme')});
+}
+
