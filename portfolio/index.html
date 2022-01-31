@@ -11,38 +11,41 @@
     <title>Portfolio</title>
 </head>
 
-<body>
+<body class="changeTheme">
     <header class="header">
         <div class="container">
             <div class="flex-header">
                 <img class="logo" src="./assets/svg/logo.svg" alt="logo">
-                <nav class="nav-list">
+                <nav class="nav-list changeTheme">
                     <ul class="flex-menu">
                         <li class="menu-li">
-                            <a class="header-link" href="#part1">Skills</a>
+                            <a class="header-link changeTheme" href="#part1" data-i18="skills">Skills</a>
                         </li>
                         <li class="menu-li">
-                            <a class="header-link" href="#part2">Portfolio</a>
+                            <a class="header-link changeTheme" href="#part2" data-i18="portfolio">Portfolio</a>
                         </li>
                         <li class="menu-li">
-                            <a class="header-link" href="#part3">Video</a>
+                            <a class="header-link changeTheme" href="#part3" data-i18="video">Video</a>
                         </li>
                         <li class="menu-li">
-                            <a class="header-link" href="#part4">Price</a>
+                            <a class="header-link changeTheme" href="#part4" data-i18="price">Price</a>
                         </li>
                         <li class="menu-li">
-                            <a class="header-link" href="#part5">Contacts</a>
+                            <a class="header-link changeTheme" href="#part5" data-i18="contacts">Contacts</a>
                         </li>
                     </ul>
                     <div class="header-lang">
-                        <span class="active icon-en">en</span>
+                        <span class="icon-en active">en</span>
                         <span class="icon-slash">/</span>
                         <span class="icon-ru">ru</span>
                     </div>
+                  
+                    <img id="buttonSun" src="./assets/svg/carbon_sun.svg" alt="sun">
+        
                     <div class="hamburger" id="hamburger-1">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
+                        <span class="line changeTheme"></span>
+                        <span class="line changeTheme"></span>
+                        <span class="line changeTheme"></span>
                     </div>
                 </nav>
 
@@ -53,80 +56,74 @@
     <main class="main">
         <div class="container">
             <section class="hero-container">
-                <h1 class="hero-heading">Alexa Rise</h1>
-                <p class="about">Save sincere emotions, romantic feelings and happy moments of life together with
+                <h1 class="hero-heading" data-i18="hero-title">Alexa Rise</h1>
+                <p class="about" data-i18="hero-text">Save sincere emotions, romantic feelings and happy moments of life together with
                     professional photographer Alexa Rise</p>
                 <form class="button-hire-me">
                     <button class="button-radius">
-                        <span class="hire_me">Hire me</span>
+                        <span class="hire_me" data-i18="hire">Hire me</span>
                     </button>
                 </form>
             </section>
             <section>
-                <div class="line-heading">
-                    <h2 id="part1" class="section-title header-line">Skills</h2>
+                <div class="line-heading changeTheme">
+                    <h2 id="part1" class="section-title header-line changeTheme" data-i18="skills">Skills</h2>
                 </div>
                 <div class="section-skills">
                     <div class="flex-item">
                         <img src="./assets/svg/camera1.svg" alt="camera" width="62" height="50">
-                        <span class="title-skills">Digital photography</span>
-                        <p class="text-skills">High-quality photos in the studio<br> and on the nature</p>
+                        <span class="title-skills changeTheme" data-i18="skill-title-1">Digital photography</span>
+                        <p class="text-skills changeTheme" data-i18="skill-text-1">High-quality photos in the studio<br> and on the nature</p>
                     </div>
                     <div class="flex-item">
                         <img src="./assets/svg/video1.svg" alt="video" width="62" height="50">
-                        <span class="title-skills">Video shooting</span>
-                        <p class="text-skills">Capture your moments so that<br> they always stay with you</p>
+                        <span class="title-skills changeTheme" data-i18="skill-title-2">Video shooting</span>
+                        <p class="text-skills changeTheme" data-i18="skill-text-2">Capture your moments so that<br> they always stay with you</p>
                     </div>
                     <div class="flex-item">
                         <img src="./assets/svg/image1.svg" alt="image" width="66" height="50">
-                        <span class="title-skills">Retouch</span>
-                        <p class="text-skills">I strive to make photography<br> surpass reality</p>
+                        <span class="title-skills changeTheme" data-i18="skill-title-3">Retouch</span>
+                        <p class="text-skills changeTheme" data-i18="skill-text-3">I strive to make photography<br> surpass reality</p>
                     </div>
                     <div class="flex-item">
                         <img src="./assets/svg/mic1.svg" alt="mic" width="32" height="50">
-                        <span class="title-skills">Audio</span>
-                        <p class="text-skills">Professional sounds recording<br> for video, advertising, portfolio</p>
+                        <span class="title-skills changeTheme" data-i18="skill-title-4">Audio</span>
+                        <p class="text-skills changeTheme" data-i18="skill-text-4">Professional sounds recording<br> for video, advertising, portfolio</p>
                     </div>
                 </div>
             </section>
             <section class="section">
-                <div class="line-heading">
-                    <h2 id="part2" class="section-title-portfolio  header-line-portfolio">Portfolio</h2>
+                <div class="line-heading changeTheme">
+                    <h2 id="part2" class="section-title-portfolio  header-line-portfolio changeTheme" data-i18="portfolio">Portfolio</h2>
                 </div>
                 <div class="flex-item-seasons">
-                    <form>
-                        <button class="button-seasons">
-                            <span class="button-seasons-text">Winter</span>
-                        </button>
-                    </form>
-                    <form>
-                        <button class="button-seasons">
-                            <span class="button-seasons-text">Spring</span>
-                        </button>
-                    </form>
-                    <form>
-                        <button class="button-seasons">
-                            <span class="button-seasons-text">Summer</span>
-                        </button>
-                    </form>
-                    <form>
-                        <button class="button-seasons">
-                            <span class="button-seasons-text">Autumn</span>
-                        </button>
-                    </form>
+
+                    <button class="button-seasons btn-portfolio changeTheme" data-season="winter" data-i18="winter">
+                        Winter
+                    </button>
+                    <button class="button-seasons btn-portfolio changeTheme" data-season="spring" data-i18="spring">
+                      Spring
+                    </button>
+                    <button class="button-seasons btn-portfolio changeTheme" data-season="summer" data-i18="summer">
+                       Summer
+                    </button>
+                    <button class="button-seasons btn-portfolio changeTheme" data-season="autumn" data-i18="autumn">
+                      Autumn
+                    </button>
+
                 </div>
                 <div class="flex-foto-portfolio">
-                    <img src="./assets/img/portfolio-img-6.jpg" alt="foto">
-                    <img src="./assets/img/portfolio-img-5.jpg" alt="foto">
-                    <img src="./assets/img/portfolio-img-4.jpg" alt="foto">
-                    <img src="./assets/img/portfolio-img-3.jpg" alt="foto">
-                    <img src="./assets/img/portfolio-img-2.jpg" alt="foto">
-                    <img src="./assets/img/portfolio-img-1.jpg" alt="foto">
+                    <img src="./assets/img/autumn/1.jpg" alt="foto" class="portfolio-image">
+                    <img src="./assets/img/autumn/2.jpg" alt="foto" class="portfolio-image">
+                    <img src="./assets/img/autumn/3.jpg" alt="foto" class="portfolio-image">
+                    <img src="./assets/img/autumn/4.jpg" alt="foto" class="portfolio-image">
+                    <img src="./assets/img/autumn/5.jpg" alt="foto" class="portfolio-image">
+                    <img src="./assets/img/autumn/6.jpg" alt="foto" class="portfolio-image">
                 </div>
             </section>
             <section class="section">
-                <div class="line-heading">
-                    <h2 id="part3" class="section-title-video header-line-video">Video</h2>
+                <div class="line-heading changeTheme">
+                    <h2 id="part3" class="section-title-video header-line-video changeTheme" data-i18="video">Video</h2>
                 </div>
                 <div class="flex-video-player">
                     <picture>
@@ -144,55 +141,55 @@
                 </div>
             </section>
             <section class="section">
-                <div class="line-heading">
-                    <h2 id="part4" class="section-title-price header-line-price">Price</h2>
+                <div class="line-heading changeTheme">
+                    <h2 id="part4" class="section-title-price header-line-price changeTheme" data-i18="price">Price</h2>
                 </div>
                 <div class="flex-price">
-                    <div class="flex-item-price">
-                        <h3>Standard</h3>
+                    <div class="flex-item-price changeTheme">
+                        <h3 class="changeTheme">Standard</h3>
                         <p class="price">500 $</p>
                         <p class="description-price">
-                            <span class="line-description">One location</span>
-                            <span class="line-description">120 photos in color</span>
-                            <span class="line-description">12 photos in retouch</span>
-                            <span class="line-description">Readiness 2-3 weeks</span>
-                            <span class="line-description">Make up, visage</span>
+                            <span class="line-description changeTheme" data-i18="price-description-1-span-1">One location</span>
+                            <span class="line-description changeTheme" data-i18="price-description-1-span-2">120 photos in color</span>
+                            <span class="line-description changeTheme" data-i18="price-description-1-span-3">12 photos in retouch</span>
+                            <span class="line-description changeTheme" data-i18="price-description-1-span-4">Readiness 2-3 weeks</span>
+                            <span class="line-description changeTheme" data-i18="price-description-1-span-5">Make up, visage</span>
                         </p>
                         <form class="button-price">
                             <button class="button-radius">
-                                <span class="button-order-shooting">Order shooting</span>
+                                <span class="button-order-shooting" data-i18="order">Order shooting</span>
                             </button>
                         </form>
                     </div>
-                    <div class="flex-item-price">
-                        <h3>Premium</h3>
+                    <div class="flex-item-price changeTheme">
+                        <h3 class="changeTheme">Premium</h3>
                         <p class="price">700 $</p>
                         <p class="description-price">
-                            <span class="line-description">One or two locations</span>
-                            <span class="line-description">200 photos in color</span>
-                            <span class="line-description">20 photos in retouch</span>
-                            <span class="line-description">Readiness 1-2 weeks</span>
-                            <span class="line-description">Make up, visage</span>
+                            <span class="line-description changeTheme" data-i18="price-description-2-span-1">One or two locations</span>
+                            <span class="line-description changeTheme" data-i18="price-description-2-span-2">200 photos in color</span>
+                            <span class="line-description changeTheme" data-i18="price-description-2-span-3">20 photos in retouch</span>
+                            <span class="line-description changeTheme" data-i18="price-description-2-span-4">Readiness 1-2 weeks</span>
+                            <span class="line-description changeTheme" data-i18="price-description-2-span-4">Make up, visage</span>
                         </p>
                         <form class="button-price">
                             <button class="button-radius">
-                                <span class="button-order-shooting">Order shooting</span>
+                                <span class="button-order-shooting" data-i18="order">Order shooting</span>
                             </button>
                         </form>
                     </div>
-                    <div class="flex-item-price">
-                        <h3>Gold</h3>
+                    <div class="flex-item-price changeTheme">
+                        <h3 class="changeTheme">Gold</h3>
                         <p class="price">1000 $</p>
                         <p class="description-price">
-                            <span class="line-description">Three locations or more</span>
-                            <span class="line-description">300 photos in color</span>
-                            <span class="line-description">50 photos in retouch</span>
-                            <span class="line-description">Readiness 1 week</span>
-                            <span class="line-description">Make up, visage, hairstyle</span>
+                            <span class="line-description changeTheme" data-i18="price-description-3-span-1">Three locations or more</span>
+                            <span class="line-description changeTheme" data-i18="price-description-3-span-2">300 photos in color</span>
+                            <span class="line-description changeTheme" data-i18="price-description-3-span-3">50 photos in retouch</span>
+                            <span class="line-description changeTheme" data-i18="price-description-3-span-4">Readiness 1 week</span>
+                            <span class="line-description changeTheme" data-i18="price-description-3-span-5">Make up, visage, hairstyle</span>
                         </p>
                         <form class="button-price">
                             <button class="button-radius">
-                                <span class="button-order-shooting">Order shooting</span>
+                                <span class="button-order-shooting" data-i18="order">Order shooting</span>
                             </button>
                         </form>
                     </div>
@@ -201,17 +198,17 @@
         </div>
         <section class="contact-container">
             <div class="flex-item-contact">
-                <h2 id="part5" class="contact-title">Contact me</h2>
+                <h2 id="part5" class="contact-title" data-i18="contact-me">Contact me</h2>
                 <form class="pading-for-email">
-                    <input type="email" placeholder="E-mail">
+                    <input type="email" placeholder="E-mail" data-i18="email">
                 </form>
                 <form class="pading-for-phone">
-                    <input type="tel" placeholder="Phone">
+                    <input type="tel" placeholder="Phone" data-i18="phone">
                 </form>
-                <p class="pading-for-message"><textarea name="message" placeholder="Message"></textarea></p>
+                <p class="pading-for-message"><textarea name="message" placeholder="Message" data-i18="message"></textarea></p>
                 <form class="button-send-message">
                     <button class="button-contact-style">
-                        <span class="send-message">Send message</span>
+                        <span class="send-message" data-i18="send-message">Send message</span>
                     </button>
                 </form>
             </div>
