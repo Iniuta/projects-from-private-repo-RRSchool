@@ -1,0 +1,90 @@
+
+/* .....................HEADER.............................. */
+
+ul {
+  list-style-type: none;
+}
+
+.flex-header {
+  background: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+}
+
+.flex-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.li {
+  color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-style: normal;
+}
+
+.header-lang {
+  color: aliceblue;
+  font-family: Impact;
+  font-size: 20px;
+}
+
+/* .....................MAIN.............................. */
+
+.flex-main {
+  display: flex;
+  background: url(../assets/img/forest.jpg) no-repeat;
+  background-repeat: no-repeat;
+  height: calc(100vh - 130px);
+  justify-content: center;
+}
+
+.button {
+  background-color: transparent;
+  border: 0;
+}
+
+
+/* .....................FOOTER.............................. */
+
+.flex-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    padding-left: 9%;
+    padding-right: 9%;
+    align-items: center;
+}
+
+.footer-font {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.flex-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 40px;
+}
+
+.rss {
+    background-image: url(./svg/rss.svg);
+    width: 110px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
