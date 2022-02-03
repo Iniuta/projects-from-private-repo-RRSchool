@@ -46,11 +46,16 @@ function translate(language) {
 
 const backgroundImages = document.querySelector('.flex-main');
 const flexHeader = document.querySelector('.flex-header');
+const iconLang = document.querySelectorAll('.icon-lang');
+const buttonBirds = document.querySelectorAll('.button-birds');
+const btnActive = document.querySelectorAll('.btn-active')
 
 function changeImage(event) {
     if(event.target.classList.contains("button-birds")) {
       const birdName = event.target.getAttribute("data-birdName");
       backgroundImages.style.backgroundImage=`url(img/${birdName}.jpg)`;
+      btnActive.forEach(e => e.classList.remove('btn-is-active'));
+      event.target.classList.add('btn-is-active');
     }
 }
 

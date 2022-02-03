@@ -52,6 +52,10 @@ ul {
     transition: all 0.5s;
 }
 
+.btn-is-active {
+  filter: drop-shadow(0 0 10px #fdeb44);
+}
+
 .icon-en {
   cursor: pointer;
 }
