@@ -43,3 +43,15 @@ function translate(language) {
         document.querySelector(".flex-ul").classList.add("ru");
     }
 }
+
+const backgroundImages = document.querySelector('.flex-main');
+const flexHeader = document.querySelector('.flex-header');
+
+function changeImage(event) {
+    if(event.target.classList.contains("button-birds")) {
+      const birdName = event.target.getAttribute("data-birdName");
+      backgroundImages.style.backgroundImage=`url(img/${birdName}.jpg)`;
+    }
+}
+
+flexHeader.addEventListener("click", (event) => changeImage(event));
