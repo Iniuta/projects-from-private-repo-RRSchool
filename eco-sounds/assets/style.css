@@ -112,7 +112,12 @@ ul {
 
 .img-button {
   width: 140px;
+cursor: pointer;
+}
 
+.img-button:hover {
+  filter: drop-shadow(0 0 3px #fdeb44);
+  transition: all 0.5s;
 }
 
 @media (max-width: 768px) {
