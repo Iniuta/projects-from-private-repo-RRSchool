@@ -12,6 +12,12 @@ ul {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .flex-header {
+  justify-content: space-around;
+  }
+}
+
 .flex-menu {
   display: flex;
   flex-direction: row;
@@ -19,10 +25,22 @@ ul {
   gap: 100px;
 }
 
+@media (max-width: 768px) {
+  .flex-menu {
+    gap: 50px;
+  }
+}
+
 .flex-ul {
   display: flex;
   flex-direction: row;
   gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .flex-ul {
+    gap: 30px;
+  }
 }
 
 .logo {
@@ -34,6 +52,24 @@ ul {
     transition: all 0.5s;
 }
 
+.icon-en {
+  cursor: pointer;
+}
+
+.icon-en:hover {
+  filter: drop-shadow(0 0 10px #fdeb44);
+  transition: all 0.5s;
+}
+
+.icon-ru {
+  cursor: pointer;
+}
+
+.icon-ru:hover {
+  filter: drop-shadow(0 0 10px #fdeb44);
+  transition: all 0.5s;
+}
+
 
 .li {
   color: #bdae82;
@@ -41,6 +77,12 @@ ul {
   font-size: 25px;
   font-style: normal;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .li {
+    font-size: 20px;
+  }
 }
 
 .li:hover {
@@ -66,6 +108,17 @@ ul {
 .button {
   background-color: transparent;
   border: 0;
+}
+
+.img-button {
+  width: 140px;
+
+}
+
+@media (max-width: 768px) {
+  .img-button {
+    width: 100px;
+  }
 }
 
 /* .....................FOOTER.............................. */
