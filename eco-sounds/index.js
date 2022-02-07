@@ -55,7 +55,7 @@ let isPlay = false;
 function changeImage(event) {
     if(event.target.classList.contains("button-birds")) {
       const birdName = event.target.getAttribute("data-birdName");
-      backgroundImages.style.backgroundImage=`url(img/${birdName}.jpg)`;
+      backgroundImages.style.backgroundImage=`url(assets/img/${birdName}.jpg)`;
       btnActive.forEach(e => e.classList.remove('btn-is-active'));
       event.target.classList.add('btn-is-active');
       playAudio(true);
@@ -71,15 +71,15 @@ function playAudio(isImageToggle) {
     if(!isPlay || isImageToggle){
         const activeBtn = document.querySelector('.btn-is-active');
         const birdName = activeBtn.getAttribute("data-birdName");
-        audio.src = `audio/${birdName}.mp3`;
+        audio.src = `assets/audio/${birdName}.mp3`;
         audio.currentTime = 0;
         audio.play();
         isPlay = true;
-        imgButton.src = "svg/pause.svg";
+        imgButton.src = "assets/svg/pause.svg";
     } else {
         audio.pause();
         isPlay = false;
-        imgButton.src = "svg/play.svg";
+        imgButton.src = "assets/svg/play.svg";
     }
 }
 
