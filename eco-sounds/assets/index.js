@@ -48,7 +48,9 @@ const backgroundImages = document.querySelector('.flex-main');
 const flexHeader = document.querySelector('.flex-header');
 const iconLang = document.querySelectorAll('.icon-lang');
 const buttonBirds = document.querySelectorAll('.button-birds');
-const btnActive = document.querySelectorAll('.btn-active')
+const btnActive = document.querySelectorAll('.btn-active');
+//------------------------------------------------------------
+let isPlay = false;
 
 function changeImage(event) {
     if(event.target.classList.contains("button-birds")) {
@@ -56,7 +58,30 @@ function changeImage(event) {
       backgroundImages.style.backgroundImage=`url(img/${birdName}.jpg)`;
       btnActive.forEach(e => e.classList.remove('btn-is-active'));
       event.target.classList.add('btn-is-active');
+      playAudio(true);
     }
 }
 
 flexHeader.addEventListener("click", (event) => changeImage(event));
+
+const audio = new Audio();
+const imgButton = document.querySelector(".img-button");
+
+function playAudio(isImageToggle) {
+    if(!isPlay || isImageToggle){
+        const activeBtn = document.querySelector('.btn-is-active');
+        const birdName = activeBtn.getAttribute("data-birdName");
+        audio.src = `audio/${birdName}.mp3`;
+        audio.currentTime = 0;
+        audio.play();
+        isPlay = true;
+        imgButton.src = "svg/pause.svg";
+    } else {
+        audio.pause();
+        isPlay = false;
+        imgButton.src = "svg/play.svg";
+    }
+}
+
+
+imgButton.addEventListener("click", () => playAudio());
