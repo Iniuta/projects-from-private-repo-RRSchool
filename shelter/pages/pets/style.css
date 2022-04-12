@@ -143,6 +143,7 @@ main {
       flex-direction: column;
       gap: 31px;
       padding-bottom: 30px;
+      background-color: #FAFAFA
     }
 
 
@@ -160,6 +161,7 @@ border-radius: 100px;
 width: 187px;
 height: 52px;
 margin: auto;
+background-color: #FAFAFA;
     }
 
 
@@ -324,7 +326,7 @@ height: 52px;
       .flex-cards:hover {
         background: #FAFAFA;
         cursor: pointer;
-        transition: 1s;
+        transition: 0.3s;
       }
       
       .flex-cards:hover .lern-more {
@@ -339,4 +341,8 @@ height: 52px;
       
 a > span.footer-text{
     padding-left: 15px;
+  }
+
+  .cards-hover:hover {
+    background-color: #FFFFFF;
   }

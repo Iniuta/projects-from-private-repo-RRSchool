@@ -74,7 +74,7 @@
     margin: 10px 0px;
     list-style-type: none;
     text-decoration: none;
-    transition: all;
+    transition: all 0.3s;
     scroll-behavior: smooth;
   }
 
@@ -215,7 +215,7 @@ text-decoration: none;
   width: 187px;
   height: 52px;
   margin: auto;
-  background-color: #F6F6F6;
+  background-color: #FAFAFA;
 }
 
 .section-3 {
@@ -248,6 +248,7 @@ color: #545454;
   flex-direction: column;
   gap: 31px;
   padding-bottom: 30px;
+  background-color: #FAFAFA
 }
 
 .get-to-know {
@@ -528,7 +529,7 @@ color: #F1CDB3;
 }
 
 .btn-make-a-friend:hover {
-  background: #E5E5E5;
+  background: #FDDCC4;
   cursor: pointer;
 }
 
@@ -540,7 +541,7 @@ color: #F1CDB3;
 .flex-cards:hover {
   background: #FAFAFA;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .flex-cards:hover .lern-more {
@@ -549,10 +550,14 @@ color: #F1CDB3;
 }
 
 .btn-section-3:hover {
-  background: #E5E5E5;
+  background-color: #FDDCC4;
   cursor: pointer;
 }
 
 a > span.footer-text{
   padding-left: 15px;
 }
+
+.cards-hover:hover {
+  background-color: #FFFFFF;
+} 
