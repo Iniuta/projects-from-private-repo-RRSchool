@@ -171,9 +171,27 @@ width: 52px;
 height: 52px;
     }
 
+    .btn-1 {
+      background-color: #F1CDB3;
+      border: #F1CDB3;
+      box-sizing: border-box;
+      border-radius: 100px;
+      width: 52px;
+      height: 52px;
+    }
+
+    .btn-left {
+      border: 2px solid #CDCDCD;
+      box-sizing: border-box;
+      border-radius: 100px;
+      width: 52px;
+      height: 52px;
+    }
+
     .btn:hover {
         cursor: pointer;
         background-color: #F1CDB3;
+        border: #F1CDB3;
     }
 
 
@@ -306,6 +324,7 @@ height: 52px;
       .flex-cards:hover {
         background: #FAFAFA;
         cursor: pointer;
+        transition: 1s;
       }
       
       .flex-cards:hover .lern-more {
