@@ -147,6 +147,7 @@ border: none;
   .section-2 {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 98px;
   }
 
   .about-the-shelter {
@@ -240,7 +241,7 @@ letter-spacing: 0.06em;
 
 color: #545454;
   margin: auto;
-  padding-top: 182px;
+  padding-top: 83px;
 }
 
 .flex-cards {
@@ -343,7 +344,7 @@ padding-top: 30px;
   justify-content: center;
   padding-top: 80px;
     gap: 32px;
-    padding-bottom: 94px;
+    padding-bottom: 97px;
     background-color: #F6F6F6;
 }
 
