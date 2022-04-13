@@ -60,7 +60,7 @@ h1 {
     padding-left: 4px;
   }
 
-  li {
+  .li-hover {
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
@@ -71,10 +71,15 @@ h1 {
     list-style-type: none;
   }
 
+  .li-hover:hover {
+    cursor: pointer;
+    color: #292929;
+  }
+
   ul {
       display: flex;
       flex-direction: row;
-      gap: 36px;
+      gap: 39px;
   }
 
   /* //////////////////////MAIN///////////////// */
@@ -221,9 +226,6 @@ height: 52px;
     
     .footer-text {
         text-decoration: none;
-        width: 272px;
-      height: 23px;
-      
       font-family: 'Georgia';
       font-style: normal;
       font-weight: 400;
@@ -286,28 +288,42 @@ height: 52px;
       padding-left: 40px;
     }
     
-    a {
+    .a {
       text-decoration: none;
-      /* width: 191px;
-    height: 23px; */
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    /* line-height: 115%; */
-    letter-spacing: 0.06em;
-    color: #F1CDB3;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 160%;
+      color: #545454;
+      margin: 17px -1px;
+      list-style-type: none;
+    }
+
+    .a:hover {
+      cursor: pointer;
+      color: #292929;
     }
     
-    li:hover {
+    /* li:hover {
         cursor: pointer;
-    }
+        color: #292929;
+    } */
 
     .active-li {
         list-style-position:inside;
         border-bottom: 3px solid #F1CDB3;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        color: #545454;
+        margin: 17px -1px;
+        list-style-type: none;
+        cursor: pointer;
       }
-
+/* 
       .li {
         font-family: 'Arial';
         font-style: normal;
@@ -318,6 +334,11 @@ height: 52px;
         margin: 10px 0px;
         list-style-type: none;
       }
+
+      .li:hover {
+        cursor: pointer;
+        color: #292929;
+      } */
 
       .flex-logo {
           cursor: pointer;
@@ -345,4 +366,8 @@ a > span.footer-text{
 
   .cards-hover:hover {
     background-color: #FFFFFF;
+  }
+
+  .link {
+    text-decoration: none;
   }
