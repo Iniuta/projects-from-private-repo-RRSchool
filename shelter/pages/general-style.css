@@ -10,7 +10,13 @@
 
 @media (max-width: 767px) {
   :root {
-    --container-width: 320px;
+    --container-width: 100%;
+  }
+}
+
+@media (max-width: 319px) {
+  :root {
+    --container-width: 319px;
   }
 }
 
@@ -91,21 +97,13 @@ h4 {
 /* FOOTER////////////////////////////////////////// */
 
 footer {
-  background-image: url(../assets/images/footer-background1.jpg);
-  background-image: url(../assets/images/footer-gradient-background.png);
+  background-image: url(../../assets/images/trans.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
 }
 
-@media (max-width: 1279px) {
-  footer {
-    background-image: url(../assets/images/main-768/footer-background.jpg);
-    background-image: url(../assets/images/main-768/footer-gradient-background.png);
-  }
-}
 
 @media (max-width: 767px) {
   footer {
-    background-image: url(../assets/images/main-320/footer-background.jpg);
-    background-image: url(../assets/images/main-320/footer-gradient-background.png);
+   text-align: center;
   }
 }
 
@@ -257,7 +255,7 @@ footer {
     width: 260px;
     height: 269px;
     padding-top: 38px;
-    padding-left: 30px;
+    padding-left: 0;
   }
 }
 

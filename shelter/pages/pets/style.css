@@ -40,7 +40,7 @@
     padding-left: 10px;
     background-color: white;
     position: fixed;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 34px;
     align-items: center;
   }
@@ -115,17 +115,11 @@ ul {
   }
 }
 
-@media (max-width: 767px) {
-  .ul-320 {
-    display: none;
-  }
-}
-
 .hamburger .line {
   width: 30px;
   height: 2px;
   display: block;
-  margin: 8px auto;
+  margin: 4px auto;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -399,4 +393,93 @@ a > span.footer-text {
 
 .link {
   text-decoration: none;
+}
+
+.hamburger {
+  display: flex;
+  cursor: pointer;
+  width: 36px;
+  height: 31px;
+  flex-direction: column;
+  position: fixed;
+  right: 50px;
+  top: 45px;
+  z-index: 10;
+  transition: all 0.5s;
+}
+
+.hamburger.hamburger-active {
+  flex-direction: column;
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+body.hamburger-active {
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .nav-320 {
+    display: flex;
+    background-color: #fafafa;
+    width: 320px;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    top: 0;
+    transition: 0.5s;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 1s;
+  }
+
+  .hidden.hamburger-active {
+    position: absolute;
+    top: 0;
+    background-color: rgba(41, 41, 41, 0.6);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav-320.hamburger-active {
+    transform: translateX(0);
+  }
+
+  .ul-320 {
+    display: flex;
+    flex-direction: column;
+    margin: 145px auto;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .ul-320 li {
+    font-size: 32px;
+  }
+}
+
+.header-flex.hamburger-active {
+  z-index: 10;
+  background-color: #7b7b7b;
+}
+
+.flex-logo.hamburger-active {
+  display: none;
+}
+
+.flex-logo-hamburger {
+  padding-left: 10px;
+  padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .flex-logo-hamburger {
+    display: none;
+  }
 }

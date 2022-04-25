@@ -150,29 +150,14 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
-  .nav-320 {
-    display: none;
-  }
-}
-
 @media (max-width: 1279px) {
   .nav-1280 {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
-}
-
 @media (max-width: 767px) {
   .nav-1280 {
-    display: none;
-  }
-  .ul-320 {
     display: none;
   }
 }
@@ -183,17 +168,11 @@ ul {
   }
 }
 
-@media (max-width: 767px) {
-  .ul-320 {
-    display: none;
-  }
-}
-
 .hamburger .line {
   width: 30px;
-  height: 2px;
+  height: 3px;
   display: block;
-  margin: 8px auto;
+  margin: 3px auto;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -225,14 +204,15 @@ ul {
   .section-1-768 {
     background-image: url(../../assets/images/main-768/start-screen-background.jpg);
     background-image: url(../../assets/images/main-768/start-screen-gradient-background.png);
+
   }
 }
 
-/* @media (min-width: 769px) {
+@media (max-width: 767px) {
   .section-1-768 {
-display: none;
+    text-align: center;
   }
-} */
+}
 
 h2 {
   width: 310px;
@@ -258,11 +238,12 @@ h2 {
   h2 {
     width: 222px;
     height: 108px;
-    padding-left: 50px;
+    padding-left: 0;
     padding-top: 60px;
     font-size: 25px;
     text-align: center;
     letter-spacing: 0.06em;
+    margin: auto;
   }
 }
 
@@ -288,8 +269,9 @@ h2 {
   .not-only {
     width: 300px;
     text-align: center;
-    padding-left: 10px;
-    padding-top: 0px;
+    padding-left: 0;
+    padding-top: 0;
+    margin: auto;
   }
 }
 
@@ -311,7 +293,7 @@ h2 {
   .img-puppi {
     width: 260px;
     height: 271.77px;
-    padding-top: 106px;
+    padding-top: 104px;
     padding-left: 50px;
   }
 }
@@ -330,8 +312,9 @@ h2 {
 
 @media (max-width: 767px) {
   .make-a-friend-btn {
-    padding-left: 56px;
-    padding-top: 64px;
+    padding-left: 0px;
+    padding-top: 65px;
+    text-align: center;
   }
 }
 
@@ -406,8 +389,10 @@ h2 {
 
 @media (max-width: 767px) {
   .about-the-shelter {
-    padding-top: 41px;
-    padding-left: 25px;
+    padding: 0px;
+    margin: auto;
+    padding-top: 45px;
+    gap: 22px;
   }
 }
 
@@ -465,8 +450,9 @@ h2 {
   .img-puppi-cat {
     width: 260px;
     height: 353.6px;
-    padding-top: 38px;
-    padding-left: 30px;
+    padding: 0px;
+    padding-top: 40px;
+    margin: auto;
   }
 }
 
@@ -749,7 +735,7 @@ h2 {
   .flex-section-donation {
     padding-top: 42px;
     gap: 43px;
-    padding-bottom: 40px;
+    padding-bottom: 41px;
   }
 }
 
@@ -976,4 +962,113 @@ a > span.footer-text {
 
 .cards-hover:hover {
   background-color: #ffffff;
+}
+
+.ul-320 {
+  display: none;
+}
+
+.hamburger-menu-logo {
+  display: none;
+}
+
+.hamburger-menu-top {
+  display: flex;
+  gap: 51px;
+}
+
+.hamburger-menu-top.hamburger-active{
+  padding-top: 30px;
+}
+
+.nav-320 {
+  display: flex;
+  background-color: #292929;
+  width: 320px;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  transition: 0.5s;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: 1s;
+}
+
+.nav-320.hamburger-active {
+  transform: translateX(0);
+}
+
+.hamburger-menu-logo.hamburger-active {
+  display: inline;
+  padding-left: 10px;
+}
+
+.ul-320.hamburger-active {
+  display: flex;
+  flex-direction: column;
+  margin: 145px auto;
+  text-align: center;
+  gap: 20px;
+}
+
+.flex-logo.hamburger-active {
+  display: none;
+}
+
+.hidden.hamburger-active {
+  position: absolute;
+  top: 0;
+  background-color: rgba(41, 41, 41, .6);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger {
+  display: flex;
+  /* justify-content: space-between; */
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  position: relative;
+  right: 0px;
+  top: 0px;
+  z-index: 10;
+  transition: all 0.5s;
+}
+
+.hamburger.hamburger-active {
+  flex-direction: column;
+  transform: rotate(90deg);
+  transition: all 0.5s;    
+  left: 92%;
+  padding-top: 23px;
+}
+
+.hamburger.hamburger-active .line {
+ margin: 3px 2px;
+}
+
+.ul-320.hamburger-active li {
+  font-size: 32px;
+}
+
+body.hamburger-active {
+  overflow: hidden;
+}
+
+
+@media (max-width: 768) {
+  header {
+    height: 90px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
 }

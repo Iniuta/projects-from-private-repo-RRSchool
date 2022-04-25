@@ -14,8 +14,7 @@
 <body>
     <header>
         <div class="header-flex">
-
-            <div class="flex-logo" onclick="location.href='#';">
+            <div class="flex-logo" onclick="location.href='#';"> <!-- active -->
 
 
                 <h1>
@@ -38,7 +37,7 @@
                         About the shelter
                     </li>
 
-                    <li  onclick="location.href='../pets/index.html';" class="li-hover li-nav">
+                    <li onclick="location.href='../pets/index.html';" class="li-hover li-nav">
                         Our pets
                     </li>
 
@@ -62,7 +61,7 @@
                         About the shelter
                     </li>
 
-                    <li onclick="location.href='../pets/index.html';"  class="li-hover li-nav">
+                    <li onclick="location.href='../pets/index.html';" class="li-hover li-nav">
                         Our pets
                     </li>
 
@@ -75,24 +74,27 @@
                     </li>
                 </ul>
 
-
-                <div class="hamburger" id="hamburger-1">
-                    <span class="line changeTheme"></span>
-                    <span class="line changeTheme"></span>
-                    <span class="line changeTheme"></span>
-                </div>
-
             </nav>
 
-            <nav class="nav-320">
+            <nav class="nav-320"> <!-- active -->
+                <div class="hamburger-menu-top hamburger-active"> <!-- active -->
+                    <div class="hamburger-menu-logo hamburger-active"> <!-- active -->
 
+                        <h1>
+                            Cozy House
+                        </h1>
 
-                <ul class="ul-320">
+                        <p class="logo">
+                            Shelter for pets in Boston
+                        </p>
+                    </div>
+                </div>
+                <ul class="ul-320 hamburger-active"> <!-- active -->
                     <li onclick="location.href='../main/index.html';" class="active-li">
                         About the shelter
                     </li>
 
-                    <li onclick="location.href='../pets/index.html';"  class="li-hover li-nav">
+                    <li onclick="location.href='../pets/index.html';" class="li-hover li-nav">
                         Our pets
                     </li>
 
@@ -100,19 +102,16 @@
                         Help the shelter
                     </li>
 
-                    <li class="li-hover">
-                        <a href="#part4" class="a li-nav">Contacts</a>
+                    <li onclick="location.href='../main/index.html#part4-768';" class="li-hover">
+                        Contacts
                     </li>
                 </ul>
-
-                <div class="hamburger" id="hamburger-1">
-                    <span class="line changeTheme"></span>
-                    <span class="line changeTheme"></span>
-                    <span class="line changeTheme"></span>
-                </div>
-
             </nav>
-
+            <div class="hamburger" id="hamburger-1"> <!-- active -->
+                <span class="line changeTheme"></span>
+                <span class="line changeTheme"></span>
+                <span class="line changeTheme"></span>
+            </div>
         </div>
     </header>
 
@@ -844,7 +843,7 @@
 
             <div class="footer-column-1">
 
-                <h5 id="part4" class="h5-footer">
+                <h5 id="part4-768" class="h5-footer">
                     For questions
                     and suggestions
                 </h5>
@@ -921,8 +920,8 @@
             height="310px">
 
     </footer>
-
-
+    <div class="hidden"></div> <!-- active -->
+    <script src="index.js"></script>
 </body>
 
 </html>
