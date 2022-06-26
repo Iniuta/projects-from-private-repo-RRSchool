@@ -1,0 +1,24 @@
+:root {
+    --container-width: 1440px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2785c;
+    opacity: 70%;
+  }
+
+  .logo-container {
+    display: flex;
+
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+  }
