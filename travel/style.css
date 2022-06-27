@@ -133,3 +133,37 @@ color: #0D606F;
   width: 317px;
   height: 24px;
 }
+
+/* ....SECTION DESTINATIONS... */
+
+.btn-border-radius {
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: #F2785C;
+  opacity: 50%;
+}
+
+.img-destinations {
+  width: 800px;
+  height: 800px;
+  border-radius: 16px;
+}
+
+.img-destinarions-container {
+  display: flex;
+  gap: 60px;
+}
+
+.destinations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btns-destinations {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
