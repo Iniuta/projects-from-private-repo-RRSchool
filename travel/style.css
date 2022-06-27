@@ -1,24 +1,91 @@
 :root {
-    --container-width: 1440px;
-  }
+  --container-width: 1440px;
+}
 
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+  width: 1440px;
+}
 
-  .header-container {
-    display: flex;
-    justify-content: space-around;
-    background-color: #f2785c;
-    opacity: 70%;
-  }
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f2785c;
+  opacity: 70%;
+}
 
-  .logo-container {
-    display: flex;
+.logo-container {
+  display: flex;
+}
 
-  }
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-  }
+.preview {
+  background: url(../travel/images/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg) no-repeat;
+  width: 1440px;
+}
+
+h1 {
+  width: 892px;
+  height: 422px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  color: #ffffff;
+}
+
+.describe-h1 {
+  width: 723px;
+  height: 24px;
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.start-planning {
+  width: 163px;
+  height: 32px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.label-search {
+  width: 560px;
+  height: 22px;
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f2785c;
+}
+
+.button-preview {
+  width: 892px;
+  height: 95px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+}
+
+.button-search {
+padding: 10px 32px;
+gap: 10px;
+width: 228px;
+height: 59px;
+background: #0D606F;
+box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+border-radius: 10px;
+border: none;
+}
