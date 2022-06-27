@@ -179,14 +179,26 @@ h2 {
 }
 
 .stories-bckg {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
   background: url(../travel/images/lake-background.jpg) no-repeat;
+  width: 1440px;
+  z-index: 0;
+}
+
+.stories-bckg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #ffffff;
   opacity: 70%;
-  width: 1440px;
+  z-index: -1;
 }
 
 .container-four-stories {
@@ -223,4 +235,29 @@ h3 {
   color: #0d606f;
   width: 760px;
   height: 184px;
+}
+
+/* ...FOOTER... */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: url(../travel/images/lake-background.jpg) no-repeat;
+  background-position: center -1270px;
+}
+
+.discribe-footer {
+  width: 260px;
+  height: 21px;
+  font-family: 'Aleo';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.social-icons {
+  display: flex;
+
 }
