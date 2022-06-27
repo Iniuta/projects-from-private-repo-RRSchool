@@ -160,6 +160,7 @@ color: #0D606F;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .btns-destinations {
