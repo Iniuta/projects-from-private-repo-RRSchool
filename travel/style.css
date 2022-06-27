@@ -7,31 +7,93 @@ html {
   width: 1440px;
 }
 
+/* ....HEADER.... */
+
 .header-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #f2785c;
   opacity: 70%;
+  padding-top: 1.71%;
+  padding-bottom: 1.7%;
+  gap: 11%;
 }
 
 .logo-container {
   display: flex;
+  width: 216px;
+}
+
+.travel-portal {
+  /* width: 180px; */
+  height: 31px;
+  font-family: "Magra";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #ffffff;
 }
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  padding-top: 2%;
+  gap: 42px;
+  padding-right: 25px;
 }
+
+.header-nav {
+  width: 105px;
+  height: 21px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.login {
+  width: 43px;
+  height: 21px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.btn-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 103px;
+  height: 41px;
+  background: #0d606f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+}
+
+.btn-log-padding {
+  padding-left: 1%;
+}
+
+/* ....PREVIEW... */
 
 .preview {
   background: url(../travel/images/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg)
     no-repeat;
   width: 1440px;
+  padding-bottom: 17.7%;
 }
 
 h1 {
   width: 892px;
-  height: 422px;
+  padding-left: 8.3%;
+  padding-top: 2.2%;
   font-family: "Aleo";
   font-style: normal;
   font-weight: 700;
@@ -43,6 +105,9 @@ h1 {
 .describe-h1 {
   width: 723px;
   height: 24px;
+  padding-left: 8.3%;
+  padding-top: 2.1%;
+  letter-spacing: 0.5px;
   font-family: "Aleo";
   font-style: italic;
   font-weight: 700;
@@ -71,13 +136,19 @@ h1 {
   font-size: 24px;
   line-height: 29px;
   color: #f2785c;
+  padding-left: 2.8%;
 }
 
 .button-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 892px;
   height: 95px;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 16px;
+  margin-left: 8.3%;
+  margin-top: 3.3%;
 }
 
 .button-search {
@@ -249,7 +320,7 @@ footer {
 .discribe-footer {
   width: 260px;
   height: 21px;
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-size: 16px;
   line-height: 21px;
@@ -259,5 +330,4 @@ footer {
 
 .social-icons {
   display: flex;
-
 }
