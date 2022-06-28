@@ -40,6 +40,7 @@ body {
 .logo-container {
   display: flex;
   width: 216px;
+  padding-right: 3px;
 }
 
 .travel-portal {
@@ -56,11 +57,13 @@ body {
 .nav-container {
   display: flex;
   padding-top: 2%;
-  gap: 42px;
-  padding-right: 25px;
+  gap: 36px;
 }
 
 .header-nav {
+  display: inline-block;
+  position: relative;
+
   width: 105px;
   height: 21px;
   font-family: "Red Hat Text";
@@ -69,6 +72,26 @@ body {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+}
+
+.header-nav::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.header-nav:hover::after {
+  /* filter: drop-shadow(0 0 5px #f3ab62);
+    transition: all 0.5s; */
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .login {
@@ -96,8 +119,17 @@ body {
   border: none;
 }
 
+button {
+  transition: 0.5s ease-out;
+}
+
+button:hover {
+  filter: drop-shadow(0 0 3px #151513);
+  transition: 0.5s ease-out;
+}
+
 .btn-log-padding {
-  padding-left: 1%;
+  padding-left: 34px;
 }
 
 /* ....PREVIEW... */
@@ -107,7 +139,7 @@ body {
     no-repeat;
   background-position: center -90px;
   width: 1440px;
-  padding-bottom: 17.7%;
+  padding-bottom: 23.2%;
 }
 
 h1 {
@@ -195,7 +227,7 @@ h2 {
   color: #f2785c;
   margin: auto;
   text-align: center;
-  padding-top: 5.5%;
+  /* padding-top: 5.5%; */
 }
 
 .steps {
@@ -203,7 +235,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 39px;
-  padding-bottom: 19px;
+  padding-bottom: 97px;
 }
 
 .step-text {
@@ -270,6 +302,8 @@ h2 {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  padding-bottom: 81px;
+
 }
 
 .btns-destinations {
