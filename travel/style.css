@@ -475,8 +475,6 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 17px;
-  padding-bottom: 10px;
   background: url(../travel/images/lake-background.jpg) no-repeat;
   background-position: center -1270px;
 }
@@ -507,4 +505,11 @@ footer {
 .social-icons-hover:hover {
   filter: drop-shadow(6px 6px 1px #151513);
   transition: 0.5s ease-out;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding-right: 427px;
 }
