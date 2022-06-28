@@ -311,7 +311,7 @@ h2 {
 .stories {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -321,6 +321,7 @@ h2 {
   flex-direction: column;
   gap: 30px;
   align-items: center;
+  padding-top: 42px;
   background: url(../travel/images/lake-background.jpg) no-repeat;
   width: 1440px;
   z-index: 0;
@@ -367,8 +368,7 @@ h3 {
   font-family: "Aleo";
   font-style: normal;
   font-size: 20px;
-  line-height: 24px;
-  line-height: 100%;
+  line-height: 25px;
   color: #0d606f;
   width: 760px;
   height: 184px;
