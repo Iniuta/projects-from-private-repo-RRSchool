@@ -7,16 +7,34 @@ html {
   width: 1440px;
 }
 
+body {
+  width: 1440px;
+}
+
 /* ....HEADER.... */
 
 .header-container {
+  position: relative;
   display: flex;
   justify-content: center;
-  background-color: #f2785c;
-  opacity: 70%;
   padding-top: 1.71%;
   padding-bottom: 1.7%;
   gap: 11%;
+  background: url(./images/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg);
+  height: 41px;
+  z-index: 0;
+}
+
+.header-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f2785c;
+  opacity: 70%;
+  z-index: -1;
 }
 
 .logo-container {
@@ -75,6 +93,7 @@ html {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
     0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
+  border: none;
 }
 
 .btn-log-padding {
@@ -86,6 +105,7 @@ html {
 .preview {
   background: url(../travel/images/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg)
     no-repeat;
+  background-position: center -90px;
   width: 1440px;
   padding-bottom: 17.7%;
 }
@@ -167,18 +187,26 @@ h1 {
 
 h2 {
   width: 611px;
-  height: 53px;
   font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 53px;
   color: #f2785c;
+  margin: auto;
+  text-align: center;
+  padding-top: 5.5%;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 39px;
+  padding-bottom: 19px;
 }
 
 .step-text {
-  width: 247px;
-  height: 24px;
   font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
@@ -189,20 +217,29 @@ h2 {
 
 .steps-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  width: 1440px;
+  gap: 163px;
 }
 
 .img-steps-container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 247px;
-  height: 154px;
+  gap: 30px;
 }
 
-.width-step-text {
+.width-step-container-1 {
+  width: 247px;
+}
+
+.width-step-container-2 {
+  width: 222px;
+  padding-left: 66px;
+}
+
+.width-step-container-3 {
   width: 317px;
-  height: 24px;
 }
 
 /* ....SECTION DESTINATIONS... */
@@ -225,6 +262,7 @@ h2 {
 .img-destinarions-container {
   display: flex;
   gap: 60px;
+  padding-top: 46px;
 }
 
 .destinations {
@@ -238,6 +276,34 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding-top: 24px;
+  padding-bottom: 41px;
+}
+
+.text-find-more {
+  width: 116px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.btn-find-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 32px;
+  gap: 10px;
+  width: 228px;
+  height: 59px;
+  background: #0d606f;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  border: none;
 }
 
 /* ....STORIES.... */
