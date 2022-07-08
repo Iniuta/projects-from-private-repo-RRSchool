@@ -439,6 +439,22 @@ h2 {
   padding-top: 46px;
 }
 
+@media (max-width: 390px) {
+  .img-destinarions-container {
+    display: none;
+  }
+}
+
+/* .img-destinarions-container-mobile {
+
+} */
+
+@media (min-width: 391px) {
+  .img-destinarions-container-mobile {
+    display: none;
+  }
+}
+
 .destinations {
   display: flex;
   flex-direction: column;
@@ -505,6 +521,18 @@ h2 {
   line-height: 42px;
 
   color: #ffffff;
+}
+
+@media (max-width: 390px) {
+  .sign-img {
+    width: 60px;
+    height: 26px;
+    left: calc(50% - 60px / 2 - 135px);
+    top: calc(50% - 26px / 2 - 233.5px);
+    font-family: "Red Hat Text";
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 /* ....STORIES.... */
