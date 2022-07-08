@@ -388,11 +388,36 @@ h2 {
   gap: 163px;
 }
 
+@media (max-width: 390px) {
+  .steps-container {
+    display: none;
+  }
+}
+
+.steps-container-mobile {
+  display: flex;
+  justify-content: center;
+  width: var(--container-width);
+  gap: 75px;
+}
+
+@media (min-width: 391px) {
+  .steps-container-mobile {
+    display: none;
+  }
+}
+
 .img-steps-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 30px;
+}
+
+@media (max-width: 390px) {
+  .img-steps-container {
+    gap: 20px;
+  }
 }
 
 .width-step-container-1 {
