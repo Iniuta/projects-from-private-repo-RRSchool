@@ -532,6 +532,7 @@ h2 {
   font-weight: bold;
 }
 
+
 .sign-img {
   position: absolute;
   width: 108px;
@@ -595,6 +596,36 @@ h2 {
   z-index: -1;
 }
 
+@media (max-width: 390px) {
+  .stories-bckg {
+display: none;
+  }
+}
+
+.stories-bckg-mobile {
+  position: relative;
+  background: url(../travel/images/footer-mobile.jpg) no-repeat;
+  z-index: 0;
+}
+
+.stories-bckg-mobile::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  opacity: 70%;
+  z-index: -1;
+}
+
+@media (min-width: 391px) {
+  .stories-bckg-mobile {
+display: none;
+  }
+}
+
 .container-four-stories {
   display: flex;
   flex-direction: row;
@@ -620,6 +651,14 @@ h3 {
   color: #0d606f;
 }
 
+@media (max-width: 390px) {
+  h3 {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+
 .travel-stories {
   font-family: "Aleo";
   font-style: normal;
@@ -628,6 +667,16 @@ h3 {
   color: #0d606f;
   width: 760px;
   height: 184px;
+}
+
+@media (max-width: 390px) {
+  .travel-stories {
+    width: 195px;
+    height: 102px;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+  }
 }
 
 .btn-see-more {
@@ -665,6 +714,14 @@ footer {
   background: url(../travel/images/lake-background.jpg) no-repeat;
   background-position: center -1270px;
 }
+
+@media (max-width: 390px) {
+  footer {
+    background: url(../travel/images/footer-mobile.jpg) no-repeat;
+    background-position: center -639px;
+  }
+}
+
 
 .discribe-footer {
   width: 260px;
