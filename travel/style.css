@@ -35,6 +35,9 @@ body {
 @media (max-width: 390px) {
   .header-container {
     background: url(./images/header-mobile.jpg);
+    justify-content: space-around;
+    padding-top: 7.71%;
+    align-items: end;
   }
 }
 
@@ -93,6 +96,7 @@ body {
 .hamburger {
   display: inline;
   padding-left: 3%;
+
 }
 
 @media (min-width: 391px) {
@@ -116,11 +120,11 @@ body {
 }
 
 .hamburger .line {
-  width: 50px;
-  height: 4.3px;
+  width: 26.25px;
+  height: 2.67px;
   background-color: #ecf0f1;
   display: block;
-  margin: 8px auto;
+  margin: 4px auto;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -217,6 +221,8 @@ button:hover {
 @media (max-width: 390px) {
   .preview {
     background: url(../travel/images/header-mobile.jpg) no-repeat;
+    background-position: center -78px;
+    padding-top: 16.5%;
   }
 }
 
@@ -293,6 +299,7 @@ h1 {
     width: 226.01px;
     height: 11.12px;
     font-size: 14px;
+    line-height: 15px;
   }
 }
 
@@ -312,6 +319,8 @@ h1 {
   .button-preview {
     width: 360px;
     height: 48px;
+    margin-top: 0px;
+    margin-left: 3.9%;
   }
 }
 
