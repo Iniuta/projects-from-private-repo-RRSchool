@@ -96,7 +96,6 @@ body {
 .hamburger {
   display: inline;
   padding-left: 3%;
-
 }
 
 @media (min-width: 391px) {
@@ -449,7 +448,7 @@ h2 {
 
 @media (max-width: 390px) {
   .width-step-container-1 {
-    width: 94px;;
+    width: 94px;
   }
 }
 
@@ -471,7 +470,7 @@ h2 {
 
 @media (max-width: 390px) {
   .width-step-container-3 {
-    width: 98px;;
+    width: 98px;
   }
 }
 
@@ -486,6 +485,13 @@ h2 {
   opacity: 50%;
 }
 
+@media (max-width: 390px) {
+  .btn-border-radius {
+    width: 8px;
+    height: 12px;
+  }
+}
+
 .activ-pink-btn {
   border-radius: 50px;
   width: 20px;
@@ -494,10 +500,23 @@ h2 {
   background-color: #f2785c;
 }
 
+@media (max-width: 390px) {
+  .activ-pink-btn {
+    width: 8px;
+    height: 12px;
+  }
+}
+
 .img-destinations {
   width: 800px;
   height: 800px;
   border-radius: 16px;
+}
+
+.img-destinations-mobile {
+  border-radius: 16px;
+  margin-top: 20px;
+  position: relative;
 }
 
 .img-destinarions-container {
@@ -512,9 +531,6 @@ h2 {
   }
 }
 
-/* .img-destinarions-container-mobile {
-
-} */
 
 @media (min-width: 391px) {
   .img-destinarions-container-mobile {
@@ -530,9 +546,6 @@ h2 {
   padding-bottom: 81px;
 }
 
-.di {
-  position: relative;
-}
 
 .btns-destinations {
   display: flex;
@@ -540,6 +553,17 @@ h2 {
   gap: 10px;
   padding-top: 24px;
   padding-bottom: 41px;
+}
+
+@media (max-width: 390px) {
+  .btns-destinations {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    gap: 5px;
+    position: absolute;
+    left: calc(50% - 22px);
+    top: calc(50% - 42px / 2 + 293px);
+  }
 }
 
 .text-find-more {
@@ -550,6 +574,14 @@ h2 {
   font-size: 24px;
   line-height: 32px;
   color: #ffffff;
+}
+
+@media (max-width: 390px) {
+  .text-find-more {
+    width: 52px;
+font-size: 11px;
+line-height: 15px;
+  }
 }
 
 .btn-find-more {
@@ -568,11 +600,45 @@ h2 {
   border: none;
 }
 
+@media (max-width: 390px) {
+  .btn-find-more {
+    display: none;
+  }
+}
+
+.btn-find-more-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  gap: 6px;
+  width: 92px;
+  height: 30px;
+  background: #0d606f;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+    0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  margin-top: 10px;
+  border: none;
+}
+
+@media (min-width: 391px) {
+  .btn-find-more-mobile {
+    display: none;
+  }
+}
+
 .read-more {
   text-decoration: underline;
   color: #0d606f;
   font-weight: bold;
 }
+
+.di {
+  position: relative;
+}
+
 
 
 .sign-img {
@@ -587,16 +653,16 @@ h2 {
   font-weight: 500;
   font-size: 32px;
   line-height: 42px;
-
   color: #ffffff;
 }
+
 
 @media (max-width: 390px) {
   .sign-img {
     width: 60px;
     height: 26px;
     left: calc(50% - 60px / 2 - 135px);
-    top: calc(50% - 26px / 2 - 233.5px);
+    top: calc(50% - 26px / 2 - 74.5px);
     font-family: "Red Hat Text";
     font-size: 20px;
     line-height: 26px;
@@ -640,7 +706,7 @@ h2 {
 
 @media (max-width: 390px) {
   .stories-bckg {
-display: none;
+    display: none;
   }
 }
 
@@ -664,7 +730,7 @@ display: none;
 
 @media (min-width: 391px) {
   .stories-bckg-mobile {
-display: none;
+    display: none;
   }
 }
 
@@ -763,7 +829,6 @@ footer {
     background-position: center -639px;
   }
 }
-
 
 .discribe-footer {
   width: 260px;
