@@ -223,6 +223,7 @@ button:hover {
     background: url(../travel/images/header-mobile.jpg) no-repeat;
     background-position: center -78px;
     padding-top: 16.5%;
+    padding-bottom: 16.2%;
   }
 }
 
@@ -374,6 +375,14 @@ h2 {
   padding-bottom: 97px;
 }
 
+@media (max-width: 390px) {
+  .steps {
+    padding-top: 18px;
+    padding-bottom: 20px;
+    gap: 20px;
+  }
+}
+
 .step-text {
   font-family: "Aleo";
   font-style: normal;
@@ -407,13 +416,18 @@ h2 {
   display: flex;
   justify-content: center;
   width: var(--container-width);
-  gap: 75px;
+  gap: 42px;
+  text-align: center;
 }
 
 @media (min-width: 391px) {
   .steps-container-mobile {
     display: none;
   }
+}
+
+.img-step {
+  border-radius: 17px;
 }
 
 .img-steps-container {
@@ -433,13 +447,32 @@ h2 {
   width: 247px;
 }
 
+@media (max-width: 390px) {
+  .width-step-container-1 {
+    width: 94px;;
+  }
+}
+
 .width-step-container-2 {
   width: 222px;
   padding-left: 66px;
 }
 
+@media (max-width: 390px) {
+  .width-step-container-2 {
+    width: 111px;
+    padding-left: 0px;
+  }
+}
+
 .width-step-container-3 {
   width: 317px;
+}
+
+@media (max-width: 390px) {
+  .width-step-container-3 {
+    width: 98px;;
+  }
 }
 
 /* ....SECTION DESTINATIONS... */
