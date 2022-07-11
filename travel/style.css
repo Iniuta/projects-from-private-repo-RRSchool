@@ -65,6 +65,13 @@ body {
   padding-right: 3px;
 }
 
+
+@media (max-width: 390px) {
+  .logo-container {
+    padding-right: 24px;
+  }
+}
+
 .travel-portal {
   /* width: 180px; */
   height: 31px;
@@ -531,7 +538,6 @@ h2 {
   }
 }
 
-
 @media (min-width: 391px) {
   .img-destinarions-container-mobile {
     display: none;
@@ -546,6 +552,11 @@ h2 {
   padding-bottom: 81px;
 }
 
+@media (max-width: 390px) {
+  .destinations {
+    padding-bottom: 20px;
+  }
+}
 
 .btns-destinations {
   display: flex;
@@ -579,8 +590,8 @@ h2 {
 @media (max-width: 390px) {
   .text-find-more {
     width: 52px;
-font-size: 11px;
-line-height: 15px;
+    font-size: 11px;
+    line-height: 15px;
   }
 }
 
@@ -639,8 +650,6 @@ line-height: 15px;
   position: relative;
 }
 
-
-
 .sign-img {
   position: absolute;
   width: 108px;
@@ -655,7 +664,6 @@ line-height: 15px;
   line-height: 42px;
   color: #ffffff;
 }
-
 
 @media (max-width: 390px) {
   .sign-img {
@@ -676,6 +684,12 @@ line-height: 15px;
   flex-direction: column;
   gap: 40px;
   align-items: center;
+}
+
+@media (max-width: 390px) {
+  .stories {
+    gap: 10px;
+  }
 }
 
 .stories-bckg {
@@ -712,7 +726,9 @@ line-height: 15px;
 
 .stories-bckg-mobile {
   position: relative;
+  width: var(--container-width);
   background: url(../travel/images/footer-mobile.jpg) no-repeat;
+  padding-bottom: 13px;
   z-index: 0;
 }
 
@@ -740,10 +756,24 @@ line-height: 15px;
   gap: 40px;
 }
 
+@media (max-width: 390px) {
+  .container-four-stories {
+    gap: 11px;
+    padding-top: 15px;
+    justify-content: center;
+  }
+}
+
 .discribe-stories {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+@media (max-width: 390px) {
+  .discribe-stories {
+    gap: 0px;
+  }
 }
 
 .img-stories {
@@ -784,6 +814,7 @@ h3 {
     font-weight: 400;
     font-size: 9px;
     line-height: 11px;
+    padding-top: 10px;
   }
 }
 
@@ -802,6 +833,22 @@ h3 {
   border: none;
 }
 
+@media (max-width: 390px) {
+  .btn-see-more {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 4px;
+    gap: 6px;
+    width: 92px;
+    height: 30px;
+    border: none;
+    margin: auto;
+    margin-top: 5px;
+  }
+}
+
 .see-more {
   width: 116px;
   height: 32px;
@@ -811,6 +858,15 @@ h3 {
   font-size: 24px;
   line-height: 32px;
   color: #ffffff;
+}
+
+@media (max-width: 390px) {
+  .see-more {
+    width: 49px;
+    height: 15px;
+    font-size: 11px;
+    line-height: 15px;
+  }
 }
 
 /* ...FOOTER... */
@@ -826,7 +882,8 @@ footer {
 @media (max-width: 390px) {
   footer {
     background: url(../travel/images/footer-mobile.jpg) no-repeat;
-    background-position: center -639px;
+    background-position: center -627px;
+    padding-bottom: 5px;
   }
 }
 
