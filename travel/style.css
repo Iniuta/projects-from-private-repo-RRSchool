@@ -532,6 +532,8 @@ h2 {
   padding-top: 46px;
 }
 
+
+
 @media (max-width: 390px) {
   .img-destinarions-container {
     display: none;
@@ -573,8 +575,37 @@ h2 {
     gap: 5px;
     position: absolute;
     left: calc(50% - 22px);
-    top: calc(50% - 42px / 2 + 293px);
+    top: calc(50% - 42px / 2 + 320px);
   }
+}
+
+
+.destinations-arrow{
+  display: flex;
+  position: absolute;
+  left: calc(13% - 22px);
+  top: calc(50% + 200px);
+  justify-content: space-between;
+  width: 333px;
+}
+
+i {
+  border: solid rgba(242, 120, 92, 0.5);
+  border-width: 0 3px 3px 0;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(135deg);
 }
 
 .text-find-more {
