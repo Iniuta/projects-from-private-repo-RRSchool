@@ -580,32 +580,43 @@ h2 {
 }
 
 
-.destinations-arrow{
+/* .destinations-arrow{
   display: flex;
   position: absolute;
-  left: calc(13% - 22px);
+  
   top: calc(50% + 200px);
-  justify-content: space-between;
-  width: 333px;
-}
+  justify-content: space-between; 
+} */
 
 i {
   border: solid rgba(242, 120, 92, 0.5);
-  border-width: 0 3px 3px 0;
+  border-width: 0 4px 4px 0;
   width: 15px;
   height: 15px;
   display: inline-block;
-  padding: 3px;
+}
+
+.arr-left {
+  position: absolute;
+  left: calc(50% - 166px);
+  top: calc(50% + 207px);
+}
+.arr-right {
+  position: absolute;
+  left: calc(50% + 146px);
+  top: calc(50% + 207px);
 }
 
 .right {
   transform: rotate(90deg);
   -webkit-transform: rotate(-45deg);
+  /* left: calc(13% - 22px); */
 }
 
 .left {
   transform: rotate(-90deg);
   -webkit-transform: rotate(135deg);
+  /* left: calc(13% - 22px); */
 }
 
 .text-find-more {
