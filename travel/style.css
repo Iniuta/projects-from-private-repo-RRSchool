@@ -88,17 +88,85 @@ body {
   }
 }
 
+/* hamburger */
+#hamburger-1.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  -o-transform: translateY(13px) rotate(45deg);
+  transform: translateY(0px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+.is-active.hamburger {
+  padding-top: 11%;
+  padding-left: 7%;
+}
+
+.is-active.hamburger .line {
+  width: 21px;
+}
+
+/* hamburger */
+
 .nav-container {
   display: flex;
   padding-top: 2%;
   gap: 36px;
 }
 
-@media (max-width: 390px) {
-  .nav-container {
+
+@media (min-width: 391px) {
+  .active-li{
     display: none;
   }
 }
+
+@media (max-width: 390px) {
+  .nav-container {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* margin: 0 10%; */
+    padding-top: 26.6%;
+    padding-right: 6%;
+    gap: 10px;
+    text-align: right;
+
+  }
+}
+
+.is-active.nav-container {
+  display: flex;
+}
+
+@media (max-width: 390px) {
+  .is-active.nav-list {
+    display: flex;
+    background-color: #F2785C;
+    width: 165px;
+    height: 250px;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    transition: 0.5s;
+    border-radius: 5%;
+    margin-right: 9px;
+    margin-top: 9px;
+}
+  }
 
 .hamburger {
   display: inline;
@@ -114,14 +182,6 @@ body {
 @media (min-width: 391px) {
   .hamburger .line {
     display: none;
-  }
-}
-
-@media (max-width: 390px) {
-  .hamburger .line {
-    width: 50px;
-    height: 2.3px;
-    margin: 11px auto;
   }
 }
 
@@ -523,8 +583,8 @@ h2 {
 .img-destinations-mobile {
   border-radius: 16px;
   margin-top: 20px;
-  position: relative;
 }
+
 
 .img-destinarions-container {
   display: flex;
@@ -578,15 +638,6 @@ h2 {
     top: calc(50% - 42px / 2 + 320px);
   }
 }
-
-
-/* .destinations-arrow{
-  display: flex;
-  position: absolute;
-  
-  top: calc(50% + 200px);
-  justify-content: space-between; 
-} */
 
 i {
   border: solid rgba(242, 120, 92, 0.5);
@@ -651,6 +702,7 @@ i {
     0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   border: none;
+  margin-top: 85px;
 }
 
 @media (max-width: 390px) {
@@ -690,6 +742,12 @@ i {
 
 .di {
   position: relative;
+}
+
+@media (max-width: 390px) {
+  .di {
+    z-index: -1;
+  }
 }
 
 .sign-img {
@@ -772,6 +830,12 @@ i {
   background: url(../travel/images/footer-mobile.jpg) no-repeat;
   padding-bottom: 13px;
   z-index: 0;
+}
+
+@media (max-width: 390px) {
+  .stories-bckg-mobile{
+    z-index: -1;
+  }
 }
 
 .stories-bckg-mobile::after {
