@@ -3,6 +3,7 @@ function addZero(num){
 }
 
 const days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+const month = ['January', 'February', 'March', 'April', 'May', 'Jun', 'July', 'August', 'September', 'October', 'November', 'December']
 
 function getTime(t) {
     let h = addZero(t.getHours());
@@ -12,7 +13,16 @@ function getTime(t) {
     return `${h}:${m}:${sec}`
 }
 
+function getData(d) {
+    let n = days[d.getDay()];
+    let mon = month[(d.getMonth() + 1)];
+    let day = addZero(d.getDate());
+
+    return `${n}, ${mon} ${day}`
+}
 
 const userTime= () => document.querySelector('.time').innerHTML = getTime(new Date);
 
-const myTimeout = setInterval(userTime, 1000);
+setInterval(userTime, 1000);
+
+document.querySelector('.date').innerHTML = getData(new Date);
