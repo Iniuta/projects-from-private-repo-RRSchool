@@ -56,7 +56,44 @@ document.querySelector('.greeting').innerHTML = hello();
 
 // AUDIO PLAYER
 
+const player = document.querySelector('.player')
 const playBtn = document.querySelector('.play');
+const playIcon = document.querySelector('.player-icon');
 const prevBtn = document.querySelector('.play-prev');
 const nextBtn = document.querySelector('.play-next');
+const audio = document.querySelector('.audio');
+const playerControls = document.querySelector('.player-controls')
+
+const songs = ['Aqua Caelestis', 'Ennio Morricone', 'River Flows In You' , 'Summer Wind'];
+
+let currentSong = 0;
+
+function initSong (song){
+    // add active list
+    audio.src = `assets/sounds/${song}.mp3`
+}
+
+initSong(songs[currentSong]);
+
+function playSong () {
+    playBtn.classList.remove('play');
+    playBtn.classList.add('pause');
+    audio.play();
+}
+
+function pauseSong () {
+    playBtn.classList.remove('pause');
+    playBtn.classList.add('play');
+    audio.pause();
+}
+
+playBtn.addEventListener('click', () => {
+   const isPlay = playBtn.classList.contains('pause');
+   if (isPlay) {
+    pauseSong()
+   } else{
+    playSong()
+   }
+})
+
 
