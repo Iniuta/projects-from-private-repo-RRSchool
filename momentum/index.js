@@ -64,7 +64,7 @@ const nextBtn = document.querySelector('.play-next');
 const audio = document.querySelector('.audio');
 const playerControls = document.querySelector('.player-controls')
 
-const songs = ['Aqua Caelestis', 'Ennio Morricone', 'River Flows In You' , 'Summer Wind'];
+const songs = ['Aqua Caelestis 2', 'Ennio Morricone 2', 'River Flows In You 2' , 'Summer Wind 2'];
 
 let currentSong = 0;
 
@@ -125,3 +125,17 @@ function prevSong () {
 }
 
 prevBtn.addEventListener('click', () => prevSong());
+
+// auto play
+
+audio.addEventListener('ended', () => {
+    // alert ( "complete audio player");
+    currentSong++;
+    if(currentSong === songs.length){
+        currentSong = 0;
+    };
+    initSong(songs[currentSong]);
+    playSong();
+});
+
+// 
