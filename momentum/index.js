@@ -75,6 +75,8 @@ function initSong (song){
 
 initSong(songs[currentSong]);
 
+// play/pause song
+
 function playSong () {
     playBtn.classList.remove('play');
     playBtn.classList.add('pause');
@@ -96,4 +98,30 @@ playBtn.addEventListener('click', () => {
    }
 })
 
+// next/preview song
 
+function nextSong () {
+    currentSong++;
+
+    if (currentSong > songs.length - 1) {
+        currentSong = 0
+    };
+
+    initSong(songs[currentSong]);
+    playSong();
+}
+
+nextBtn.addEventListener('click', () => nextSong());
+
+function prevSong () {
+    currentSong--;
+
+    if(currentSong < 0) {
+        currentSong = songs.length - 1
+    };
+
+    initSong(songs[currentSong]);
+    playSong();
+}
+
+prevBtn.addEventListener('click', () => prevSong());
