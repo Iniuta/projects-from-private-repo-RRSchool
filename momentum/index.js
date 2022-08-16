@@ -138,4 +138,36 @@ audio.addEventListener('ended', () => {
     playSong();
 });
 
-// 
+// CHANGE IMAGES
+
+let Image = document.querySelector('body');
+
+//Image.style.backgroundImage = "url('https://raw.githubusercontent.com/Iniuta/stage1-tasks/assets/images/morning/01.jpg')";
+
+function getRandomNum  () {
+    let result = parseInt(Math.random() * 21)
+    return result === 0 ? 1 : result
+}
+
+function setBg () {
+    let randomImage;
+    let bgNum = addZero(getRandomNum());
+    let currentTime =  new Date().getHours();
+
+    if(currentTime >= 6 && currentTime < 12){
+        randomImage = `https://raw.githubusercontent.com/Iniuta/stage1-tasks/assets/images/morning/${bgNum}.jpg`;
+    } else if(currentTime >= 12 && currentTime < 18){
+        randomImage = `https://raw.githubusercontent.com/Iniuta/stage1-tasks/assets/images/afternoon/${bgNum}.jpg`;
+    }else if(currentTime >= 18 && currentTime < 24){
+        randomImage = `https://raw.githubusercontent.com/Iniuta/stage1-tasks/assets/images/evening/${bgNum}.jpg`;
+    } else {
+        randomImage = `https://raw.githubusercontent.com/Iniuta/stage1-tasks/assets/images/night/${bgNum}.jpg`;
+    }
+
+    Image.style.backgroundImage = `url(${randomImage})`;
+}
+
+setBg(); 
+
+
+

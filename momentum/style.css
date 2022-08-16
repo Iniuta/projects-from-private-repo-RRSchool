@@ -16,7 +16,6 @@
     font-size: 16px;
     color: #fff;
     text-align: center;
-    background: url("https://raw.githubusercontent.com/Iniuta/stage1-tasks/momentum/assets/img/bg.jpg") center/cover, rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     transition: background-image 1s ease-in-out;
   }
