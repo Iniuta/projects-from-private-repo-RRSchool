@@ -138,7 +138,17 @@ audio.addEventListener('ended', () => {
     playSong();
 });
 
-// CHANGE IMAGES
+
+
+// CHANGE IMAGES 
+
+
+// ...random
+
+const daysImg = ['morning', 'afternoon', 'evening', 'night'];
+
+const btnNextImg = document.querySelector('.slide-next');
+const btnPrevImg = document.querySelector('.slide-prev');
 
 let Image = document.querySelector('body');
 
@@ -154,6 +164,8 @@ function setBg () {
     let bgNum = addZero(getRandomNum());
     let currentTime =  new Date().getHours();
 
+   
+
     if(currentTime >= 6 && currentTime < 12){
         randomImage = `https://raw.githubusercontent.com/Iniuta/stage1-tasks/assets/images/morning/${bgNum}.jpg`;
     } else if(currentTime >= 12 && currentTime < 18){
@@ -168,6 +180,42 @@ function setBg () {
 }
 
 setBg(); 
+btnNextImg.addEventListener('click', () =>  setBg());
+btnPrevImg.addEventListener('click', () =>  setBg());
 
 
 
+// THE WEATHER
+
+const weatherIcon = document.querySelector('.owf');
+const weatherError = document.querySelector('.weather-error');
+const temperature = document.querySelector('.temperature');
+const weatherDescription = document.querySelector('.weather-description');
+const wind = document.querySelector('.wind');
+const humidity = document.querySelector('.humidity');
+const city = document.querySelector('.city');
+
+
+async function getWeather() {
+    try{
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value || "Minsk"}&lang=ru&appid=3b8864b2f0d5c724b521422fb0fe9880&units=metric`;
+        const res = await fetch(url);
+        const data = await res.json();
+        
+        weatherIcon.classList.add(`owf-${data.weather[0].id}`);
+        temperature.textContent = `${Math.round(data.main.temp)}°C`;
+        weatherDescription.textContent = data.weather[0].description;
+    } catch (e){
+        console.error(e)
+    }
+  }
+
+  getWeather()
+
+
+
+  city.addEventListener('change', () => getWeather())
+
+
+
+// `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&lang=ru&appid=3b8864b2f0d5c724b521422fb0fe9880&units=metric`
