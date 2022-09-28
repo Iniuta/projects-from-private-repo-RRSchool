@@ -260,6 +260,11 @@ h4 {
   height: 426px;
   border: 1px solid #fa6f32;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.cards:hover {
+box-shadow: 2px 2px 8px 5px #fa6f32;
 }
 
 .discribe-pets {
@@ -439,6 +444,25 @@ h5 {
   color: #333b41;
   padding-top: 10px;
   width: 836px;
+}
+
+.link-support {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+/* or 21px */
+color: #333B41;
+text-decoration: underline orange 2px;
+transition: 1s;
+}
+
+.link-support:hover {
+
+color: #4B9200;
+text-decoration: underline #4B9200 2px;
+transition: 1s;
 }
 
 h6 {
