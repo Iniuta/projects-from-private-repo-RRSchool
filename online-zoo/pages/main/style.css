@@ -264,7 +264,7 @@ h4 {
 }
 
 .cards:hover {
-box-shadow: 2px 2px 8px 5px #fa6f32;
+  box-shadow: 2px 2px 8px 5px #fa6f32;
 }
 
 .discribe-pets {
@@ -447,22 +447,21 @@ h5 {
 }
 
 .link-support {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 130%;
-/* or 21px */
-color: #333B41;
-text-decoration: underline orange 2px;
-transition: 1s;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  /* or 21px */
+  color: #333b41;
+  text-decoration: underline orange 2px;
+  transition: 1s;
 }
 
 .link-support:hover {
-
-color: #4B9200;
-text-decoration: underline #4B9200 2px;
-transition: 1s;
+  color: #4b9200;
+  text-decoration: underline #4b9200 2px;
+  transition: 1s;
 }
 
 h6 {
@@ -822,6 +821,14 @@ footer {
   line-height: 197%;
   /* identical to box height, or 21px */
   color: #ffffff;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.designer:hover,
+.rsschool:hover {
+  transition: 1s;
+  color: #4b9200;
 }
 
 .input-email {
