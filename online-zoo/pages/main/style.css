@@ -3,24 +3,50 @@
 }
 html {
   scroll-behavior: smooth;
-}
-
-body {
   max-width: var(--container-width);
   margin: auto;
 }
 
-.header-container {
+body {
   max-width: var(--container-width);
-  display: flex;
-  /* justify-content: space-evenly; */
-  position: absolute;
+}
+
+/* header {
+  width: 100%;
+  height: 780px;
+  background-position: center;
+  background-image: url(../../img/Panda.jpg);
+} */
+
+.header-container {
+  max-width: 100%;
   height: 80px;
-  width: 1600px;
-  align-items: center;
   background-color: black;
-  gap: 447px;
-  padding-left: 185px;
+  position: relative;
+}
+
+.wrapper-center-header {
+  max-width: 1160px;
+  height: 100%;
+  margin: auto;
+  padding-top: 13px;
+}
+
+.main-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-nav {
+  display: flex;
+}
+
+.logo-nav-container {
+  display: flex;
+  align-items: center;
+  gap: 63px;
+  height: 100%;
 }
 
 .header-nav {
@@ -33,6 +59,16 @@ body {
   color: #ffffff;
 }
 
+.header-nav-a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  color: #f9804b;
+}
+
 .header-nav:hover {
   color: #f9804b;
 }
@@ -41,23 +77,11 @@ body {
   display: flex;
   flex-direction: row;
   gap: 62px;
-  padding-left: 28px;
-}
-
-.container-nav {
-  display: flex;
 }
 
 a {
   cursor: pointer;
-}
-
-.logo-nav-container {
-  display: flex;
-  flex-direction: row;
-  align-items: ;
-  align-items: center;
-  gap: 35px;
+  color: white;
 }
 
 .logo {
@@ -74,6 +98,8 @@ a {
 }
 
 h1 {
+  width: 72.49px;
+  height: 44.91px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -82,12 +108,6 @@ h1 {
   /* or 23px */
   text-align: center;
   color: #ffffff;
-  width: 72.49px;
-  height: 44.91px;
-}
-
-.design {
-  color: white;
 }
 
 .design-link-header {
@@ -104,16 +124,20 @@ h1 {
   color: #4b9200;
 }
 
-a {
-  color: white;
-}
-
 /* MAIN */
 
 /* SECTION favorite-animal */
 
+.favorite-animal {
+  width: 100%;
+  height: 700px;
+  background-position: center -80px;
+  background-repeat: no-repeat;
+  /* background-image: url(../../img/Panda.jpg); */
+}
+
 .big-panda {
-  padding-top: -5px;
+  margin-top: -80px;
 }
 
 .orange-ellipse {
@@ -145,6 +169,10 @@ a {
 }
 
 /* SECTION the-backstage */
+
+.the-backstage {
+  height: 403px;
+}
 
 .discribe-backstage-container {
   display: flex;
@@ -189,7 +217,7 @@ h3 {
   height: 403px;
   align-items: flex-start;
   margin-left: 218px;
-  margin-top: 108px;
+  padding-top: 140px;
   gap: 86px;
 }
 
@@ -202,7 +230,29 @@ h3 {
 /* SECTION pets */
 
 .pets {
-  margin-top: 180px;
+  margin-top: 320px;
+  height: 1106px;
+}
+
+h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.native {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  /* identical to box height, or 18px */
+  color: #000000;
 }
 
 .cards {
@@ -216,6 +266,9 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 7px;
+  padding-left: 15px;
+  width: 337px;
 }
 
 .cards-row-1 {
@@ -237,9 +290,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding-left: 28px;
-
+  gap: 18px;
 }
 
 .btn-arrow {
@@ -262,7 +313,7 @@ h3 {
   background: #fe9013;
   border-radius: 25px;
   border: none;
-  margin-left: 28px;
+  margin-top: 13px;
   transition: 1s;
 }
 
@@ -278,10 +329,8 @@ h3 {
   font-size: 16px;
   line-height: 140%;
   /* or 22px */
-
   text-align: center;
   text-transform: uppercase;
-
   color: #ffffff;
 }
 
@@ -293,11 +342,11 @@ h3 {
 }
 
 .palm {
-  margin-top: -345px;
+  margin-top: -358px;
 }
 
 .stelitzia {
-  margin-top: -293px;
+  margin-top: -294px;
   margin-left: 1232px;
 }
 
@@ -330,7 +379,7 @@ h3 {
     );
 
   height: 935px;
-  padding-top: 4px;
+  padding-top: 19px;
   padding-bottom: 50px;
 }
 
@@ -358,6 +407,11 @@ h5 {
 
   color: #fe9013;
   padding-top: 41px;
+}
+
+.text-container-h5 {
+  text-align: left;
+  padding-left: 9%;
 }
 
 .h3-pick-feed {
@@ -404,6 +458,9 @@ h6 {
   border-radius: 5px;
   width: 168px;
   height: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-pay {
@@ -419,6 +476,13 @@ h6 {
   justify-content: center;
   gap: 29px;
   padding-top: 39px;
+}
+
+.vector {
+  display: flex;
+  align-self: flex-start;
+  /* gap: 44px; */
+  padding-top: 5%;
 }
 
 .text-icons {
@@ -452,23 +516,6 @@ h6 {
 .user-cards {
   background: #f1f3f2;
   border-radius: 20px;
-  /* border: 2px 
-      linear-gradient(
-        315.75deg,
-        rgba(254, 189, 171, 0.74) 30.06%,
-        rgba(243, 169, 248, 0.66) 50.74%,
-        #e0d8f0 80.49%,
-        #eaf7fe 127.9%,
-        #eaf7fe 149.54%
-      ),
-    linear-gradient(
-      315.75deg,
-      rgba(254, 189, 171, 0.74) 30.06%,
-      rgba(243, 169, 248, 0.66) 50.74%,
-      #e0d8f0 80.49%,
-      #eaf7fe 127.9%,
-      #eaf7fe 149.54%
-    ); */
   width: 267px;
   height: 391px;
 }
@@ -503,6 +550,46 @@ h6 {
   justify-content: center;
   gap: 28px;
   margin-top: 45px;
+}
+
+.names {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+  color: #000000;
+}
+
+.lokal-today {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #bdbdbd;
+}
+
+.comments {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
+  padding-left: 6%;
+  padding-top: 4%;
+  width: 237px;
+  text-align: justify;
+}
+
+.name-lokal-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  padding-top: 4%;
+  padding-left: 7%;
 }
 
 .input-testimonials {
@@ -571,6 +658,8 @@ footer {
 
 /* icons */
 .ellipse-icon {
+  display: flex;
+  align-items: center;
   background-color: rgba(196, 196, 196, 0.5);
   width: 26px;
   height: 26px;
@@ -581,6 +670,10 @@ footer {
 
 .ellipse-icon:hover {
   background-color: #4b9200;
+}
+
+.ellipse-icon {
+  padding-left: 1%;
 }
 
 .social-icons-text {
@@ -633,7 +726,7 @@ footer {
 .nav-subscribe-container {
   display: flex;
   flex-direction: row;
-  gap: 51px;
+  gap: 37px;
 }
 
 .btn-donate {
@@ -702,7 +795,7 @@ footer {
   font-style: normal;
   font-weight: 100;
   font-size: 16px;
-  line-height: 130%;
+  line-height: 197%;
   /* identical to box height, or 21px */
   color: #ffffff;
 }
