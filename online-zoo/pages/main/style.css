@@ -25,10 +25,10 @@ header {
 }
 
 .wrapper-center-header {
-  margin: auto;
-  padding-top: 13px;
   max-width: 1160px;
   height: 100%;
+  margin: auto;
+  padding-top: 13px;
 }
 
 .main-header-container {
@@ -71,6 +71,7 @@ header {
 
 a {
   cursor: pointer;
+  color: white;
 }
 
 .logo {
@@ -87,6 +88,8 @@ a {
 }
 
 h1 {
+  width: 72.49px;
+  height: 44.91px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -95,12 +98,6 @@ h1 {
   /* or 23px */
   text-align: center;
   color: #ffffff;
-  width: 72.49px;
-  height: 44.91px;
-}
-
-.design {
-  color: white;
 }
 
 .design-link-header {
@@ -115,10 +112,6 @@ h1 {
 
 .design-link-header:hover {
   color: #4b9200;
-}
-
-a {
-  color: white;
 }
 
 /* MAIN */
