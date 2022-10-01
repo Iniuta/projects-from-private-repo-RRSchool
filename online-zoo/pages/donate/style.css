@@ -393,8 +393,8 @@ h5 {
 .label-another-amount::after {
   content: attr(dolor);
   position: absolute;
-  top: 444px;
-  left: 269px;
+  top: 5px;
+  right: 14px;
 }
 
 .input-another-amount {
@@ -424,6 +424,13 @@ h5 {
   border: 1px solid #fe9013;
   cursor: pointer;
 }
+
+.radio-monthly-once:checked+label::before {
+  border-color:#4B9200;
+  background-color: #4B9200;;
+  /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e"); */
+}
+
 
 .label-monthly,
 .label-once {
