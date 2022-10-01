@@ -224,37 +224,41 @@ h5 {
 }
 
 .text-container-h5 {
+  display: flex;
   text-align: left;
   padding-left: 8%;
+  flex-direction: column;
+  gap: 61px;
 }
 
 .number {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 72px;
-line-height: 80%;
-/* identical to box height, or 58px */
-text-align: center;
-text-transform: uppercase;
-color: #000000;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80%;
+  /* identical to box height, or 58px */
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .about-animal {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 140%;
-/* or 22px */
-text-align: center;
-color: #333B41;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  text-align: center;
+  color: #333b41;
 }
 
 .mini-panda-container {
   display: flex;
   flex-direction: row;
   align-items: center;
+  /* margin-top: 6%; */
   gap: 35px;
 }
 
@@ -297,58 +301,6 @@ color: #333B41;
   padding-top: 10px;
   width: 836px;
 }
-h6 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 130%;
-  /* identical to box height, or 47px */
-  color: #333b41;
-  padding-top: 60px;
-}
-.pay-icon {
-  background: #ffffff;
-  border: 1px solid #f9804b;
-  border-radius: 5px;
-  width: 168px;
-  height: 168px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card-pay {
-  width: 168px;
-  height: 244px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.how-it-works-cards {
-  display: flex;
-  justify-content: center;
-  gap: 29px;
-  padding-top: 39px;
-}
-.vector {
-  display: flex;
-  align-self: flex-start;
-  /* gap: 44px; */
-  padding-top: 5%;
-}
-.text-icons {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  /* or 22px */
-  color: #333b41;
-  text-align: start;
-}
-/* .btn-feed-friend {
-    margin-top: 60px;
-  } */
 
 .btn-choose {
   width: 298px;
@@ -356,7 +308,8 @@ h6 {
   background: #fe9013;
   border-radius: 25px;
   border: none;
-  margin-top: 13px;
+  margin-top: 5%;
+  margin-left: 32%;
   transition: 1s;
 }
 
@@ -370,6 +323,141 @@ h6 {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+/* scale */
+
+.scale-text-share {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  margin-left: 32%;
+  margin-top: 2.6%;
+  color: #333b41;
+}
+
+.amount {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.container-for-inputs {
+  display: flex;
+  align-items: center;
+  width: 944px;
+  height: 27px;
+  background: #404950;
+  border-radius: 2px;
+  padding-left: 3%;
+}
+
+.gaps-for-inputs {
+  display: flex;
+  gap: 58px;
+  align-items: center;
+  width: 915px;
+  height: 2px;
+  background: #72828e;
+}
+
+.label-amount {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #333b41;
+}
+
+.label-amount::after {
+  content: attr(number);
+  position: absolute;
+  top: 21px;
+  right: 44px;
+}
+
+.label-another-amount {
+  position: relative;
+  color: #929699;
+  font-size: 21px;
+}
+
+.label-another-amount::after {
+  content: attr(dolor);
+  position: absolute;
+  top: 444px;
+  left: 269px;
+}
+
+.input-another-amount {
+  width: 268px;
+  height: 54px;
+  border: 1px solid #929699;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.radio-monthly-once {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.radio-monthly-once + label::before {
+  content: "";
+  display: inline-block;
+  top: 25px;
+  left: 380px;
+  background-size: 50% 50%;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #fe9013;
+  cursor: pointer;
+}
+
+.label-monthly,
+.label-once {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333b41;
+}
+
+.label-monthly::after {
+  content: attr(monthly);
+  position: absolute;
+  top: 444px;
+  left: 269px;
+}
+
+.label-once::after {
+  content: attr(once);
+  position: absolute;
+  top: 444px;
+  left: 269px;
+}
+
+.container-another-amount {
+  padding-top: 9%;
+  padding-left: 33%;
+}
+
+.container-monthly-once {
+  display: flex;
+  gap: 116px;
 }
 
 /* footer */
