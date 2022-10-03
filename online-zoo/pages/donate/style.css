@@ -22,7 +22,7 @@ body {
   max-width: 1160px;
   height: 100%;
   margin: auto;
-  padding-top: 13px;
+  padding-top: 0.8%;
 }
 
 .main-header-container {
@@ -78,7 +78,7 @@ a {
 }
 
 .logo {
-  width: 82px;
+  width: 104%;
   height: 52px;
   border: 1px solid #ffffff;
   border-radius: 2px;
@@ -86,8 +86,8 @@ a {
 }
 
 .logo-bamboo {
-  margin-top: -44px;
-  margin-left: 8px;
+  margin-top: -43%;
+  margin-left: 11%;
 }
 
 h1 {
@@ -220,42 +220,45 @@ h5 {
   text-align: center;
 
   color: #fe9013;
-  padding-top: 41px;
+  padding-top: 3.4%;
 }
 
 .text-container-h5 {
+  display: flex;
   text-align: left;
   padding-left: 8%;
+  flex-direction: column;
+  gap: 61px;
 }
 
 .number {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 72px;
-line-height: 80%;
-/* identical to box height, or 58px */
-text-align: center;
-text-transform: uppercase;
-color: #000000;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80%;
+  /* identical to box height, or 58px */
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .about-animal {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 140%;
-/* or 22px */
-text-align: center;
-color: #333B41;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  text-align: center;
+  color: #333b41;
 }
 
 .mini-panda-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 35px;
+  gap: 3.5%;
 }
 
 .wrapper-for-num {
@@ -267,7 +270,7 @@ color: #333B41;
 }
 
 .h3-pick-feed {
-  padding-top: 21px;
+  padding-top: 2%;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -297,66 +300,15 @@ color: #333B41;
   padding-top: 10px;
   width: 836px;
 }
-h6 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 130%;
-  /* identical to box height, or 47px */
-  color: #333b41;
-  padding-top: 60px;
-}
-.pay-icon {
-  background: #ffffff;
-  border: 1px solid #f9804b;
-  border-radius: 5px;
-  width: 168px;
-  height: 168px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card-pay {
-  width: 168px;
-  height: 244px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.how-it-works-cards {
-  display: flex;
-  justify-content: center;
-  gap: 29px;
-  padding-top: 39px;
-}
-.vector {
-  display: flex;
-  align-self: flex-start;
-  /* gap: 44px; */
-  padding-top: 5%;
-}
-.text-icons {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  /* or 22px */
-  color: #333b41;
-  text-align: start;
-}
-/* .btn-feed-friend {
-    margin-top: 60px;
-  } */
 
 .btn-choose {
-  width: 298px;
+  width: 28%;
   height: 54px;
   background: #fe9013;
   border-radius: 25px;
   border: none;
-  margin-top: 13px;
+  margin-top: 5%;
+  margin-left: 32%;
   transition: 1s;
 }
 
@@ -372,17 +324,159 @@ h6 {
   color: #ffffff;
 }
 
+/* scale */
+
+.scale-text-share {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  margin-left: 32%;
+  margin-top: 2.6%;
+  color: #333b41;
+}
+
+.amount {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.container-for-inputs {
+  display: flex;
+  align-items: center;
+  width: 944px;
+  height: 27px;
+  background: #404950;
+  border-radius: 2px;
+  padding-left: 3%;
+}
+
+.gaps-for-inputs {
+  display: flex;
+  gap: 6.33%;
+  align-items: center;
+  width: 915px;
+  height: 2px;
+  background: #72828e;
+}
+
+.label-amount {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #333b41;
+}
+
+.label-amount::after {
+  content: attr(number);
+  position: absolute;
+  top: 21px;
+  right: 44px;
+}
+
+.label-another-amount {
+  position: relative;
+  color: #929699;
+  font-size: 21px;
+}
+
+.label-another-amount::after {
+  content: attr(dolor);
+  position: absolute;
+  top: 5px;
+  right: 14px;
+}
+
+.input-another-amount {
+  width: 268px;
+  height: 54px;
+  border: 1px solid #929699;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.radio-monthly-once {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.radio-monthly-once + label::before {
+  content: "";
+  display: inline-block;
+  top: 25px;
+  left: 380px;
+  background-size: 50% 50%;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #fe9013;
+  cursor: pointer;
+}
+
+.radio-monthly-once:checked+label::before {
+  border-color:#4B9200;
+  background-color: #4B9200;;
+  /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e"); */
+}
+
+
+.label-monthly,
+.label-once {
+  position: relative;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333b41;
+}
+
+.label-monthly::after {
+  content: attr(monthly);
+  position: absolute;
+  top: 444px;
+  left: 269px;
+}
+
+.label-once::after {
+  content: attr(once);
+  position: absolute;
+  top: 444px;
+  left: 269px;
+}
+
+.container-another-amount {
+  padding-top: 9%;
+  padding-left: 33%;
+}
+
+.container-monthly-once {
+  display: flex;
+  gap: 11%;
+}
+
 /* footer */
 
 footer {
   display: flex;
   flex-direction: row;
   /* justify-content: center; */
-  gap: 101px;
+  gap: 189px;
   padding-left: 219px;
   background-color: #111115;
   position: relative;
-  padding-bottom: 46px;
+  padding-bottom: 3%;
 }
 
 /* icons */
@@ -422,7 +516,7 @@ footer {
 .social-icons-flex {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 6%;
 }
 
 .social-icons-container {
@@ -459,7 +553,7 @@ footer {
 }
 
 .btn-donate {
-  width: 298px;
+  width: 142%;
   height: 54px;
   background: #fe9013;
   border-radius: 5px;
@@ -489,11 +583,11 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 57px;
-  padding-top: 40px;
+  padding-top: 3.6%
 }
 
 .flex-nav {
-  padding-top: 371px;
+  padding-top: 48.5%;
 }
 /* .flex-nav {
     display: flex;
