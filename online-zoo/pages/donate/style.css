@@ -22,7 +22,7 @@ body {
   max-width: 1160px;
   height: 100%;
   margin: auto;
-  padding-top: 13px;
+  padding-top: 0.8%;
 }
 
 .main-header-container {
@@ -78,7 +78,7 @@ a {
 }
 
 .logo {
-  width: 82px;
+  width: 104%;
   height: 52px;
   border: 1px solid #ffffff;
   border-radius: 2px;
@@ -86,8 +86,8 @@ a {
 }
 
 .logo-bamboo {
-  margin-top: -44px;
-  margin-left: 8px;
+  margin-top: -43%;
+  margin-left: 11%;
 }
 
 h1 {
@@ -220,7 +220,7 @@ h5 {
   text-align: center;
 
   color: #fe9013;
-  padding-top: 41px;
+  padding-top: 3.4%;
 }
 
 .text-container-h5 {
@@ -258,8 +258,7 @@ h5 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* margin-top: 6%; */
-  gap: 35px;
+  gap: 3.5%;
 }
 
 .wrapper-for-num {
@@ -271,7 +270,7 @@ h5 {
 }
 
 .h3-pick-feed {
-  padding-top: 21px;
+  padding-top: 2%;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -303,7 +302,7 @@ h5 {
 }
 
 .btn-choose {
-  width: 298px;
+  width: 28%;
   height: 54px;
   background: #fe9013;
   border-radius: 25px;
@@ -359,7 +358,7 @@ h5 {
 
 .gaps-for-inputs {
   display: flex;
-  gap: 58px;
+  gap: 6.33%;
   align-items: center;
   width: 915px;
   height: 2px;
@@ -464,7 +463,7 @@ h5 {
 
 .container-monthly-once {
   display: flex;
-  gap: 116px;
+  gap: 11%;
 }
 
 /* footer */
@@ -473,11 +472,11 @@ footer {
   display: flex;
   flex-direction: row;
   /* justify-content: center; */
-  gap: 101px;
+  gap: 189px;
   padding-left: 219px;
   background-color: #111115;
   position: relative;
-  padding-bottom: 46px;
+  padding-bottom: 3%;
 }
 
 /* icons */
@@ -517,7 +516,7 @@ footer {
 .social-icons-flex {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 6%;
 }
 
 .social-icons-container {
@@ -554,7 +553,7 @@ footer {
 }
 
 .btn-donate {
-  width: 298px;
+  width: 142%;
   height: 54px;
   background: #fe9013;
   border-radius: 5px;
@@ -584,11 +583,11 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 57px;
-  padding-top: 40px;
+  padding-top: 3.6%
 }
 
 .flex-nav {
-  padding-top: 371px;
+  padding-top: 48.5%;
 }
 /* .flex-nav {
     display: flex;
