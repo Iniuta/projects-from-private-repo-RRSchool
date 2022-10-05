@@ -3,21 +3,16 @@
 }
 html {
   scroll-behavior: smooth;
-  max-width: 100%;
+  width: 100%;
   margin: auto;
   font-size: 10px;
 }
 
 body {
-  max-width: var(--container-width);
+ width: 100%;
 }
 
-/* header {
-  width: 100%;
-  height: 780px;
-  background-position: center;
-  background-image: url(../../img/Panda.jpg);
-} */
+
 
 .header-container {
   max-width: 100%;
@@ -27,7 +22,7 @@ body {
 }
 
 .wrapper-center-header {
-  max-width: 1160px;
+  width: 100%;
   height: 100%;
   margin: auto;
   padding-top: 0.8%;
