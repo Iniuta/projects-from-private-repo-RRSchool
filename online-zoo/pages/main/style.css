@@ -307,7 +307,6 @@ h3 {
   gap: 86px;
 }
 
-
 @media (min-width: 1001px) and (max-width: 1599px) {
   .bamboo-cap {
     margin-left: 3.3%;
@@ -1241,19 +1240,7 @@ footer {
   align-items: end;
 }
 
-
-
-/* ot 1001 none */
-/* @media (min-width: 1001px) {
-  .watch-640,
-  .big-panda-640,
-  .orange-ellipse-640 
-  .bamboo-cap-1600,
-{
-    display: none;
-  }
-} */
-
+/* ot 1600 etogo ne vidno */
 @media (min-width: 1600px) {
   .big-panda-1000,
   .big-panda-640,
@@ -1283,43 +1270,29 @@ footer {
   .stelitzia,
   .testimonials-container,
   .leav,
-  .watch-640,
-  .big-panda-640,
-  .orange-ellipse-640 {
+  .orange-ellipse {
     display: none;
   }
 }
 
-/* @media (max-width: 1000px) {
-  .big-panda,
-  .orange-ellipse,
-  .watch,
-  .bamboo-cap-1600,
-  .flower-backstage,
-  .cards-container,
-  .palm,
-  .stelitzia,
-  .testimonials-container,
-  .leav {
+@media (min-width: 1000px) {
+  .big-panda-640,
+  .orange-ellipse-640,
+  .watch-640 {
     display: none;
-      .big-panda-1000,
-  .orange-ellipse-1000,
-  .watch-1000,
-  .bamboo-cap-1000,
-  .cards-container-1000,
-  .palm-1000,
-  .stelitzia-1000,
-  .testimonials-container-1000,
-  .leav-1000,
   }
-} */
+}
 
-/* @media (max-width: 1599px) {
-  .btn-watch-online {
-    margin-top: -11.1%;
-    margin-left: -34%;
+@media (max-width: 999px) {
+  .bamboo-cap-1000,
+  .watch-1000,
+  .bamboo-cap-1600,
+  .big-panda,
+  .big-panda-1000,
+  .orange-ellipse-1000 {
+    display: none;
   }
-} */
+}
 
 @media (max-width: 1599px) {
   .favorite-animal {
