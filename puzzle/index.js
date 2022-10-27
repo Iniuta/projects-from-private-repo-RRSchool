@@ -2,12 +2,21 @@ const gameContainer = document.querySelector(".game-container");
 const repeat = document.querySelector(".repeat");
 const moves = document.querySelector(".moves");
 const time = document.querySelector(".time");
+const play = document.querySelector(".play");
+const pause = document.querySelector(".pause");
+const mute = document.querySelector(".mute");
+const audio = new Audio;
+
+
 
 let topDownNeighbor = 4;
 let counter = 0;
 let sec = 0;
 let isTimerOff = true;
 let timeInterval;
+let isSoundOn = true;
+
+// 
 
 for (let i = 1; i <= 15; i++) {
   const cell = document.createElement("button");
@@ -40,7 +49,8 @@ function getRandom() {
   clearInterval(timeInterval);
   sec = 0;
   isTimerOff = true;
-
+  moves.innerHTML = `Moves: 0`;
+  counter = 0;
 }
 
 getRandom();
@@ -56,11 +66,21 @@ gameContainer.addEventListener("click", (event) => {
   changeCell(button);
 });
 
+// sound ON/OFF
+
 function soundClick() {
-  const audio = new Audio();
   audio.src = `audio/fefteen.mp3`;
   audio.autoplay = true;
 }
+
+function toggleSound() {
+  mute.classList.toggle("is-active");
+  isSoundOn = !isSoundOn;
+}
+
+mute.addEventListener("click", () => toggleSound());
+
+// ///////////////////////////
 
 function pad(val) {
   return val > 9 ? val : "0" + val;
@@ -96,10 +116,15 @@ function changeCell(button) {
     cell.forEach((elem) => gameContainer.appendChild(elem));
     counter += 1;
     moves.innerHTML = `Moves: ${counter}`;
-    soundClick();
     if (isTimerOff) {
       timeInterval = setInterval(timer, 1000);
       isTimerOff = false;
     }
+    if(isSoundOn){
+      soundClick();
+    }
   }
 }
+
+
+

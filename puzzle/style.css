@@ -16,7 +16,7 @@ body {
 
 .game-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
   width: 400px;
   height: 400px;
@@ -62,4 +62,74 @@ display: flex;
 
 .time {
 display: flex;
+}
+
+.repeat {
+  background-image: url(../../img/repeat100.png);
+  cursor: pointer;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border: none;
+  transition: 1s;
+}
+
+.repeat:hover{
+  background-image: url(../../img/hoverrepeat100.png);
+  transition: 1s;
+}
+
+.play {
+  background-image: url(../../img/play100.png);
+  cursor: pointer;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border: none;
+  transition: 1s;
+}
+
+.play:hover{
+  background-image: url(../../img/hoverplay100.png);
+  transition: 1s;
+}
+
+.pause {
+  background-image: url(../../img/pause100.png);
+  cursor: pointer;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border: none;
+  transition: 1s;
+}
+
+.pause:hover{
+  background-image: url(../../img/hoverpause100.png);
+  transition: 1s;
+}
+
+.mute {
+  background-image: url(../../img/unmute100.png);
+  cursor: pointer;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border: none;
+  transition: 1s;
+}
+
+.mute:hover{
+  background-image: url(../../img/hoverunmute100.png);
+  transition: 1s;
+}
+
+.is-active.mute {
+  background-image: url(../../img/mute100.png);
+  cursor: pointer;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border: none;
+  transition: 1s;
 }
