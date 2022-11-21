@@ -7,6 +7,7 @@ const mute = document.querySelector(".mute");
 const sizeContainer = document.querySelector(".size-container");
 // const buttonSize = document.querySelectorAll(".btn");
 const audio = new Audio();
+const screenWidth = window.screen.width;
 
 let topDownNeighbor = 4;
 let counter = 0;
@@ -20,7 +21,22 @@ let isChangeCell = true;
 let cells = [];
 
 //
-initContainer(16, '400px', '400px');
+function adaptiveField(event){
+  const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  if(viewportWidth <= 455){
+    gameContainer.classList.add('adaptive')
+  } else {
+    if(gameContainer.classList.contains('adaptive')){
+      gameContainer.classList.remove('adaptive')
+    }
+  }
+}
+
+adaptiveField();
+
+window.addEventListener('resize', adaptiveField)
+
+initContainer(16);
 
 function initContainer(amount, height, width) {
   gameContainer.innerHTML = "";
@@ -37,8 +53,8 @@ function initContainer(amount, height, width) {
   cellNull.innerHTML = "";
   gameContainer.append(cellNull);
   cells = Array.from(document.querySelectorAll(".cell"));
+  adaptiveField()
 }
-
 
 
 sizeContainer.addEventListener("click", (event) => {

@@ -15,6 +15,8 @@ body {
 }
 
 .game-container {
+  width: 400px;
+  height: 400px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -37,6 +39,11 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.adaptive.game-container{
+  width: 300px;
+  height: 300px;
 }
 
 @keyframes animationborder {
@@ -77,9 +84,10 @@ body {
 }
 
 .size-container {
-  width: 400px;
+  width: 50%;
+  height: 110px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
@@ -87,28 +95,24 @@ body {
   margin-bottom: 2rem;
 }
 
-/* .btn {
-  display: inline-block;
-  padding: 1px 3px;
-  font-size: 18px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: midnightblue;
-  background: linear-gradient(limegreen, transparent),
-    linear-gradient(90deg, skyblue, transparent),
-    linear-gradient(-90deg, coral, transparent);
-  border: none;
-  border-radius: 5px;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-} */
-/*
 
-<!-- HTML !-->
-<button class="button-52" role="button">Button 52</button>
+.btn-size-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
-/* CSS */
+
+.buttons{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .btn {
   font-size: 16px;
   font-weight: 200;
@@ -141,26 +145,6 @@ body {
   left: 0px;
 }
 
- */
-
-/* .btn:hover {
-  background: linear-gradient(
-      rgba(135, 60, 255, 0.4),
-      rgba(135, 60, 255, 0) 80%
-    ),
-    linear-gradient(
-      -45deg,
-      rgba(120, 155, 255, 0.9) 25%,
-      rgba(255, 160, 65, 0.9) 75%
-    );
-} */
-
-.btn:active {
-  background-color: #ffe54c;
-  top: 0px;
-  left: 0px;
-}
-
 .score-container {
   width: 100%;
   display: flex;
@@ -180,6 +164,7 @@ body {
 
 .repeat {
   background-image: url(../../img/repeat100.png);
+  background-repeat: no-repeat;
   cursor: pointer;
   background-color: transparent;
   width: 100px;
@@ -190,11 +175,13 @@ body {
 
 .repeat:hover {
   background-image: url(../../img/hoverrepeat100.png);
+  background-repeat: no-repeat;
   transition: 1s ease;
 }
 
 .play {
   background-image: url(../../img/play100.png);
+  background-repeat: no-repeat;
   cursor: pointer;
   background-color: transparent;
   width: 100px;
@@ -205,11 +192,13 @@ body {
 
 .play:hover {
   background-image: url(../../img/hoverplay100.png);
+  background-repeat: no-repeat;
   transition: 1s ease;
 }
 
 .is-active.play {
   background-image: url(../../img/pause100.png);
+  background-repeat: no-repeat;
   cursor: pointer;
   background-color: transparent;
   width: 100px;
@@ -220,11 +209,13 @@ body {
 
 .is-active.play:hover {
   background-image: url(../../img/hoverpause100.png);
+  background-repeat: no-repeat;
   transition: 1s ease;
 }
 
 .mute {
   background-image: url(../../img/unmute100.png);
+  background-repeat: no-repeat;
   cursor: pointer;
   background-color: transparent;
   width: 100px;
@@ -235,15 +226,34 @@ body {
 
 .mute:hover {
   background-image: url(../../img/hoverunmute100.png);
+  background-repeat: no-repeat;
   transition: 1s ease;
 }
 
 .is-active.mute {
   background-image: url(../../img/mute100.png);
+  background-repeat: no-repeat;
   cursor: pointer;
   background-color: transparent;
   width: 100px;
   height: 100px;
   border: none;
   transition: 1s ease;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+  .size-container{
+    height: 170px;
+  }
+  .btn-size-container{
+    height: 170px;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 455px) {
+.cell{
+  width: 75px;
+  height: 75px;
+  font-size: 2rem;
+}
 }
