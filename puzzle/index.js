@@ -53,16 +53,24 @@ function initContainer(amount, height, width) {
   cellNull.innerHTML = "";
   gameContainer.append(cellNull);
   cells = Array.from(document.querySelectorAll(".cell"));
-  adaptiveField()
 }
 
 
 sizeContainer.addEventListener("click", (event) => {
   const button = event.target.closest(".btn");
-  if (button) {
-    initContainer(button.dataset.amount, button.dataset.height, button.dataset.width);
-    getRandom();
+  const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  if(viewportWidth > 455){
+    if (button) {
+      initContainer(button.dataset.amount, button.dataset.height, button.dataset.width);
+      getRandom();
+    }
+  } else {
+    if (button) {
+      initContainer(button.dataset.amount, '300px', '300px');
+      getRandom();
+    }
   }
+
 });
 
 
