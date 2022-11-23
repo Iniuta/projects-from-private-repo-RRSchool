@@ -5,7 +5,7 @@ const time = document.querySelector(".time");
 const play = document.querySelector(".play");
 const mute = document.querySelector(".mute");
 const sizeContainer = document.querySelector(".size-container");
-// const buttonSize = document.querySelectorAll(".btn");
+const buttonSize = document.querySelectorAll(".btn");
 const audio = new Audio();
 const screenWidth = window.screen.width;
 
@@ -21,20 +21,23 @@ let isChangeCell = true;
 let cells = [];
 
 //
-function adaptiveField(event){
-  const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  if(viewportWidth <= 455){
-    gameContainer.classList.add('adaptive')
+function adaptiveField(event) {
+  const viewportWidth = Math.max(
+    document.documentElement.clientWidth,
+    window.innerWidth || 0
+  );
+  if (viewportWidth <= 455) {
+    gameContainer.classList.add("adaptive");
   } else {
-    if(gameContainer.classList.contains('adaptive')){
-      gameContainer.classList.remove('adaptive')
+    if (gameContainer.classList.contains("adaptive")) {
+      gameContainer.classList.remove("adaptive");
     }
   }
 }
 
 adaptiveField();
 
-window.addEventListener('resize', adaptiveField)
+window.addEventListener("resize", adaptiveField);
 
 initContainer(16);
 
@@ -55,24 +58,75 @@ function initContainer(amount, height, width) {
   cells = Array.from(document.querySelectorAll(".cell"));
 }
 
+const cellsSize = document.querySelectorAll(".cell");
 
 sizeContainer.addEventListener("click", (event) => {
   const button = event.target.closest(".btn");
-  const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  if(viewportWidth > 455){
+  const viewportWidth = Math.max(
+    document.documentElement.clientWidth,
+    window.innerWidth || 0
+  );
+  if (viewportWidth > 455) {
     if (button) {
-      initContainer(button.dataset.amount, button.dataset.height, button.dataset.width);
+      initContainer(
+        button.dataset.amount,
+        button.dataset.height,
+        button.dataset.width
+      );
       getRandom();
     }
-  } else {
-    if (button) {
-      initContainer(button.dataset.amount, '300px', '300px');
-      getRandom();
+  } else if (button && button.textContent === "4x4") {
+    initContainer(button.dataset.amount, "300px", "300px");
+    for (let i = 0; i < cellsSize.length; i++) {
+      cellsSize[i].classList.remove("adaptive-5");
+    }
+    gameContainer.innerHTML = "";
+    for (let i = 0; i < cellsSize.length; i++) {
+      cellsSize[i].classList.add("adaptive-4");
+      gameContainer.append(cellsSize[i]);
+    }
+  } else if (button && button.textContent === "5x5") {
+    initContainer(button.dataset.amount, "300px", "300px");
+    const cellsSize = document.querySelectorAll(".cell");
+    gameContainer.innerHTML = "";
+    for (let i = 0; i < cellsSize.length; i++) {
+      cellsSize[i].classList.add("adaptive-5");
+      gameContainer.append(cellsSize[i]);
+    }
+  } else if (button && button.textContent === "3x3") {
+    initContainer(button.dataset.amount, "300px", "300px");
+    const cellsSize = document.querySelectorAll(".cell");
+    gameContainer.innerHTML = "";
+    for (let i = 0; i < cellsSize.length; i++) {
+      cellsSize[i].classList.add("adaptive-3");
+      gameContainer.append(cellsSize[i]);
+    }
+  } else if (button && button.textContent === "6x6") {
+    initContainer(button.dataset.amount, "300px", "300px");
+    const cellsSize = document.querySelectorAll(".cell");
+    gameContainer.innerHTML = "";
+    for (let i = 0; i < cellsSize.length; i++) {
+      cellsSize[i].classList.add("adaptive-6");
+      gameContainer.append(cellsSize[i]);
+    }
+  } else if (button && button.textContent === "7x7") {
+    initContainer(button.dataset.amount, "300px", "300px");
+    const cellsSize = document.querySelectorAll(".cell");
+    gameContainer.innerHTML = "";
+    for (let i = 0; i < cellsSize.length; i++) {
+      cellsSize[i].classList.add("adaptive-7");
+      gameContainer.append(cellsSize[i]);
+    }
+  } else if (button && button.textContent === "8x8") {
+    initContainer(button.dataset.amount, "300px", "300px");
+    const cellsSize = document.querySelectorAll(".cell");
+    gameContainer.innerHTML = "";
+    for (let i = 0; i < cellsSize.length; i++) {
+      cellsSize[i].classList.add("adaptive-8");
+      gameContainer.append(cellsSize[i]);
     }
   }
-
 });
-
 
 //  RANDOM CELL FOR GAME
 
