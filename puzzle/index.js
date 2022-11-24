@@ -66,7 +66,7 @@ sizeContainer.addEventListener("click", (event) => {
     document.documentElement.clientWidth,
     window.innerWidth || 0
   );
-  if (viewportWidth > 455) {
+  if (viewportWidth > 850) {
     if (button) {
       initContainer(
         button.dataset.amount,
@@ -74,6 +74,19 @@ sizeContainer.addEventListener("click", (event) => {
         button.dataset.width
       );
       getRandom();
+    }
+  } else if (
+    viewportWidth > 455 &&
+    viewportWidth < 851 &&
+    button &&
+    button.textContent === "8x8"
+  ) {
+    initContainer(button.dataset.amount, "400px", "400px");
+    const cellsSize = document.querySelectorAll(".cell");
+    gameContainer.innerHTML = "";
+    for (let i = 0; i < cellsSize.length; i++) {
+      cellsSize[i].classList.add("adaptive-9");
+      gameContainer.append(cellsSize[i]);
     }
   } else if (button && button.textContent === "4x4") {
     initContainer(button.dataset.amount, "300px", "300px");
