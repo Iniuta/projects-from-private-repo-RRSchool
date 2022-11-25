@@ -21,25 +21,25 @@ let isChangeCell = true;
 let cells = [];
 
 //
-function adaptiveField(event) {
-  const viewportWidth = Math.max(
-    document.documentElement.clientWidth,
-    window.innerWidth || 0
-  );
-  if (viewportWidth <= 455) {
-    gameContainer.classList.add("adaptive");
-  } else {
-    if (gameContainer.classList.contains("adaptive")) {
-      gameContainer.classList.remove("adaptive");
-    }
-  }
-}
+// function adaptiveField(event) {
+//   const viewportWidth = Math.max(
+//     document.documentElement.clientWidth,
+//     window.innerWidth || 0
+//   );
+//   if (viewportWidth <= 455) {
+//     gameContainer.classList.add("adaptive");
+//   } else {
+//     if (gameContainer.classList.contains("adaptive")) {
+//       gameContainer.classList.remove("adaptive");
+//     }
+//   }
+// }
 
-adaptiveField();
+// adaptiveField();
 
-window.addEventListener("resize", adaptiveField);
+// window.addEventListener("resize", adaptiveField);
 
-initContainer(16);
+initContainer();
 
 function initContainer(amount, height, width) {
   gameContainer.innerHTML = "";
@@ -57,7 +57,7 @@ function initContainer(amount, height, width) {
   gameContainer.append(cellNull);
   cells = Array.from(document.querySelectorAll(".cell"));
 }
-
+initContainer(16);
 const cellsSize = document.querySelectorAll(".cell");
 
 sizeContainer.addEventListener("click", (event) => {
@@ -90,6 +90,7 @@ sizeContainer.addEventListener("click", (event) => {
     }
   } else if (button && button.textContent === "4x4") {
     initContainer(button.dataset.amount, "300px", "300px");
+    const cellsSize = document.querySelectorAll(".cell");
     for (let i = 0; i < cellsSize.length; i++) {
       cellsSize[i].classList.remove("adaptive-5");
     }
@@ -138,7 +139,7 @@ sizeContainer.addEventListener("click", (event) => {
       cellsSize[i].classList.add("adaptive-8");
       gameContainer.append(cellsSize[i]);
     }
-  }
+  }getRandom()
 });
 
 //  RANDOM CELL FOR GAME

@@ -79,6 +79,11 @@ body {
   /* position: absolute; */
 }
 
+.adaptive.cell{
+  width: 75px;
+  height: 75px;
+  font-size: 1.5rem;
+}
 .adaptive-4.cell{
   width: 75px;
   height: 75px;
@@ -122,6 +127,11 @@ body {
 
 .cell-null {
   background: #8672a6;
+}
+
+.adaptive.cell-null{
+  width: 75px;
+  height: 75px;
 }
 
 .adaptive-4.cell-null{
