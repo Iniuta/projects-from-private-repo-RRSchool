@@ -1,0 +1,89 @@
+[33mcommit b05182dcafe4dfc6a38cf10fb59aef0ccd52e34b[m[33m ([m[1;36mHEAD -> [m[1;32mpuzzle[m[33m, [m[1;31morigin/puzzle[m[33m)[m
+Author: Ina Klimenka <innazolotkomoe@gmail.com>
+Date:   Fri Nov 25 15:59:50 2022 +0100
+
+    feat: added main adaptive
+
+[33mcommit 0dfd6a194c83a2870454c6e3ae34e82b0035416b[m
+Author: Ina Klimenka <innazolotkomoe@gmail.com>
+Date:   Thu Nov 24 18:11:33 2022 +0100
+
+    feat: added adaptive
+
+[33mcommit 6614911a54565dd9ec4fe8792fb6d9b12796490d[m
+Author: Ina Klimenka <innazolotkomoe@gmail.com>
+Date:   Wed Nov 23 21:39:19 2022 +0100
+
+    feat: added adaptive for all cells for width < 455
+
+[33mcommit a9f5e0476cc3c7b842d8505e29d22c8821ca8262[m
+Author: Ina Klimenka <innazolotkomoe@gmail.com>
+Date:   Tue Nov 22 21:07:13 2022 +0100
+
+    feat: added adaptive field for every buttons-size
+
+[33mcommit 397a2d62fccfb32e7c83cd21557a5ef717079d26[m
+Author: Ina Klimenka <innazolotkomoe@gmail.com>
+Date:   Mon Nov 21 19:19:21 2022 +0100
+
+    feat: added function adaptiveField
+
+[33mcommit 341b97ccfd81eb6de13e9b9a2d369f27b34807bf[m
+Author: Ina Klimenka <innazolotkomoe@gmail.com>
+Date:   Fri Nov 18 20:33:14 2022 +0100
+
+    feat: added styles for buttons
+
+[33mcommit 26522e536d258c8b5e31473df7fb542b32501784[m
+Author: Ina Klimenka <innazolotkomoe@gmail.com>
+Date:   Thu Oct 27 23:17:06 2022 +0200
+
+    feat: added toggleSound function
+
+[33mcommit 9f81a7b06469637d3bf7640182e9b36f08a48aec[m
+Author: Ina Klimenka <innazolotkomoe@gmail.com>
+Date:   Tue Oct 25 22:23:47 2022 +0200
+
+    feat: adder timer function and moves
+
+[33mcommit dd773da593639e4bf221952ded8f33fd248c3b6e[m
+Author: Ina Klimenka <innazolotkomoe@gmail.com>
+Date:   Tue Oct 25 15:56:43 2022 +0200
+
+    feat: added audio and changeCell function
+
+[33mcommit c11af6e4b52bd368e7cb60db4ca9533f328af9bd[m
+Author: Ina Klimenka <innazolotkomoe@gmail.com>
+Date:   Mon Oct 24 22:17:02 2022 +0200
+
+    feat: added swap function
+
+[33mcommit 8977a7cc2be224c39b75f53be1623e354877d4c3[m
+Author: Ina Klimenka <innazolotkomoe@gmail.com>
+Date:   Sun Oct 23 14:42:41 2022 +0200
+
+    feat: added swup function
+
+[33mcommit add7bbd993701e25aa30c83780285068f308beb3[m
+Author: Ina Klimenka <innazolotkomoe@gmail.com>
+Date:   Thu Oct 20 17:00:20 2022 +0200
+
+    init: started task puzzle
+
+[33mcommit cbc7f1d452b6e9a5c1256b18da9c9dacb6976709[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Iniuta <94313074+Iniuta@users.noreply.github.com>
+Date:   Mon Feb 7 17:06:26 2022 +0100
+
+    Update README.md
+
+[33mcommit 50ffb9578782afd1ec2f789e55e3e2c6e32c3838[m
+Author: Iniuta <94313074+Iniuta@users.noreply.github.com>
+Date:   Mon Jan 17 21:33:40 2022 +0100
+
+    Update README.md
+
+[33mcommit 57676c91ba845c15dd5aa095b9953b9e3cc14d36[m
+Author: rs-app[bot] <57502719+rs-app[bot]@users.noreply.github.com>
+Date:   Tue Jan 11 13:10:00 2022 +0000
+
+    Initial commit
