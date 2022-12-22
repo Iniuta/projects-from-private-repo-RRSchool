@@ -1,0 +1,23 @@
+$color: violet;
+$background-color: aquamarine;
+
+@mixin title {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+@mixin title-position {
+    text-align: center;
+}
+
+.h1 {
+    @include title();
+    @include title-position();
+    color: $color;
+}
+
+.wrap {
+    margin: 0 auto;
+    background-color: $background-color;
+}
