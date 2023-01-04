@@ -5,40 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <title>Plants</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header_bckg">
         <div class="wrapper">
-            <a href="#" class="logo"><img src="img/logo.png" alt="logo" class="header-logo"></a>
-            <nav class="header__navigation">
-                <ul class="navigation">
-                    <li class="navigation__item">Home</li>
-                    <li class="navigation__item">About us</li>
-                    <li class="navigation__item">Service</li>
-                    <li class="navigation__item">Price</li>
-                    <li class="navigation__item">Contacts</li>
-                </ul>
-            </nav>
+            <div class="header__container ">
+                <a href="#" class="logo"><img src="img/logo.png" alt="logo" class="header-logo"></a>
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li class="navigation__item_color">Home</li>
+                        <li class="navigation__item">About us</li>
+                        <li class="navigation__item">Service</li>
+                        <li class="navigation__item">Price</li>
+                        <li class="navigation__item">Contacts</li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="main">
-        <section class="welcome">
+        <section class="welcome welcome_bckg">
             <div class="wrapper">
-                <img src="img/leafs.png" alt="Leafs" class="welcome__img">
-                <div class="welcome__content">
-                    <h1 class="title">We grow plants and give you oxygen</h1>
-                    <p class="describe welcome__describe">Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                        1500s.</p>
-                    <div class="welcome__btn">
-                        <button class="main-button">LEARN MORE</button>
+                <div class="welcome__container">
+                    <img src="img/leafs.png" alt="Leafs" class="welcome__img">
+                    <div class="welcome__content">
+                        <h1 class="title">We grow <span class="title_color-active">plants</span> and give you oxygen
+                        </h1>
+                        <p class="describe welcome__describe">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s.</p>
+                        <div class="welcome__btn">
+                            <button class="main-button">LEARN MORE</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -46,7 +52,7 @@
         <section class="about">
             <div class="wrapper">
                 <div class="about__content">
-                    <h2 class="h2 h2_inika">We are professional experienced gardeners</h2>
+                    <h2 class="h2 h2_inika">We are <span class="h2_color">professional experienced</span> gardeners</h2>
                     <p class="describe about__describe">Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                         unknown printer took a galley of type and scrambled it to make a type specimen book. It has
@@ -56,7 +62,7 @@
                 <img src="img/houseplant.png" alt="Houseplant" class="about__img">
             </div>
         </section>
-        <section class="service">
+        <section class="service service_bckg">
             <div class="wrapper">
                 <div class="service-navigation">
                     <h2 class="h2 h2_inika">Service and our projects</h2>
@@ -129,7 +135,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts contacts_bckg">
             <div class="wrapper">
                 <img src="img/contact_woman.png" alt="Woman" class="contacts__img">
                 <h2 class="h2 h2_inika-bold">Contact us</h2>

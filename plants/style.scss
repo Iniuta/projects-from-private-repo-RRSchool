@@ -1,5 +1,33 @@
-$color: violet;
-$background-color: aquamarine;
+$content-width: 1222px;
+$background-color: #E3E1D5;
+$color-active:  #E06733;
+$color-title:  #717171;
+$color-title-active:  #499A18;
+
+@mixin Inika-font () {
+    font: {
+        family: 'Inika';
+        weight: 400;
+    }
+    color: #010201;
+  }
+
+  @mixin Inter-bold-font () {
+    font: {
+        family: 'Inter';
+        weight: 700;
+    }
+    color: #010201;
+  }
+
+  @mixin Inter-normal-font ($font-size: 20px) {
+    font: {
+        family: 'Inter';
+        weight: 400;
+        size: $font-size;
+    }
+    color: #636060;
+  }
 
 html{
     font-size: 10px;
@@ -7,25 +35,274 @@ html{
 body {
     font-size: 1.6rem;
     font-family: 'Inter', sans-serif;
-}
-
-@mixin title {
-    font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
-}
-
-@mixin title-position {
-    text-align: center;
-}
-
-.h1 {
-    @include title();
-    @include title-position();
-    color: $color;
-}
-
-.wrap {
+    width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
-    background-color: $background-color;
 }
+
+.header {
+    padding: 52px 0 52px 0 ;
+
+    &_bckg {
+        background-color: $background-color;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: $content-width;
+    }
+
+    // .header__navigation
+
+    &__navigation {
+        width: 452px;
+    }
+}
+.wrapper {
+    max-width: $content-width;
+    margin: 0 auto;
+
+}
+.logo {
+}
+.header-logo {
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // .navigation__item
+
+    &__item {
+        @include Inika-font ();
+        font-size: 16px;
+
+    // .navigation__item_color
+
+        &_color {
+            color: $color-active;
+        }
+    }
+}
+.main {
+}
+.welcome {
+    padding: 62px 0 62px 0;
+
+    &_bckg {
+        background-color: $background-color;
+    }
+
+    // .welcome__container
+
+    &__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .welcome__img
+
+    &__img {
+        width: 37%;
+    }
+
+    // .welcome__content
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 549px;
+        height: 340px;
+        padding-top: 1%;
+    }
+
+    // .welcome__describe
+
+    &__describe {
+        @include Inter-normal-font ();
+        line-height: 35px;
+    }
+
+    // .welcome__btn
+
+    &__btn {
+    }
+}
+.title {
+    @include Inter-bold-font ();
+    color: $color-title;
+    font-size: 45px;
+    line-height: 50px;
+
+     // .title_color-active
+
+    &_color-active{
+    color: $color-title-active;
+}
+}
+.describe {
+}
+.main-button {
+    width: 158px;
+height: 44px;
+border: 2px solid $color-active;
+border-radius: 10px;
+@include Inter-normal-font (16px);
+}
+.about {
+
+    // .about__content
+
+    &__content {
+    }
+
+    // .about__describe
+
+    &__describe {
+        @include Inter-normal-font ();
+        line-height: 30px;
+    }
+
+    // .about__img
+
+    &__img {
+    }
+}
+.h2 {
+
+    &_color{
+        color: $color-active;
+    }
+
+    // .h2_inika
+
+    &_inika {
+    }
+
+    // .h2_inter
+
+    &_inter {
+    }
+
+    // .h2_inika-bold
+
+    &_inika-bold {
+    }
+}
+.service {
+    &_bckg {
+        background-color: $background-color;
+    }
+    // .service__buttons
+
+    &__buttons {
+    }
+
+    // .service__img
+
+    &__img {
+    }
+}
+.service-navigation {
+}
+.buttons {
+}
+.button {
+
+    // .button_normal-text
+
+    &_normal-text {
+    }
+
+    // .button_bold-text
+
+    &_bold-text {
+    }
+}
+.grid {
+}
+.grid-item {
+}
+.item {
+
+    // .item__wrap
+
+    &__wrap {
+    }
+
+    // .item__describe
+
+    &__describe {
+    }
+}
+.h3 {
+}
+.prices {
+
+    // .prices__col-1
+
+    &__col-1 {
+    }
+
+    // .prices__col-2
+
+    &__col-2 {
+    }
+
+    // .prices__button
+
+    &__button {
+    }
+
+    // .prices__img
+
+    &__img {
+    }
+}
+.dropdown {
+}
+.contacts {
+    &_bckg {
+        background-color: $background-color;
+    }
+    // .contacts__img
+
+    &__img {
+    }
+}
+.select {
+}
+.footer {
+
+    // .footer__col-1
+
+    &__col-1 {
+    }
+
+    // .footer__text
+
+    &__text {
+    }
+
+    // .footer__RSS
+
+    &__RSS {
+    }
+}
+.icons {
+}
+
+
+
+
+
+
+
+
+
