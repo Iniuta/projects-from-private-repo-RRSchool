@@ -44,6 +44,12 @@ $line-heigh-h3: 20px;
         align-items: $align-items;
   }
 
+  @mixin flex-column ($justify-content: space-between) {
+        display: flex;
+        flex-direction: column;
+        justify-content: $justify-content;
+  }
+
   @mixin h2-main-styles ($color: $color-title-active) {
     font-size: 40px;
     line-height: 52px;
@@ -127,9 +133,7 @@ body {
     // .welcome__content
 
     &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+       @include flex-column ();
         width: 549px;
         height: 340px;
         padding-top: 1%;
@@ -139,7 +143,6 @@ body {
 
     &__describe {
         @include Inter-normal-font ();
-        // line-height: 35px;
     }
 
     // .welcome__btn
@@ -179,9 +182,7 @@ body {
     // .about__content
 
     &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include flex-column ();
         width: 603px;
         height: 350px;
         padding-top: 1%;
@@ -191,7 +192,6 @@ body {
 
     &__describe {
         @include Inter-normal-font (20px, $color-tex-describe, 30px);
-        // line-height: 30px;
     }
 
     // .about__img
@@ -224,6 +224,10 @@ body {
         @include Inter-normal-font (40px)
     }
 
+    &_inter-bold {
+        @include Inter-bold-font (40px, 48px, $color-black);
+    }
+
     // .h2_inika-bold
 
     &_inika-bold {
@@ -240,9 +244,6 @@ body {
         width: 559px;
         height: 50px;
         @include flex-container();
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: space-between;
     }
 
     // .service__img
@@ -313,17 +314,32 @@ body {
 }
 .h3 {
     @include Inter-bold-font (20px, 20px, $color-active);
+
+    &_color-black {
+        @include Inter-bold-font (20px, 20px, $color-black);
+    }
 }
 .prices {
+    padding: 42px 0 111px 0;
+
+    &__container {
+        @include flex-container(flex-start);
+    }
 
     // .prices__col-1
 
     &__col-1 {
+        width: 332px;
     }
 
     // .prices__col-2
 
     &__col-2 {
+        width: 452px;
+        height: 405px;
+        @include flex-column ();
+        align-items: end;
+        text-align: end;
     }
 
     // .prices__button
@@ -334,9 +350,37 @@ body {
     // .prices__img
 
     &__img {
+        width: 35%;
     }
 }
-.dropdown {
+.accordion {
+    width: 332px;
+    height: 282.01px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    margin-top: 56px;
+
+    // .accordion__wrap
+
+    &__wrap {
+        width: 250px;
+        height: 76%;
+        margin: 34px auto;
+        @include flex-column();
+    }
+
+    // .accordion__input
+
+    &__input {
+        width: 250px;
+        height: 50px;
+        background: $background-color;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 .contacts {
     &_bckg {

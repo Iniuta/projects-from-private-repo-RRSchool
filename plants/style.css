@@ -157,6 +157,13 @@ body {
   line-height: 35px;
   color: #636060;
 }
+.h2_inter-bold {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
 .service {
   padding: 42px 0 121px 0;
 }
@@ -223,7 +230,7 @@ body {
   border: 1px solid #E3E1D5;
   border-radius: 0px 0px 20px 20px;
   width: 330px;
-  padding: 10px 0 36px 0;
+  padding: 10px 0 21px 0;
 }
 .item__container {
   display: flex;
@@ -244,6 +251,64 @@ body {
   font-size: 20px;
   line-height: 20px;
   color: #E06733;
+}
+.h3_color-black {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.prices {
+  padding: 42px 0 111px 0;
+}
+.prices__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.prices__col-1 {
+  width: 332px;
+}
+.prices__col-2 {
+  width: 452px;
+  height: 405px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  text-align: end;
+}
+.prices__img {
+  width: 35%;
+}
+
+.accordion {
+  width: 332px;
+  height: 282.01px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  margin-top: 56px;
+}
+.accordion__wrap {
+  width: 250px;
+  height: 76%;
+  margin: 34px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.accordion__input {
+  width: 250px;
+  height: 50px;
+  background: #EDF2EC;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .contacts_bckg {
