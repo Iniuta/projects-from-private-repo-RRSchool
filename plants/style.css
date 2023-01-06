@@ -14,13 +14,13 @@ body {
   padding: 52px 0 52px 0;
 }
 .header_bckg {
-  background-color: #E3E1D5;
+  background-color: #EDF2EC;
 }
 .header__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   max-width: 1222px;
 }
 .header__navigation {
@@ -36,12 +36,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .navigation__item {
   font-family: "Inika";
   font-weight: 400;
-  color: #010201;
   font-size: 16px;
+  color: #000000;
 }
 .navigation__item_color {
   color: #E06733;
@@ -51,7 +52,7 @@ body {
   padding: 62px 0 62px 0;
 }
 .welcome_bckg {
-  background-color: #E3E1D5;
+  background-color: #EDF2EC;
 }
 .welcome__container {
   display: flex;
@@ -74,16 +75,19 @@ body {
   font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
-  color: #636060;
   line-height: 35px;
+  color: #636060;
 }
+.welcome__btn {
+  background-color: transparent;
+}
+
 .title {
   font-family: "Inter";
   font-weight: 700;
-  color: #010201;
-  color: #717171;
   font-size: 45px;
   line-height: 50px;
+  color: #717171;
 }
 .title_color-active {
   color: #499A18;
@@ -97,24 +101,153 @@ body {
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
-  color: #636060;
+  line-height: 20px;
+  color: #000000;
 }
 
+.about {
+  padding: 93px 0 94px 0;
+}
+.about__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 603px;
+  height: 350px;
+  padding-top: 1%;
+}
 .about__describe {
   font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
-  color: #636060;
   line-height: 30px;
+  color: #636060;
+}
+.about__img {
+  width: 38%;
+}
+
+.h2 {
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
 }
 .h2_color {
   color: #E06733;
 }
-.service_bckg {
-  background-color: #E3E1D5;
+.h2_inika {
+  font-family: "Inika";
+  font-weight: 400;
+  font-size: 40px;
+  color: #499A18;
 }
+.h2_width {
+  width: 306px;
+}
+.h2_inter {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 35px;
+  color: #636060;
+}
+.service {
+  padding: 42px 0 121px 0;
+}
+.service_bckg {
+  background-color: #EDF2EC;
+}
+.service__buttons {
+  width: 559px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.service__img {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.service-navigation {
+  width: 1007px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  font-family: "Inika";
+  font-weight: 400;
+  font-size: 20px;
+  color: #E06733;
+  width: 161px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+}
+
+.button_bold-text {
+  font-family: "Inika";
+  font-weight: 700;
+  font-size: 20px;
+  color: #E06733;
+}
+
+.grid {
+  padding-top: 78px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 95.5rem;
+}
+
+.grid-item {
+  width: 330px;
+  height: 450px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.item__wrap {
+  border: 1px solid #E3E1D5;
+  border-radius: 0px 0px 20px 20px;
+  width: 330px;
+  padding: 10px 0 36px 0;
+}
+.item__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item__describe {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 47px;
+  color: #717171;
+}
+
+.h3 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #E06733;
+}
+
 .contacts_bckg {
-  background-color: #E3E1D5;
+  background-color: #EDF2EC;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,32 +1,53 @@
 $content-width: 1222px;
-$background-color: #E3E1D5;
+$background-color: #EDF2EC;
 $color-active:  #E06733;
 $color-title:  #717171;
 $color-title-active:  #499A18;
+$color-black: #000000;
+$color-tex-describe: #636060;
+$size-h3: 20px;
+$line-heigh-h3: 20px;
 
-@mixin Inika-font () {
+@mixin Inika-font ($font-size: 16px, $font-weight: 400, $color: $color-black) {
     font: {
         family: 'Inika';
-        weight: 400;
+        weight: $font-weight;
+        size: $font-size;
     }
-    color: #010201;
+    color: $color;
   }
 
-  @mixin Inter-bold-font () {
+  @mixin Inter-bold-font ($font-size: $size-h3, $line-heigh: $line-heigh-h3, $color: $color-title) {
     font: {
         family: 'Inter';
         weight: 700;
+        size: $font-size;
     }
-    color: #010201;
+    line-height: $line-heigh;
+    color: $color;
   }
 
-  @mixin Inter-normal-font ($font-size: 20px) {
+  @mixin Inter-normal-font ($font-size: 20px, $color: $color-tex-describe, $line-height: 35px) {
     font: {
         family: 'Inter';
         weight: 400;
         size: $font-size;
     }
-    color: #636060;
+    line-height: $line-height;
+    color: $color;
+  }
+
+  @mixin flex-container ($align-items: center) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: $align-items;
+  }
+
+  @mixin h2-main-styles ($color: $color-title-active) {
+    font-size: 40px;
+    line-height: 52px;
+    color: $color;
   }
 
 html{
@@ -48,10 +69,7 @@ body {
     }
 
     &__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-container (end);
         max-width: $content-width;
     }
 
@@ -71,14 +89,12 @@ body {
 .header-logo {
 }
 .navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex-container ();
+
     // .navigation__item
 
     &__item {
         @include Inika-font ();
-        font-size: 16px;
 
     // .navigation__item_color
 
@@ -99,10 +115,7 @@ body {
     // .welcome__container
 
     &__container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+       @include flex-container ();
     }
 
     // .welcome__img
@@ -126,19 +139,17 @@ body {
 
     &__describe {
         @include Inter-normal-font ();
-        line-height: 35px;
+        // line-height: 35px;
     }
 
     // .welcome__btn
 
     &__btn {
+        background-color: transparent;
     }
 }
 .title {
-    @include Inter-bold-font ();
-    color: $color-title;
-    font-size: 45px;
-    line-height: 50px;
+    @include Inter-bold-font (45px, 50px);
 
      // .title_color-active
 
@@ -150,31 +161,48 @@ body {
 }
 .main-button {
     width: 158px;
-height: 44px;
-border: 2px solid $color-active;
-border-radius: 10px;
-@include Inter-normal-font (16px);
+    height: 44px;
+    border: 2px solid $color-active;
+    border-radius: 10px;
+    @include Inter-normal-font (16px, $color-black, 20px);
 }
 .about {
+
+    padding: 93px 0 94px 0;
+
+    // .about__container
+
+    &__container {
+       @include flex-container ();
+    }
 
     // .about__content
 
     &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 603px;
+        height: 350px;
+        padding-top: 1%;
     }
 
     // .about__describe
 
     &__describe {
-        @include Inter-normal-font ();
-        line-height: 30px;
+        @include Inter-normal-font (20px, $color-tex-describe, 30px);
+        // line-height: 30px;
     }
 
     // .about__img
 
     &__img {
+        width: 38%;
     }
 }
 .h2 {
+
+    @include h2-main-styles ();
 
     &_color{
         color: $color-active;
@@ -183,11 +211,17 @@ border-radius: 10px;
     // .h2_inika
 
     &_inika {
+        @include Inika-font (40px, 400, $color-title-active);
+    }
+
+    &_width {
+        width: 306px;
     }
 
     // .h2_inter
 
     &_inter {
+        @include Inter-normal-font (40px)
     }
 
     // .h2_inika-bold
@@ -196,22 +230,38 @@ border-radius: 10px;
     }
 }
 .service {
+    padding: 42px 0 121px 0;
     &_bckg {
         background-color: $background-color;
     }
     // .service__buttons
 
     &__buttons {
+        width: 559px;
+        height: 50px;
+        @include flex-container();
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-between;
     }
 
     // .service__img
 
     &__img {
+        border-radius: 20px 20px 0px 0px;
     }
 }
 .service-navigation {
+    width: 1007px;
+    @include flex-container();
 }
 .buttons {
+    @include Inika-font(20px, 400, $color-active);
+    width: 161px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid $color-active;
+    border-radius: 5px;
 }
 .button {
 
@@ -223,25 +273,46 @@ border-radius: 10px;
     // .button_bold-text
 
     &_bold-text {
+        @include Inika-font (20px, 700, $color: $color-active)
     }
 }
 .grid {
+    padding-top: 78px;
+    @include flex-container();
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 95.5rem;
 }
 .grid-item {
+    width: 330px;
+    height: 450px;
+    border-radius: 20px 20px 0px 0px;
 }
 .item {
 
     // .item__wrap
 
     &__wrap {
+        border: 1px solid #E3E1D5;
+        border-radius: 0px 0px 20px 20px;
+        width: 330px;
+        padding: 10px 0 21px 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center
     }
 
     // .item__describe
 
     &__describe {
+        @include Inter-normal-font(16px, $color-title, 47px)
     }
 }
 .h3 {
+    @include Inter-bold-font (20px, 20px, $color-active);
 }
 .prices {
 
