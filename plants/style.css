@@ -1,17 +1,18 @@
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
-  width: 100%;
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
 }
 
 .header {
   padding: 52px 0 52px 0;
+  max-width: 1440px;
 }
 .header_bckg {
   background-color: #EDF2EC;
@@ -164,6 +165,16 @@ body {
   line-height: 48px;
   color: #000000;
 }
+.h2_inika-bold {
+  font-family: "Inika";
+  font-weight: 700;
+  font-size: 40px;
+  color: #499A18;
+  width: 304px;
+  text-align: end;
+  line-height: 67px;
+}
+
 .service {
   padding: 42px 0 121px 0;
 }
@@ -313,6 +324,34 @@ body {
 
 .contacts_bckg {
   background-color: #EDF2EC;
+}
+.contacts__container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 53px;
+}
+.contacts__select-wrap {
+  width: 381px;
+  margin: 95px auto 0 auto;
+}
+.select {
+  display: flex;
+  justify-content: center;
+  width: 450px;
+  height: 50px;
+  background: #D6E7D2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.select__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.select__dropdown {
+  width: 379px;
+  border: none;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 $content-width: 1222px;
+$page-width: 1440px;
 $background-color: #EDF2EC;
 $color-active:  #E06733;
 $color-title:  #717171;
@@ -58,17 +59,19 @@ $line-heigh-h3: 20px;
 
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 body {
     font-size: 1.6rem;
     font-family: 'Inter', sans-serif;
-    width: 100%;
-    max-width: 1440px;
+    width: $page-width;
+    // max-width: 1440px;
     margin: 0 auto;
 }
 
 .header {
     padding: 52px 0 52px 0 ;
+    max-width: 1440px;
 
     &_bckg {
         background-color: $background-color;
@@ -231,6 +234,10 @@ body {
     // .h2_inika-bold
 
     &_inika-bold {
+        @include Inika-font(40px, 700, $color-title-active);
+        width: 304px;
+        text-align: end;
+        line-height: 67px;
     }
 }
 .service {
@@ -386,12 +393,41 @@ body {
     &_bckg {
         background-color: $background-color;
     }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        padding-top: 53px;
+    }
+
+    &__select-wrap {
+        width: 381px;
+        margin: 95px auto 0 auto;
+    }
     // .contacts__img
 
     &__img {
     }
 }
+
 .select {
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    height: 50px;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &__wrap{
+        @include flex-container();
+        
+    }
+
+    &__dropdown {
+        width: 379px;
+        border: none;
+        background-color: transparent;
+    }
 }
 .footer {
 
