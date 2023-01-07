@@ -7,11 +7,12 @@ body {
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
   width: 1440px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .header {
-  padding: 52px 0 52px 0;
+  padding: 5.2rem 0;
 }
 .header_bckg {
   background-color: #EDF2EC;
@@ -24,7 +25,7 @@ body {
   max-width: 1222px;
 }
 .header__navigation {
-  width: 452px;
+  width: 37%;
 }
 
 .wrapper {
@@ -47,7 +48,7 @@ body {
 .navigation__item {
   font-family: "Inika";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #000000;
 }
 .navigation__item_color {
@@ -55,7 +56,7 @@ body {
 }
 
 .welcome {
-  padding: 62px 0 62px 0;
+  padding: 6.2rem 0;
 }
 .welcome_bckg {
   background-color: #EDF2EC;
@@ -73,14 +74,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 549px;
-  height: 340px;
+  width: 44.9%;
+  min-height: 340px;
   padding-top: 1%;
 }
 .welcome__describe {
   font-family: "Inter";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 35px;
   color: #636060;
 }
@@ -91,7 +92,7 @@ body {
 .title {
   font-family: "Inter";
   font-weight: 700;
-  font-size: 45px;
+  font-size: 4.5rem;
   line-height: 50px;
   color: #717171;
 }
@@ -101,18 +102,18 @@ body {
 
 .main-button {
   width: 158px;
-  height: 44px;
+  min-height: 44px;
   border: 2px solid #E06733;
   border-radius: 10px;
   font-family: "Inter";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 20px;
   color: #000000;
 }
 
 .about {
-  padding: 93px 0 94px 0;
+  padding: 9.3rem 0 9.4rem 0;
 }
 .about__container {
   display: flex;
@@ -124,14 +125,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 603px;
-  height: 350px;
+  width: 49%;
+  min-height: 350px;
   padding-top: 1%;
 }
 .about__describe {
   font-family: "Inter";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 30px;
   color: #636060;
 }
@@ -140,7 +141,7 @@ body {
 }
 
 .h2 {
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 52px;
   color: #499A18;
 }
@@ -150,45 +151,45 @@ body {
 .h2_inika {
   font-family: "Inika";
   font-weight: 400;
-  font-size: 40px;
+  font-size: 4rem;
   color: #499A18;
 }
 .h2_width {
-  width: 306px;
+  width: 30%;
 }
 .h2_inter {
   font-family: "Inter";
   font-weight: 400;
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 35px;
   color: #636060;
 }
 .h2_inter-bold {
   font-family: "Inter";
   font-weight: 700;
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 48px;
   color: #000000;
 }
 .h2_inika-bold {
   font-family: "Inika";
   font-weight: 700;
-  font-size: 40px;
+  font-size: 4rem;
   color: #499A18;
-  width: 304px;
+  width: 24.86%;
   text-align: end;
   line-height: 67px;
 }
 
 .service {
-  padding: 42px 0 121px 0;
+  padding: 4.2rem 0 12.1rem 0;
 }
 .service_bckg {
   background-color: #EDF2EC;
 }
 .service__buttons {
-  width: 559px;
-  height: 50px;
+  width: 55.6%;
+  min-height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -196,10 +197,11 @@ body {
 }
 .service__img {
   border-radius: 20px 20px 0px 0px;
+  width: 100%;
 }
 
 .service-navigation {
-  width: 1007px;
+  width: 82.5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -209,44 +211,46 @@ body {
 .buttons {
   font-family: "Inika";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2rem;
   color: #E06733;
-  width: 161px;
-  height: 50px;
+  width: 100%;
+  min-height: 50px;
   background-color: transparent;
   border: 1px solid #E06733;
   border-radius: 5px;
 }
 
+.button_normal-text {
+  width: 28.8%;
+}
 .button_bold-text {
   font-family: "Inika";
   font-weight: 700;
-  font-size: 20px;
+  font-size: 2rem;
   color: #E06733;
 }
 
 .grid {
-  padding-top: 78px;
+  padding-top: 7.8rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   align-content: space-between;
-  height: 95.5rem;
+  min-height: 95.5rem;
 }
 
 .grid-item {
-  width: 330px;
-  height: 450px;
+  min-height: 450px;
   border-radius: 20px 20px 0px 0px;
 }
 
 .item__wrap {
   border: 1px solid #E3E1D5;
   border-radius: 0px 0px 20px 20px;
-  width: 330px;
-  padding: 10px 0 21px 0;
+  width: 99.3%;
+  padding: 1rem 0 2.1rem 0;
 }
 .item__container {
   display: flex;
@@ -256,7 +260,7 @@ body {
 .item__describe {
   font-family: "Inter";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 47px;
   color: #717171;
 }
@@ -264,20 +268,20 @@ body {
 .h3 {
   font-family: "Inter";
   font-weight: 700;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 20px;
   color: #E06733;
 }
 .h3_color-black {
   font-family: "Inter";
   font-weight: 700;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 20px;
   color: #000000;
 }
 
 .prices {
-  padding: 42px 0 111px 0;
+  padding: 4.2rem 0 11.1rem 0;
 }
 .prices__container {
   display: flex;
@@ -286,39 +290,42 @@ body {
   align-items: flex-start;
 }
 .prices__col-1 {
-  width: 332px;
+  width: 27%;
 }
 .prices__col-2 {
-  width: 452px;
-  height: 405px;
+  width: 37%;
+  min-height: 405px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: end;
   text-align: end;
 }
+.prices__button {
+  width: 36%;
+}
 .prices__img {
   width: 35%;
 }
 
 .accordion {
-  width: 332px;
+  width: 100%;
   height: 282.01px;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
   margin-top: 56px;
 }
 .accordion__wrap {
-  width: 250px;
-  height: 76%;
+  width: 76%;
+  min-height: 76%;
   margin: 34px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .accordion__input {
-  width: 250px;
-  height: 50px;
+  width: 100%;
+  min-height: 50px;
   background: #EDF2EC;
   border-radius: 20px;
   display: flex;
@@ -327,23 +334,29 @@ body {
   align-items: center;
 }
 
+.contacts {
+  padding-top: 5.3rem;
+}
 .contacts_bckg {
   background-color: #EDF2EC;
 }
 .contacts__container {
   display: flex;
   flex-direction: row;
-  padding-top: 53px;
 }
 .contacts__select-wrap {
-  width: 381px;
+  width: 31.2%;
   margin: 95px auto 0 auto;
 }
+.contacts__img {
+  width: 32.69%;
+}
+
 .select {
   display: flex;
   justify-content: center;
-  width: 450px;
-  height: 50px;
+  width: 118.1%;
+  min-height: 50px;
   background: #D6E7D2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -352,9 +365,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 92%;
 }
 .select__dropdown {
-  width: 379px;
+  width: 96%;
   border: none;
   background-color: transparent;
   background-image: url("img/accordion_btn_1.png");
@@ -363,19 +377,20 @@ body {
 }
 
 .footer {
-  padding: 40px 0;
+  padding: 4rem 0;
 }
 .footer__col-1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
-  width: 182px;
+  gap: 11%;
+  width: 15.3%;
 }
 .footer__text {
   font-family: "Inter";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 50px;
   color: #000000;
 }
@@ -388,7 +403,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 188px;
+  width: 15.4%;
+}
+.icons__img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
