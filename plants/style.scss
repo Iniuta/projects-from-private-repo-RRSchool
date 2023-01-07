@@ -71,7 +71,7 @@ body {
 
 .header {
     padding: 52px 0 52px 0 ;
-    max-width: 1440px;
+    // max-width: 1440px;
 
     &_bckg {
         background-color: $background-color;
@@ -91,6 +91,10 @@ body {
 .wrapper {
     max-width: $content-width;
     margin: 0 auto;
+
+    &__container {
+        @include flex-container()
+    }
 
 }
 .logo {
@@ -427,26 +431,34 @@ body {
         width: 379px;
         border: none;
         background-color: transparent;
+        background-image: url('img/accordion_btn_1.png');
+        background-repeat: no-repeat;
+        background-position: right;
     }
 }
 .footer {
+    padding: 40px 0;
 
     // .footer__col-1
 
     &__col-1 {
+        @include flex-container();
+        width: 182px;
     }
 
     // .footer__text
 
     &__text {
+        @include Inter-normal-font(20px, $color-black, 50px)
     }
 
-    // .footer__RSS
-
-    &__RSS {
+    &_text-width {
+        text-align: center;
     }
 }
 .icons {
+    @include flex-container();
+    width: 188px;
 }
 
 

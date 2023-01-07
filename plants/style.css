@@ -12,7 +12,6 @@ body {
 
 .header {
   padding: 52px 0 52px 0;
-  max-width: 1440px;
 }
 .header_bckg {
   background-color: #EDF2EC;
@@ -31,6 +30,12 @@ body {
 .wrapper {
   max-width: 1222px;
   margin: 0 auto;
+}
+.wrapper__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation {
@@ -352,6 +357,38 @@ body {
   width: 379px;
   border: none;
   background-color: transparent;
+  background-image: url("img/accordion_btn_1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.footer {
+  padding: 40px 0;
+}
+.footer__col-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 182px;
+}
+.footer__text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #000000;
+}
+.footer_text-width {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 188px;
 }
 
 /*# sourceMappingURL=style.css.map */
