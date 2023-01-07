@@ -1,23 +1,481 @@
-$color: violet;
-$background-color: aquamarine;
+$content-width: 1222px;
+$page-width: 1440px;
+$background-color: #EDF2EC;
+$color-active:  #E06733;
+$color-title:  #717171;
+$color-title-active:  #499A18;
+$color-black: #000000;
+$color-tex-describe: #636060;
+$size-h3: 2rem;
+$line-heigh-h3: 20px;
 
-@mixin title {
-    font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
-}
-
-@mixin title-position {
-    text-align: center;
-}
-
-.h1 {
-    @include title();
-    @include title-position();
+@mixin Inika-font ($font-size: 1.6rem, $font-weight: 400, $color: $color-black) {
+    font: {
+        family: 'Inika';
+        weight: $font-weight;
+        size: $font-size;
+    }
     color: $color;
+  }
+
+  @mixin Inter-bold-font ($font-size: $size-h3, $line-heigh: $line-heigh-h3, $color: $color-title) {
+    font: {
+        family: 'Inter';
+        weight: 700;
+        size: $font-size;
+    }
+    line-height: $line-heigh;
+    color: $color;
+  }
+
+  @mixin Inter-normal-font ($font-size: 2rem, $color: $color-tex-describe, $line-height: 35px) {
+    font: {
+        family: 'Inter';
+        weight: 400;
+        size: $font-size;
+    }
+    line-height: $line-height;
+    color: $color;
+  }
+
+  @mixin flex-container ($align-items: center, $justify-content: space-between) {
+        display: flex;
+        flex-direction: row;
+        justify-content: $justify-content;
+        align-items: $align-items;
+  }
+
+  @mixin flex-column ($justify-content: space-between) {
+        display: flex;
+        flex-direction: column;
+        justify-content: $justify-content;
+  }
+
+  @mixin h2-main-styles ($color: $color-title-active) {
+    font-size: 4rem;
+    line-height: 52px;
+    color: $color;
+  }
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    width: $page-width;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.wrap {
-    margin: 0 auto;
-    background-color: $background-color;
+.header {
+    padding: 5.2rem 0;
+    // max-width: 1440px;
+
+    &_bckg {
+        background-color: $background-color;
+    }
+
+    &__container {
+        @include flex-container (end);
+        max-width: $content-width;
+    }
+
+    // .header__navigation
+
+    &__navigation {
+        width: 37%;
+    }
 }
+.wrapper {
+    max-width: $content-width;
+    margin: 0 auto;
+
+    &__container {
+        @include flex-container()
+    }
+
+}
+.logo {
+}
+.header-logo {
+}
+.navigation {
+    @include flex-container ();
+
+    // .navigation__item
+
+    &__item {
+        @include Inika-font ();
+
+    // .navigation__item_color
+
+        &_color {
+            color: $color-active;
+        }
+    }
+}
+.main {
+}
+.welcome {
+    padding: 6.2rem 0;
+
+    &_bckg {
+        background-color: $background-color;
+    }
+
+    // .welcome__container
+
+    &__container{
+       @include flex-container ();
+    }
+
+    // .welcome__img
+
+    &__img {
+        width: 37%;
+    }
+
+    // .welcome__content
+
+    &__content {
+       @include flex-column ();
+        width: 44.9%;
+        min-height: 340px;
+        padding-top: 1%;
+    }
+
+    // .welcome__describe
+
+    &__describe {
+        @include Inter-normal-font ();
+    }
+
+    // .welcome__btn
+
+    &__btn {
+        background-color: transparent;
+    }
+}
+.title {
+    @include Inter-bold-font (4.5rem, 50px);
+
+     // .title_color-active
+
+    &_color-active{
+    color: $color-title-active;
+}
+}
+.describe {
+}
+.main-button {
+    width: 158px;
+    min-height: 44px;
+    border: 2px solid $color-active;
+    border-radius: 10px;
+    @include Inter-normal-font (1.6rem, $color-black, 20px);
+}
+.about {
+
+    padding: 9.3rem 0 9.4rem 0;
+
+    // .about__container
+
+    &__container {
+       @include flex-container ();
+    }
+
+    // .about__content
+
+    &__content {
+        @include flex-column ();
+        width: 49%;
+        min-height: 350px;
+        padding-top: 1%;
+    }
+
+    // .about__describe
+
+    &__describe {
+        @include Inter-normal-font (2rem, $color-tex-describe, 30px);
+    }
+
+    // .about__img
+
+    &__img {
+        width: 38%;
+    }
+}
+.h2 {
+
+    @include h2-main-styles ();
+
+    &_color{
+        color: $color-active;
+    }
+
+    // .h2_inika
+
+    &_inika {
+        @include Inika-font (4rem, 400, $color-title-active);
+    }
+
+    &_width {
+        width: 30%;
+    }
+
+    // .h2_inter
+
+    &_inter {
+        @include Inter-normal-font (4rem)
+    }
+
+    &_inter-bold {
+        @include Inter-bold-font (4rem, 48px, $color-black);
+    }
+
+    // .h2_inika-bold
+
+    &_inika-bold {
+        @include Inika-font(4rem, 700, $color-title-active);
+        width: 24.86%;
+        text-align: end;
+        line-height: 67px;
+    }
+}
+.service {
+    padding: 4.2rem 0 12.1rem 0;
+    &_bckg {
+        background-color: $background-color;
+    }
+    // .service__buttons
+
+    &__buttons {
+        width: 55.6%;
+        min-height: 50px;
+        @include flex-container();
+    }
+
+    // .service__img
+
+    &__img {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+    }
+}
+.service-navigation {
+    width: 82.5%;
+    @include flex-container();
+}
+.buttons {
+    @include Inika-font(2rem, 400, $color-active);
+    width: 100%;
+    min-height: 50px;
+    background-color: transparent;
+    border: 1px solid $color-active;
+    border-radius: 5px;
+}
+.button {
+
+    // .button_normal-text
+
+    &_normal-text {
+        width: 28.8%;
+    }
+
+    // .button_bold-text
+
+    &_bold-text {
+        @include Inika-font (2rem, 700, $color: $color-active)
+    }
+}
+.grid {
+    padding-top: 7.8rem;
+    @include flex-container();
+    flex-wrap: wrap;
+    align-content: space-between;
+    min-height: 95.5rem;
+}
+.grid-item {
+    // width: 27%;
+    min-height: 450px;
+    border-radius: 20px 20px 0px 0px;
+}
+.item {
+
+    // .item__wrap
+
+    &__wrap {
+        border: 1px solid #E3E1D5;
+        border-radius: 0px 0px 20px 20px;
+        width: 99.3%;
+        padding: 1rem 0 2.1rem 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    // .item__describe
+
+    &__describe {
+        @include Inter-normal-font(1.6rem, $color-title, 47px)
+    }
+}
+.h3 {
+    @include Inter-bold-font (2rem, 20px, $color-active);
+
+    &_color-black {
+        @include Inter-bold-font (2rem, 20px, $color-black);
+    }
+}
+.prices {
+    padding: 4.2rem 0 11.1rem 0;
+
+    &__container {
+        @include flex-container(flex-start);
+    }
+
+    // .prices__col-1
+
+    &__col-1 {
+        width: 27%;
+    }
+
+    // .prices__col-2
+
+    &__col-2 {
+        width: 37%;
+        min-height: 405px;
+        @include flex-column ();
+        align-items: end;
+        text-align: end;
+    }
+
+    // .prices__button
+
+    &__button {
+        width: 36%
+    }
+
+    // .prices__img
+
+    &__img {
+        width: 35%;
+    }
+}
+.accordion {
+    width: 100%;
+    height: 282.01px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    margin-top: 56px;
+
+    // .accordion__wrap
+
+    &__wrap {
+        width: 76%;
+        min-height: 76%;
+        margin: 34px auto;
+        @include flex-column();
+    }
+
+    // .accordion__input
+
+    &__input {
+        width: 100%;
+        min-height: 50px;
+        background: $background-color;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+.contacts {
+    padding-top: 5.3rem;
+
+    &_bckg {
+        background-color: $background-color;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__select-wrap {
+        width: 31.2%;
+        margin: 95px auto 0 auto;
+    }
+    // .contacts__img
+
+    &__img {
+        width: 32.69%;
+    }
+}
+
+.select {
+    display: flex;
+    justify-content: center;
+    width: 118.1%;
+    min-height: 50px;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &__wrap{
+        @include flex-container();
+        width: 92%;
+    }
+
+    &__dropdown {
+        width: 96%;
+        border: none;
+        background-color: transparent;
+        background-image: url('img/accordion_btn_1.png');
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+.footer {
+    padding: 4rem 0;
+
+    // .footer__col-1
+
+    &__col-1 {
+        @include flex-container(center, start);
+        gap: 11%;
+        width: 15.3%
+    }
+
+    // .footer__text
+
+    &__text {
+        @include Inter-normal-font(2rem, $color-black, 50px)
+    }
+
+    &_text-width {
+        text-align: center;
+    }
+}
+.icons {
+    @include flex-container();
+    width: 15.4%;
+
+    &__img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+

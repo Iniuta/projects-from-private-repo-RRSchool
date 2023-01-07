@@ -1,15 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="reset.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Plants</title>
 </head>
+
 <body>
-    <div class="wrap">
-        <h1 class="h1">Hello, SASS!</h1>
-    </div>
+    <header class="header header_bckg">
+        <div class="wrapper">
+            <div class="header__container ">
+                <a href="#" class="logo"><img src="img/logo.png" alt="logo" class="header-logo"></a>
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li class="navigation__item_color">Home</li>
+                        <li class="navigation__item">About us</li>
+                        <li class="navigation__item">Service</li>
+                        <li class="navigation__item">Price</li>
+                        <li class="navigation__item">Contacts</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="welcome welcome_bckg">
+            <div class="wrapper">
+                <div class="welcome__container">
+                    <img src="img/leafs.png" alt="Leafs" class="welcome__img">
+                    <div class="welcome__content">
+                        <h1 class="title">We grow <span class="title_color-active">plants</span> and give you oxygen
+                        </h1>
+                        <p class="describe welcome__describe">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s.</p>
+                        <div class="welcome__btn">
+                            <button class="main-button">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="wrapper">
+                <div class="about__container">
+                    <div class="about__content">
+                        <h2 class="h2 h2_inika">We are <span class="h2_color">professional experienced</span> gardeners
+                        </h2>
+                        <p class="describe about__describe">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an
+                            unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries, but also the leap into electronic typesetting, remaining
+                            essentially unchanged. </p>
+                    </div>
+                    <img src="img/houseplant.png" alt="Houseplant" class="about__img">
+                </div>
+            </div>
+        </section>
+        <section class="service service_bckg">
+            <div class="wrapper">
+                <div class="service-navigation">
+                    <h2 class="h2 h2_inika h2_width">Service and our projects</h2>
+                    <div class="service__buttons">
+                        <button class="buttons button_normal-text">Gardens</button>
+                        <button class="buttons button_normal-text">Lawn</button>
+                        <button class="buttons button_normal-text">Planting</button>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid-item">
+                        <img src="img/1.png" alt="photo" class="service__img">
+                        <div class="item__wrap">
+                            <div class="item__container">
+                                <h3 class="h3">Garden care</h3>
+                                <p class="item__describe">Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/2.png" alt="photo" class="service__img">
+                        <div class="item__wrap">
+                            <div class="item__container">
+                                <h3 class="h3">Planting</h3>
+                                <p class="item__describe">Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/3.png" alt="photo" class="service__img">
+                        <div class="item__wrap">
+                            <div class="item__container">
+                                <h3 class="h3">Lawn care</h3>
+                                <p class="item__describe">Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/4.png" alt="photo" class="service__img">
+                        <div class="item__wrap">
+                            <div class="item__container">
+                                <h3 class="h3">Planting</h3>
+                                <p class="item__describe">Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/5.png" alt="photo" class="service__img">
+                        <div class="item__wrap">
+                            <div class="item__container">
+                                <h3 class="h3">Garden care</h3>
+                                <p class="item__describe">Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="img/6.png" alt="photo" class="service__img">
+                        <div class="item__wrap">
+                            <div class="item__container">
+                                <h3 class="h3">Planting</h3>
+                                <p class="item__describe">Lorem Ipsum has been the industry</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prices">
+            <div class="wrapper">
+                <div class="prices__container">
+                    <div class="prices__col-1">
+                        <h2 class="h2 h2_inter h2_inter-bold">Prices</h2>
+                        <div class="accordion">
+                            <div class="accordion__wrap">
+                                <div class="accordion__input">
+                                    <h3 class="h3 h3_color-black">Basics</h3>
+                                    <img src="img/accordion_btn_1.png" alt="button">
+                                </div>
+                                <!-- <div class="panel">
+                                    <p>Lorem ipsum...</p>
+                                </div> -->
+                                <div class="accordion__input">
+                                    <h3 class="h3 h3_color-black">Standard</h3>
+                                    <img src="img/accordion_btn_1.png" alt="button">
+                                </div>
+                                <!-- <div class="panel">
+                                    <p>Lorem ipsum...</p>
+                                </div> -->
+                                <div class="accordion__input">
+                                    <h3 class="h3 h3_color-black">Pro care</h3>
+                                    <img src="img/accordion_btn_1.png" alt="button">
+                                </div>
+                                <!-- <div class="panel">
+                                    <p>Lorem ipsum...</p>
+                                </div> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="prices__col-2">
+                        <h2 class="h2 h2_inter h2_inter-bold">Our best <span class="title_color-active">gardeners</span>
+                            are ready to help you</h2>
+                        <div class="prices__button">
+                            <button class="buttons button_bold-text">Contact us</button>
+                        </div>
+                        <img src="img/mini-leafs.png" alt="Leafs" class="prices__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts contacts_bckg">
+            <div class="wrapper">
+                <div class="contacts__container">
+                    <img src="img/contact_woman.png" alt="Woman" class="contacts__img">
+                    <h2 class="h2 h2_inika-bold">Contact us</h2>
+                    <div class="contacts__select-wrap">
+                        <div class="select">
+                            <div class="select__wrap">
+                                <select class="select__dropdown" name="select">
+                                    <option value="value1" selected>City</option>
+                                    <option value="value2">New York</option>
+                                    <option value="value3">Chicago</option>
+                                    <option value="value4">Dallas</option>
+                                    <option value="value5">Denver</option>
+                                    <option value="value6">Detroit</option>
+                                    <option value="value7">Atlanta</option>
+                                </select>
+                                <!-- <img src="img/accordion_btn_1.png" alt="button"> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="wrapper__container">
+                <div class="footer__col-1">
+                    <p class="footer__text">©</p>
+                    <p class="footer__text">2022</p>
+                    <p class="footer__text">github</p>
+                </div>
+                <p class="footer__text footer_text-width">Rolling Scopes School</p>
+                <div class="icons">
+                    <a href="#" class=""><img class="icons__img" src="img/inst.svg" alt="inst"></a>
+                    <a href="#" class=""><img class="icons__img" src="img/fb.svg" alt="fb"></a>
+                    <a href="#" class=""><img class="icons__img" src="img/tw.svg" alt="twitter"></a>
+                    <a href="#" class=""><img class="icons__img" src="img/pinterest.svg" alt="pinterest"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
