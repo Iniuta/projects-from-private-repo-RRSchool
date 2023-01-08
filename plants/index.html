@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="img/favicon.svg" type="image/svg" sizes="48x48">
     <title>Plants</title>
 </head>
 
@@ -21,11 +22,11 @@
                 <a href="#" class="logo"><img src="img/logo.png" alt="logo" class="header-logo"></a>
                 <nav class="header__navigation">
                     <ul class="navigation">
-                        <li class="navigation__item_color">Home</li>
-                        <li class="navigation__item">About us</li>
-                        <li class="navigation__item">Service</li>
-                        <li class="navigation__item">Price</li>
-                        <li class="navigation__item">Contacts</li>
+                        <li class=""><a href="#" class="navigation__item_color navigation_links">Home</a></li>
+                        <li class=""><a href="#about" class="navigation__item navigation_links">About us</a></li>
+                        <li class=""><a href="#service" class="navigation__item navigation_links">Service</a></li>
+                        <li class=""><a href="#price" class="navigation__item navigation_links">Price</a></li>
+                        <li class=""><a href="#contacts" class="navigation__item navigation_links">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
@@ -49,7 +50,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="wrapper">
                 <div class="about__container">
                     <div class="about__content">
@@ -67,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section class="service service_bckg">
+        <section id="service" class="service service_bckg">
             <div class="wrapper">
                 <div class="service-navigation">
                     <h2 class="h2 h2_inika h2_width">Service and our projects</h2>
@@ -135,7 +136,7 @@
                 </div>
             </div>
         </section>
-        <section class="prices">
+        <section id="price" class="prices">
             <div class="wrapper">
                 <div class="prices__container">
                     <div class="prices__col-1">
@@ -164,7 +165,6 @@
                                     <p>Lorem ipsum...</p>
                                 </div> -->
                             </div>
-
                         </div>
                     </div>
                     <div class="prices__col-2">
@@ -178,26 +178,19 @@
                 </div>
             </div>
         </section>
-        <section class="contacts contacts_bckg">
+        <section id="contacts" class="contacts contacts_bckg">
             <div class="wrapper">
                 <div class="contacts__container">
                     <img src="img/contact_woman.png" alt="Woman" class="contacts__img">
                     <h2 class="h2 h2_inika-bold">Contact us</h2>
                     <div class="contacts__select-wrap">
-                        <div class="select">
-                            <div class="select__wrap">
-                                <select class="select__dropdown" name="select">
-                                    <option value="value1" selected>City</option>
-                                    <option value="value2">New York</option>
-                                    <option value="value3">Chicago</option>
-                                    <option value="value4">Dallas</option>
-                                    <option value="value5">Denver</option>
-                                    <option value="value6">Detroit</option>
-                                    <option value="value7">Atlanta</option>
-                                </select>
-                                <!-- <img src="img/accordion_btn_1.png" alt="button"> -->
-                            </div>
-                        </div>
+                        <details class="details select__details">
+                            <summary class="details__summary details_summary-active">City</summary>
+                            <summary class="details__summary details_summary-unactive">Canandaigua, NY</summary>
+                            <summary class="details__summary details_summary-unactive">New York City</summary>
+                            <summary class="details__summary details_summary-unactive">Yonkers, NY</summary>
+                            <summary class="details__summary details_summary-unactive">Sherrill, NY</summary>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -209,15 +202,16 @@
                 <div class="footer__col-1">
                     <p class="footer__text">©</p>
                     <p class="footer__text">2022</p>
-                    <p class="footer__text">github</p>
+                    <p class="footer__text"><a href="https://github.com/Iniuta" class="footer_link">github</a> </p>
                 </div>
-                <p class="footer__text footer_text-width">Rolling Scopes School</p>
-                <div class="icons">
-                    <a href="#" class=""><img class="icons__img" src="img/inst.svg" alt="inst"></a>
-                    <a href="#" class=""><img class="icons__img" src="img/fb.svg" alt="fb"></a>
-                    <a href="#" class=""><img class="icons__img" src="img/tw.svg" alt="twitter"></a>
-                    <a href="#" class=""><img class="icons__img" src="img/pinterest.svg" alt="pinterest"></a>
-                </div>
+                <p class="footer__text footer_text-width"><a href="https://rs.school/js-stage0/"
+                        class="footer_link">Rolling Scopes School</a></p>
+                <ul class="icons">
+                    <li><a href="#" class=""><img class="icons__img" src="img/inst.svg" alt="inst"></a></li>
+                    <li><a href="#" class=""><img class="icons__img" src="img/fb.svg" alt="fb"></a></li>
+                    <li><a href="#" class=""><img class="icons__img" src="img/tw.svg" alt="twitter"></a></li>
+                    <li><a href="#" class=""><img class="icons__img" src="img/pinterest.svg" alt="pinterest"></a></li>
+                </ul>
             </div>
         </div>
     </footer>
