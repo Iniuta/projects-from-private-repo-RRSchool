@@ -360,30 +360,27 @@ li {
   flex-direction: row;
 }
 .contacts__select-wrap {
-  width: 31.2%;
-  margin: 95px auto 0 auto;
+  width: 36.8%;
+  margin: 95px 0 0 69px;
 }
 .contacts__img {
   width: 32.69%;
 }
 
 .select {
-  display: flex;
-  justify-content: center;
-  width: 118.1%;
+  width: 100%;
   min-height: 50px;
   background: #D6E7D2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.select__wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 92%;
-}
 .select__dropdown {
-  width: 96%;
+  margin: 1.4rem 3.5rem 0 2rem;
+  width: 87%;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 40px;
+  color: #636060;
   border: none;
   background-color: transparent;
   background-image: url("img/accordion_btn_1.png");
