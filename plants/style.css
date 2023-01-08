@@ -54,9 +54,14 @@ li {
   font-weight: 400;
   font-size: 1.6rem;
   color: #000000;
+  transition: 0.4s;
 }
 .navigation__item_color {
   color: #E06733;
+}
+.navigation__item:hover {
+  color: #E06733;
+  transition: 0.4s;
 }
 
 .welcome {
@@ -367,26 +372,37 @@ li {
   width: 32.69%;
 }
 
-.select {
+.details {
   width: 100%;
   min-height: 50px;
-  background: #D6E7D2;
+  background-color: #D6E7D2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.select__dropdown {
-  margin: 1.4rem 3.5rem 0 2rem;
-  width: 87%;
+.details__summary {
+  min-height: 50px;
+  appearance: auto;
+  padding: 0.5rem 1rem 0 2rem;
   font-family: "Inter";
   font-weight: 400;
   font-size: 2rem;
   line-height: 40px;
   color: #636060;
-  border: none;
-  background-color: transparent;
-  background-image: url("img/accordion_btn_1.png");
-  background-repeat: no-repeat;
-  background-position: right;
+  letter-spacing: 0.05em;
   cursor: pointer;
+}
+.details__summary:focus {
+  background-color: #C1E698;
+}
+.details_summary-unactive {
+  width: 86%;
+  padding: 0;
+  margin: 0.5rem 1rem 0 2rem;
+  color: #499A18;
+  border-bottom: 1px solid #D9D9D9;
+}
+.details_summary-unactive:hover {
+  color: #717171;
+  border-color: #717171;
 }
 
 .footer {
