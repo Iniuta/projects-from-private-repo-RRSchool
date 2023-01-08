@@ -11,6 +11,10 @@ body {
   margin: 0 auto;
 }
 
+li {
+  cursor: pointer;
+}
+
 .header {
   padding: 5.2rem 0;
 }
@@ -85,9 +89,6 @@ body {
   line-height: 35px;
   color: #636060;
 }
-.welcome__btn {
-  background-color: transparent;
-}
 
 .title {
   font-family: "Inter";
@@ -110,6 +111,13 @@ body {
   font-size: 1.6rem;
   line-height: 20px;
   color: #000000;
+  background-color: transparent;
+  transition: 0.4s;
+}
+.main-button:hover {
+  background-color: #E06733;
+  color: white;
+  transition: 0.4s;
 }
 
 .about {
@@ -218,6 +226,12 @@ body {
   background-color: transparent;
   border: 1px solid #E06733;
   border-radius: 5px;
+  transition: 0.4s;
+}
+.buttons:hover {
+  background-color: #E06733;
+  color: white;
+  transition: 0.4s;
 }
 
 .button_normal-text {
@@ -332,6 +346,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 }
 
 .contacts {
@@ -374,6 +389,7 @@ body {
   background-image: url("img/accordion_btn_1.png");
   background-repeat: no-repeat;
   background-position: right;
+  cursor: pointer;
 }
 
 .footer {
@@ -393,6 +409,14 @@ body {
   font-size: 2rem;
   line-height: 50px;
   color: #000000;
+}
+.footer_link {
+  transition: 0.4s;
+  color: #000000;
+}
+.footer_link:hover {
+  color: #499A18;
+  transition: 0.4s;
 }
 .footer_text-width {
   text-align: center;
