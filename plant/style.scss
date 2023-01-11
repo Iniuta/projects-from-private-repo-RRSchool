@@ -1,5 +1,4 @@
 $content-width: 1222px;
-$page-width: 1440px;
 $background-color: #EDF2EC;
 $color-active:  #E06733;
 $color-title:  #717171;
@@ -70,7 +69,6 @@ html{
 body {
     font-size: 1.6rem;
     font-family: 'Inter', sans-serif;
-    width: $page-width;
     width: 100%;
     margin: 0 auto;
 }
@@ -81,7 +79,10 @@ li {
 
 .header {
     padding: 5.2rem 0;
-    // max-width: 1440px;
+
+    @media (max-width: 1439px){
+        padding: 4.5rem 0px;
+    }
 
     &_bckg {
         background-color: $background-color;
@@ -96,6 +97,10 @@ li {
 
     &__navigation {
         width: 37%;
+
+        @media (max-width: 1439px){
+            width: 67.7%;
+        }
     }
 }
 .wrapper {
@@ -104,6 +109,14 @@ li {
 
     &__container {
         @include flex-container()
+    }
+
+    @media (max-width: 1439px){
+        max-width: 668px;
+    }
+
+    @media (max-width: 767px){
+        max-width: 330px;
     }
 
 }
@@ -137,6 +150,10 @@ li {
 .welcome {
     padding: 6.2rem 0;
 
+    @media (max-width: 1439px) {
+        padding: 4.4rem 0 7rem 0;
+    }
+
     &_bckg {
         background-color: $background-color;
     }
@@ -145,12 +162,21 @@ li {
 
     &__container{
        @include flex-container ();
+
+       @media (max-width: 1439px) {
+        flex-direction: row-reverse;
+        align-items: start;
+    }
     }
 
     // .welcome__img
 
     &__img {
         width: 37%;
+
+        @media (max-width: 1439px) {
+            width: 42%;
+        }
     }
 
     // .welcome__content
@@ -160,12 +186,24 @@ li {
         width: 44.9%;
         min-height: 340px;
         padding-top: 1%;
+
+        @media (max-width: 1439px) {
+            width: 51%;
+            min-height: 310px;
+            padding-top: 0;
+        }
     }
 
     // .welcome__describe
 
     &__describe {
         @include Inter-normal-font ();
+
+        @media (max-width: 1439px) {
+            font-size: 1.6rem;
+            line-height: 25px;
+            padding-left: 5px;
+        }
     }
 
     // .welcome__btn
@@ -174,7 +212,9 @@ li {
 .title {
     @include Inter-bold-font (4.5rem, 50px);
 
-     // .title_color-active
+    @media (max-width: 1439px) {
+        font-size: 3.5rem;
+    }
 
     &_color-active{
     color: $color-title-active;
@@ -199,10 +239,18 @@ li {
 
     padding: 9.3rem 0 9.4rem 0;
 
+    @media (max-width: 1439px) {
+        padding: 4rem 0 9.5rem 0;
+    }
+
     // .about__container
 
     &__container {
        @include flex-container ();
+
+       @media (max-width: 1439px) {
+        flex-direction: column;
+    }
     }
 
     // .about__content
@@ -212,6 +260,11 @@ li {
         width: 49%;
         min-height: 350px;
         padding-top: 1%;
+
+        @media (max-width: 1439px) {
+            width: 100%;
+            padding: 0;
+        }
     }
 
     // .about__describe
@@ -224,6 +277,14 @@ li {
 
     &__img {
         width: 38%;
+    }
+
+    &_inika {
+        @include Inika-font (4rem, 400, $color-title-active);
+
+        @media (max-width: 1439px) {
+            font-size: 3.5rem;
+        }
     }
 }
 .h2 {
@@ -238,6 +299,10 @@ li {
 
     &_inika {
         @include Inika-font (4rem, 400, $color-title-active);
+
+        @media (max-width: 1439px) {
+            font-size: 3.5rem;
+        }
     }
 
     &_width {
