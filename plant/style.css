@@ -19,7 +19,7 @@ li {
 }
 @media (max-width: 1439px) {
   .header {
-    padding: 4.5rem 0px;
+    padding: 4.7rem 0px 4.2rem 0;
   }
 }
 .header_bckg {
@@ -83,7 +83,7 @@ li {
 }
 @media (max-width: 1439px) {
   .welcome {
-    padding: 4.4rem 0 7rem 0;
+    padding: 4.4rem 0 7.1rem 0;
   }
 }
 .welcome_bckg {
@@ -296,13 +296,19 @@ li {
   text-align: end;
   line-height: 67px;
 }
+@media (max-width: 1439px) {
+  .h2_inika-bold {
+    width: 44.86%;
+    text-align: center;
+  }
+}
 
 .service {
   padding: 4.2rem 0 12.1rem 0;
 }
 @media (max-width: 1439px) {
   .service {
-    padding: 6rem 0 6.8rem 0;
+    padding: 6rem 0 6.7rem 0;
   }
 }
 .service_bckg {
@@ -548,6 +554,11 @@ li {
 .contacts {
   padding-top: 5.3rem;
 }
+@media (max-width: 1439px) {
+  .contacts {
+    padding-top: 3.3rem;
+  }
+}
 .contacts_bckg {
   background-color: #EDF2EC;
 }
@@ -555,12 +566,35 @@ li {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 1439px) {
+  .contacts__container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70.6rem;
+  }
+}
 .contacts__select-wrap {
   width: 36.8%;
   margin: 95px 0 0 69px;
 }
+@media (max-width: 1439px) {
+  .contacts__select-wrap {
+    width: 67%;
+    margin: 0;
+  }
+}
 .contacts__img {
   width: 32.69%;
+}
+@media (max-width: 1439px) {
+  .contacts__img {
+    display: flex;
+    order: 3;
+    padding-top: 15.8rem;
+    padding-left: 2rem;
+    width: 30%;
+  }
 }
 
 .detail {
@@ -584,6 +618,12 @@ li {
 .detail__summary:focus {
   background-color: #C1E698;
 }
+@media (max-width: 1439px) {
+  .detail__summary {
+    line-height: 50px;
+    padding-top: 0;
+  }
+}
 .detail_summary-unactive {
   width: 86%;
   padding: 0;
@@ -599,6 +639,17 @@ li {
 .footer {
   padding: 4rem 0;
 }
+@media (max-width: 1439px) {
+  .footer {
+    padding: 3.2rem 0 3rem 0;
+  }
+}
+@media (max-width: 1439px) {
+  .footer_container-tablet {
+    flex-direction: column;
+    min-height: 12rem;
+  }
+}
 .footer__col-1 {
   display: flex;
   flex-direction: row;
@@ -607,12 +658,23 @@ li {
   gap: 11%;
   width: 15.3%;
 }
+@media (max-width: 1439px) {
+  .footer__col-1 {
+    gap: 13%;
+    width: 26.3%;
+  }
+}
 .footer__text {
   font-family: "Inter";
   font-weight: 400;
   font-size: 2rem;
   line-height: 50px;
   color: #000000;
+}
+@media (max-width: 1439px) {
+  .footer__text {
+    line-height: 24px;
+  }
 }
 .footer_link {
   transition: 0.4s;
@@ -632,6 +694,11 @@ li {
   justify-content: space-between;
   align-items: center;
   width: 15.4%;
+}
+@media (max-width: 1439px) {
+  .icons {
+    width: 28%;
+  }
 }
 .icons__img {
   width: 100%;
