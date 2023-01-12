@@ -112,11 +112,13 @@ li {
     }
 
     @media (max-width: 1439px){
-        max-width: 668px;
+        // max-width: 668px;
+        // padding: 0 5rem 0 5rem;
     }
 
-    @media (max-width: 767px){
-        max-width: 330px;
+    @media (max-width: 768px){
+        // max-width: 330px;
+        padding: 0 5rem 0 5rem;
     }
 
 }
@@ -240,7 +242,7 @@ li {
     padding: 9.3rem 0 9.4rem 0;
 
     @media (max-width: 1439px) {
-        padding: 4rem 0 9.5rem 0;
+        padding: 4rem 0 9.3rem 0;
     }
 
     // .about__container
@@ -250,6 +252,7 @@ li {
 
        @media (max-width: 1439px) {
         flex-direction: column;
+        min-height: 650px;
     }
     }
 
@@ -264,6 +267,7 @@ li {
         @media (max-width: 1439px) {
             width: 100%;
             padding: 0;
+            min-height: 322px;
         }
     }
 
@@ -283,13 +287,21 @@ li {
         @include Inika-font (4rem, 400, $color-title-active);
 
         @media (max-width: 1439px) {
-            font-size: 3.5rem;
+            text-align: center;
+            width: 63%;
+            margin: 0 auto;
         }
     }
 }
 .h2 {
 
     @include h2-main-styles ();
+
+    @media (max-width: 1439px) {
+        font-size: 3.5rem;
+        line-height: 45px;
+    }
+
 
     &_color{
         color: $color-active;
@@ -307,6 +319,10 @@ li {
 
     &_width {
         width: 30%;
+
+        @media (max-width: 1439px) {
+            width: 56%;
+        }
     }
 
     // .h2_inter
@@ -317,6 +333,12 @@ li {
 
     &_inter-bold {
         @include Inter-bold-font (4rem, 48px, $color-black);
+
+        @media (max-width: 1439px) {
+            font-size: 3.5rem;
+            line-height: 42px;
+            padding-left: 1.5rem;
+        }
     }
 
     // .h2_inika-bold
@@ -330,6 +352,10 @@ li {
 }
 .service {
     padding: 4.2rem 0 12.1rem 0;
+
+    @media (max-width: 1439px) {
+        padding: 6rem 0 6.8rem 0;
+    }
     &_bckg {
         background-color: $background-color;
     }
@@ -339,6 +365,10 @@ li {
         width: 55.6%;
         min-height: 50px;
         @include flex-container();
+
+        @media (max-width: 1439px) {
+            width: 100%;
+        }
     }
 
     // .service__img
@@ -346,11 +376,33 @@ li {
     &__img {
         border-radius: 20px 20px 0px 0px;
         width: 100%;
+
+        @media (max-width: 1439px) {
+            display: none;
+        }
+    }
+
+    &__img-tablet {
+        @media (min-width: 1440px) {
+            display: none;
+        }
+
+        @media (max-width: 1439px) {
+            border-radius: 20px 20px 0px 0px;
+            width: 100%;
+        }
     }
 }
 .service-navigation {
     width: 82.5%;
     @include flex-container();
+
+    @media (max-width: 1439px) {
+        width: 83.7%;
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 184px;
+    }
 }
 .buttons {
     @include Inika-font(2rem, 400, $color-active);
@@ -385,6 +437,11 @@ li {
     flex-wrap: wrap;
     align-content: space-between;
     min-height: 95.5rem;
+
+    @media (max-width: 1439px) {
+        padding-top: 4rem;
+        min-height: 142.9rem;
+    }
 }
 .grid-item {
     // width: 27%;
@@ -411,7 +468,14 @@ li {
     // .item__describe
 
     &__describe {
-        @include Inter-normal-font(1.6rem, $color-title, 47px)
+        @include Inter-normal-font(1.6rem, $color-title, 47px);
+
+        @media (max-width: 1439px) {
+            width: 73%;
+            text-align: center;
+            line-height: 20px;
+            padding-top: 1rem;
+        }
     }
 }
 .h3 {
@@ -424,6 +488,10 @@ li {
 .prices {
     padding: 4.2rem 0 11.1rem 0;
 
+    @media (max-width: 1439px) {
+        padding: 4rem 0 7.8rem 0;
+    }
+
     &__container {
         @include flex-container(flex-start);
     }
@@ -432,6 +500,10 @@ li {
 
     &__col-1 {
         width: 27%;
+
+        @media (max-width: 1439px) {
+            width: 50%;
+        }
     }
 
     // .prices__col-2
@@ -442,18 +514,41 @@ li {
         @include flex-column ();
         align-items: end;
         text-align: end;
+
+        @media (max-width: 1439px) {
+            width: 43%;
+            min-height: 367px;
+            padding-top: 10rem;
+        }
     }
 
     // .prices__button
 
     &__button {
-        width: 36%
+        width: 36%;
+
+        @media (max-width: 1439px) {
+            width: 57%;
+        }
+    }
+
+    &_inter-bold-tablet {
+        @include Inter-bold-font (4rem, 48px, $color-black);
+
+        @media (max-width: 1439px) {
+            font-size: 2.5rem;
+            line-height: 35px;
+        }
     }
 
     // .prices__img
 
     &__img {
         width: 35%;
+
+        @media (max-width: 1439px) {
+            width: 59%;
+        }
     }
 }
 .accordion {
