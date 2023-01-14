@@ -408,8 +408,6 @@ li {
   .h2_inter-bold {
     font-size: 2.5rem;
     line-height: 33px;
-    text-align: center;
-    padding: 0;
   }
 }
 .h2_inika-bold {
@@ -532,11 +530,6 @@ li {
   color: white;
   transition: 0.4s;
 }
-@media (max-width: 380px) {
-  .buttons {
-    min-height: 37px;
-  }
-}
 
 .button_normal-text {
   width: 28.8%;
@@ -553,11 +546,6 @@ li {
   font-weight: 700;
   font-size: 2rem;
   color: #E06733;
-}
-@media (max-width: 380px) {
-  .button_bold-text {
-    font-size: 1.5rem;
-  }
 }
 
 .grid {
@@ -629,12 +617,11 @@ li {
   color: #E06733;
 }
 .h3_color-black {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 20px;
   color: #000000;
-}
-@media (max-width: 380px) {
-  .h3_color-black {
-    font-size: 1.5rem;
-  }
 }
 
 .prices {
@@ -645,22 +632,11 @@ li {
     padding: 4rem 0 7.8rem 0;
   }
 }
-@media (max-width: 380px) {
-  .prices {
-    padding: 2.4rem 0 3.9rem 0;
-  }
-}
 .prices__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-}
-@media (max-width: 380px) {
-  .prices__container {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 .prices__col-1 {
   width: 27%;
@@ -668,11 +644,6 @@ li {
 @media (max-width: 1024px) {
   .prices__col-1 {
     width: 50%;
-  }
-}
-@media (max-width: 380px) {
-  .prices__col-1 {
-    width: 67%;
   }
 }
 .prices__col-2 {
@@ -691,25 +662,12 @@ li {
     padding-top: 10rem;
   }
 }
-@media (max-width: 380px) {
-  .prices__col-2 {
-    width: 70%;
-    min-height: 124px;
-    padding-top: 2.2rem;
-  }
-}
 .prices__button {
   width: 36%;
 }
 @media (max-width: 1024px) {
   .prices__button {
     width: 57%;
-  }
-}
-@media (max-width: 380px) {
-  .prices__button {
-    width: 53%;
-    margin: 0 auto;
   }
 }
 .prices_inter-bold-tablet {
@@ -729,7 +687,6 @@ li {
   .prices_inter-bold-tablet {
     font-size: 2rem;
     line-height: 33px;
-    text-align: center;
   }
 }
 .prices__img {
@@ -740,11 +697,6 @@ li {
     width: 59%;
   }
 }
-@media (max-width: 380px) {
-  .prices__img {
-    display: none;
-  }
-}
 
 .accordion {
   width: 100%;
@@ -753,12 +705,6 @@ li {
   border-radius: 20px;
   margin-top: 56px;
 }
-@media (max-width: 380px) {
-  .accordion {
-    height: 233px;
-    margin-top: 35px;
-  }
-}
 .accordion__wrap {
   width: 76%;
   min-height: 76%;
@@ -766,13 +712,6 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-@media (max-width: 380px) {
-  .accordion__wrap {
-    width: 81%;
-    min-height: 76%;
-    margin: 29px auto;
-  }
 }
 .accordion__input {
   width: 100%;
@@ -785,11 +724,6 @@ li {
   align-items: center;
   cursor: pointer;
 }
-@media (max-width: 380px) {
-  .accordion__input {
-    min-height: 49px;
-  }
-}
 
 .contacts {
   padding-top: 5.3rem;
@@ -797,11 +731,6 @@ li {
 @media (max-width: 1024px) {
   .contacts {
     padding-top: 3.3rem;
-  }
-}
-@media (max-width: 380px) {
-  .contacts {
-    padding-top: 2.5rem;
   }
 }
 .contacts_bckg {
@@ -819,11 +748,6 @@ li {
     min-height: 70.6rem;
   }
 }
-@media (max-width: 380px) {
-  .contacts__container {
-    min-height: 42rem;
-  }
-}
 .contacts__select-wrap {
   width: 36.8%;
   margin: 95px 0 0 69px;
@@ -832,11 +756,6 @@ li {
   .contacts__select-wrap {
     width: 67%;
     margin: 0;
-  }
-}
-@media (max-width: 380px) {
-  .contacts__select-wrap {
-    width: 91%;
   }
 }
 .contacts__img {
@@ -849,14 +768,6 @@ li {
     padding-top: 15.8rem;
     padding-left: 2rem;
     width: 30%;
-  }
-}
-@media (max-width: 380px) {
-  .contacts__img {
-    padding-top: 5.6rem;
-    padding-right: 0.3rem;
-    padding-left: 0;
-    width: 29%;
   }
 }
 
@@ -907,20 +818,10 @@ li {
     padding: 3.2rem 0 3rem 0;
   }
 }
-@media (max-width: 380px) {
-  .footer {
-    padding: 2.2rem 0 1.2rem 0;
-  }
-}
 @media (max-width: 1024px) {
   .footer_container-tablet {
     flex-direction: column;
     min-height: 12rem;
-  }
-}
-@media (max-width: 380px) {
-  .footer_container-tablet {
-    min-height: 11rem;
   }
 }
 .footer__col-1 {
@@ -935,11 +836,6 @@ li {
   .footer__col-1 {
     gap: 13%;
     width: 26.3%;
-  }
-}
-@media (max-width: 380px) {
-  .footer__col-1 {
-    width: 53%;
   }
 }
 .footer__text {
@@ -978,13 +874,8 @@ li {
     width: 28%;
   }
 }
-@media (max-width: 380px) {
-  .icons {
-    width: 57%;
-  }
-}
 .icons__img {
   width: 100%;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stele.css.map */

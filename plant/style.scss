@@ -443,6 +443,8 @@ li {
 
         @media (max-width: 380px) {
             @include mobile-size-text;
+            text-align: center;
+            padding: 0;
         }
     }
 
@@ -472,7 +474,7 @@ li {
     }
 
     @media (max-width: 380px) {
-        padding: 3rem 0 6.7rem 0;
+        padding: 3rem 0 2.4rem 0;
     }
 
     &_bckg {
@@ -549,6 +551,10 @@ li {
         @include buttons-hover;
     }
 
+    @media (max-width: 380px) {
+        min-height: 37px;
+    }
+
 }
 .button {
 
@@ -567,7 +573,11 @@ li {
     // .button_bold-text
 
     &_bold-text {
-        @include Inika-font (2rem, 700, $color: $color-active)
+        @include Inika-font (2rem, 700, $color: $color-active);
+
+        @media (max-width: 380px) {
+            font-size: 1.5rem;
+        }
     }
 }
 .grid {
@@ -631,7 +641,11 @@ li {
     @include Inter-bold-font (2rem, 20px, $color-active);
 
     &_color-black {
-        @include Inter-bold-font (2rem, 20px, $color-black);
+        color: $color-black;
+
+        @media (max-width: 380px) {
+            font-size: 1.5rem;
+        }
     }
 }
 .prices {
@@ -641,8 +655,17 @@ li {
         padding: 4rem 0 7.8rem 0;
     }
 
+    @media (max-width: 380px) {
+        padding: 2.4rem 0 3.9rem 0;
+    }
+
     &__container {
         @include flex-container(flex-start);
+
+        @media (max-width: 380px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     // .prices__col-1
@@ -652,6 +675,10 @@ li {
 
         @media (max-width: 1024px) {
             width: 50%;
+        }
+
+        @media (max-width: 380px) {
+            width: 67%;
         }
     }
 
@@ -669,6 +696,12 @@ li {
             min-height: 367px;
             padding-top: 10rem;
         }
+
+        @media (max-width: 380px) {
+            width: 70%;
+            min-height: 124px;
+            padding-top: 2.2rem;
+        }
     }
 
     // .prices__button
@@ -679,7 +712,13 @@ li {
         @media (max-width: 1024px) {
             width: 57%;
         }
+
+        @media (max-width: 380px) {
+            width: 53%;
+            margin: 0 auto;
+        }
     }
+    
 
     &_inter-bold-tablet {
         @include Inter-bold-font (4rem, 48px, $color-black);
@@ -691,6 +730,7 @@ li {
 
         @media (max-width: 380px) {
             @include mobile-size-text (2rem);
+            text-align: center;
         }
     }
 
@@ -702,6 +742,10 @@ li {
         @media (max-width: 1024px) {
             width: 59%;
         }
+
+        @media (max-width: 380px) {
+            display: none;
+        }
     }
 }
 .accordion {
@@ -711,6 +755,11 @@ li {
     border-radius: 20px;
     margin-top: 56px;
 
+    @media (max-width: 380px) {
+        height: 233px;
+        margin-top: 35px;
+    }
+
     // .accordion__wrap
 
     &__wrap {
@@ -718,6 +767,12 @@ li {
         min-height: 76%;
         margin: 34px auto;
         @include flex-column();
+
+        @media (max-width: 380px) {
+            width: 81%;
+            min-height: 76%;
+            margin: 29px auto;
+        }
     }
 
     // .accordion__input
@@ -732,6 +787,10 @@ li {
         justify-content: space-around;
         align-items: center;
         cursor: pointer;
+
+        @media (max-width: 380px) {
+            min-height: 49px;
+        }
     }
 }
 .contacts {
@@ -739,6 +798,10 @@ li {
 
     @media (max-width: 1024px) {
         padding-top: 3.3rem;
+    }
+
+    @media (max-width: 380px) {
+        padding-top: 2.5rem;
     }
 
     &_bckg {
@@ -755,6 +818,10 @@ li {
             align-items: center;
             min-height: 70.6rem;
         }
+
+        @media (max-width: 380px) {
+            min-height: 42rem;
+        }
     }
 
     &__select-wrap {
@@ -764,6 +831,10 @@ li {
         @media (max-width: 1024px) {
             width: 67%;
             margin: 0;
+        }
+
+        @media (max-width: 380px) {
+            width: 91%;
         }
     }
     // .contacts__img
@@ -777,6 +848,13 @@ li {
             padding-top: 15.8rem;
             padding-left: 2rem;
             width: 30%;
+        }
+
+        @media (max-width: 380px) {
+            padding-top: 5.6rem;
+            padding-right: 0.3rem;
+            padding-left: 0;
+            width: 29%;
         }
     }
 }
@@ -826,11 +904,19 @@ li {
         padding: 3.2rem 0 3rem 0;
     }
 
+    @media (max-width: 380px) {
+        padding: 2.2rem 0 1.2rem 0;
+     }
+
     &_container-tablet{
         @media (max-width: 1024px) {
             flex-direction: column;
             min-height: 12rem;
         }
+
+        @media (max-width: 380px) {
+            min-height: 11rem;
+         }
     }
 
     // .footer__col-1
@@ -844,6 +930,10 @@ li {
         gap: 13%;
         width: 26.3%;
         }
+
+        @media (max-width: 380px) {
+            width: 53%;
+         }
     }
 
     // .footer__text
@@ -876,6 +966,10 @@ li {
 
     @media (max-width: 1024px) {
         width: 28%;
+        }
+
+        @media (max-width: 380px) {
+           width: 57%;
         }
 
     &__img {
