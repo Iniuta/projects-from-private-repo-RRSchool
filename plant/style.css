@@ -603,6 +603,21 @@ li {
   }
 }
 
+.is-active.button-lawn {
+  background-color: #E06733;
+  color: white;
+}
+
+.is-active.button-gardens {
+  background-color: #E06733;
+  color: white;
+}
+
+.is-active.button-planting {
+  background-color: #E06733;
+  color: white;
+}
+
 .button_normal-text {
   width: 28.8%;
 }
@@ -656,7 +671,20 @@ li {
 @media (max-width: 609px) {
   .grid-item {
     margin: 0 auto;
+    filter: blur(2px);
   }
+}
+
+.is-active.planting {
+  filter: blur(2px);
+}
+
+.is-active.garden-care {
+  filter: blur(2px);
+}
+
+.is-active.lawn-care {
+  filter: blur(2px);
 }
 
 .item__wrap {

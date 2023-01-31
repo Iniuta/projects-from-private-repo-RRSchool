@@ -621,6 +621,22 @@ li {
     }
 
 }
+.is-active.button-lawn{
+    background-color: $color-active;
+    color: white;
+    
+}
+.is-active.button-gardens{
+    background-color: $color-active;
+    color: white;
+    
+}
+.is-active.button-planting{
+    background-color: $color-active;
+    color: white;
+    
+}
+
 .button {
 
     // .button_normal-text
@@ -664,13 +680,23 @@ li {
     }
 }
 .grid-item {
-    // width: 27%;
     min-height: 450px;
     border-radius: 20px 20px 0px 0px;
 
     @media (max-width: 609px) {
         margin: 0 auto;
+        filter: blur(2px);
     }
+}
+
+.is-active.planting {
+    filter: blur(2px);
+}
+.is-active.garden-care {
+    filter: blur(2px);
+}
+.is-active.lawn-care {
+    filter: blur(2px);
 }
 .item {
 
