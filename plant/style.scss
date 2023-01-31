@@ -611,9 +611,12 @@ li {
     border: 1px solid $color-active;
     border-radius: 5px;
     transition: 0.4s;
-
+    
     &:hover {
         @include buttons-hover;
+        box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+        transform: translate3d(0, 2px, 0);
+
     }
 
     @media (max-width: 380px) {
@@ -624,16 +627,31 @@ li {
 .is-active.button-lawn{
     background-color: $color-active;
     color: white;
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+    
+}
+.is-active.button-lawn:active{
+    box-shadow: rgb(0 0 0 / 30%) 2px 8px 4px -6px;
     
 }
 .is-active.button-gardens{
     background-color: $color-active;
     color: white;
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+    
+}
+.is-active.button-gardens:active{
+    box-shadow: rgb(0 0 0 / 30%) 2px 8px 4px -6px;
     
 }
 .is-active.button-planting{
     background-color: $color-active;
     color: white;
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+    
+}
+.is-active.button-planting:active{
+    box-shadow: rgb(0 0 0 / 30%) 2px 8px 4px -6px;
     
 }
 
@@ -685,18 +703,27 @@ li {
 
     @media (max-width: 609px) {
         margin: 0 auto;
-        filter: blur(2px);
+        // filter: blur(2px);
     }
+}
+
+.planting,
+.garden-care,
+.lawn-care {
+    transition: 0.4s;
 }
 
 .is-active.planting {
     filter: blur(2px);
+    transition: 0.4s;
 }
 .is-active.garden-care {
     filter: blur(2px);
+    transition: 0.4s;
 }
 .is-active.lawn-care {
     filter: blur(2px);
+    transition: 0.4s;
 }
 .item {
 
