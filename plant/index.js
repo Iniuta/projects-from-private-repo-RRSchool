@@ -14,6 +14,16 @@ let blurLawnCards = document.querySelectorAll('.lawn-care');
 let blurGardenCards = document.querySelectorAll('.garden-care');
 let blurPlantingCards = document.querySelectorAll('.planting');
 
+let accordionButtons = document.querySelectorAll('.accordion__input');
+let accordionContent = document.querySelectorAll('.accordion__content-wrap');
+let btnBasic = document.querySelector('.btn-basic');
+let btnStandard = document.querySelector('.btn-standard');
+let btnProcare = document.querySelector('.btn-procare');
+let contentBasic = document.querySelector('.basic');
+let contentStandard = document.querySelector('.standard');
+let contentProcare = document.querySelector('.procare');
+let accordion = document.querySelector('.accordion');
+
 
 
 
@@ -100,4 +110,47 @@ serviceButtons.addEventListener("click", (event) => {
 
 
   //3-FUNCTION ACCORDION//
+    
+        accordionButtons.forEach((btns) => btns.onclick = function(event) {
+            if(event.target.classList.contains('btn-basic')){
+                btnBasic.classList.toggle('is-active');
+                contentBasic.classList.toggle('is-active');
+                // accordion.classList.toggle('is-active');
+                contentStandard.classList.remove('is-active');
+                contentProcare.classList.remove('is-active');
+                btnProcare.classList.remove('is-active');
+                btnStandard.classList.remove('is-active');
+            }else if(event.target.classList.contains('btn-standard')){
+                btnStandard.classList.toggle('is-active');
+                contentStandard.classList.toggle('is-active');
+                // accordion.classList.toggle('is-active');
+                contentBasic.classList.remove('is-active');
+                contentProcare.classList.remove('is-active');
+                btnBasic.classList.remove('is-active');
+                btnProcare.classList.remove('is-active');
+            }else if(event.target.classList.contains('btn-procare')){
+                btnProcare.classList.toggle('is-active');
+                contentProcare.classList.toggle('is-active');
+                // accordion.classList.toggle('is-active');
+                contentBasic.classList.remove('is-active');
+                contentStandard.classList.remove('is-active');
+                btnBasic.classList.remove('is-active');
+                btnStandard.classList.remove('is-active');
+            }
+    
+            if (accordion.style.height) {
+                accordion.style.height = null;
+            } else {
+                accordion.style.height = accordion.scrollHeight + "px";
+                console.log(accordion.style.height);
+        }
+    });
+    
+
+
+
+    
+    
+
+    
 

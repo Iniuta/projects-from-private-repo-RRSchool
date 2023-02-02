@@ -748,10 +748,13 @@ li {
 }
 .h3_color-black {
   color: #000000;
+  padding-left: 4rem;
+  width: 100px;
 }
 @media (max-width: 380px) {
   .h3_color-black {
     font-size: 1.5rem;
+    padding-left: 3rem;
   }
 }
 
@@ -899,7 +902,6 @@ li {
   border-radius: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
   cursor: pointer;
 }
@@ -907,6 +909,116 @@ li {
   .accordion__input {
     min-height: 49px;
   }
+}
+.accordion__input::after {
+  content: "\f107";
+  font-family: FontAwesome;
+  font-size: 10px;
+  float: right;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  padding-left: 6rem;
+}
+@media (max-width: 380px) {
+  .accordion__input::after {
+    padding-left: 0;
+  }
+}
+.accordion__content {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 10px;
+  color: #717171;
+  font-weight: 300;
+  background-color: #D6E7D2;
+  width: 68%;
+  padding: 0.6rem 4rem 1.2rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+@media (max-width: 380px) {
+  .accordion__content {
+    width: 67%;
+    padding: 0.6rem 3rem 1.2rem;
+  }
+}
+.accordion__content-wrap {
+  max-height: 0px;
+  overflow: hidden;
+}
+.accordion__h4 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 20px;
+  color: #000000;
+  padding-top: 0.6rem;
+}
+.accordion_span {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 20px;
+  color: #717171;
+  color: #E06733;
+}
+.accordion_span::before {
+  content: "\f155";
+  font-family: FontAwesome;
+  font-size: 1.2rem;
+  float: left;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+.accordion__button {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 20px;
+  color: #717171;
+  width: 86px;
+  height: 25px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  margin-top: 1.2rem;
+}
+
+.is-active.basic {
+  max-height: 0px;
+  overflow: visible;
+}
+
+.is-active.standard {
+  max-height: 0px;
+  overflow: visible;
+}
+
+.is-active.procare {
+  max-height: 0px;
+  overflow: visible;
+}
+
+.is-active.accordion__content-wrap {
+  max-height: 100%;
+  overflow: visible;
+}
+
+.is-active.accordion__input {
+  content: "\f106";
+  border-bottom: 0.5px solid #AEA1A1;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #D6E7D2;
+}
+
+.is-active.accordion {
+  height: 33rem;
 }
 
 .contacts {

@@ -7,6 +7,9 @@ $color-black: #000000;
 $color-tex-describe: #636060;
 $size-h3: 2rem;
 $line-heigh-h3: 20px;
+$background-accordion: #D6E7D2;
+$color-white: #FFFFFF;
+$color-top-line: #AEA1A1;
 
 @mixin buttons-hover {
         background-color: $color-active;
@@ -760,9 +763,12 @@ li {
 
     &_color-black {
         color: $color-black;
+        padding-left: 4rem;
+        width: 100px;
 
         @media (max-width: 380px) {
             font-size: 1.5rem;
+            padding-left: 3rem;
         }
     }
 }
@@ -902,7 +908,6 @@ li {
         border-radius: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         align-items: center;
         cursor: pointer;
 
@@ -910,6 +915,101 @@ li {
             min-height: 49px;
         }
     }
+    &__input::after {
+        content: "\f107";
+        font-family: FontAwesome;
+        font-size: 10px;
+        float: right;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        padding-left: 6rem;
+
+        @media (max-width: 380px) {
+            padding-left: 0;
+        }
+    }
+
+    &__content {
+        @include Inter-normal-font(1rem, $color-title, 10px);
+        font-weight:300;
+        background-color: $background-accordion;
+        width: 68%;
+        padding: 0.6rem 4rem 1.2rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        @media (max-width: 380px) {
+            width: 67%;
+            padding: 0.6rem 3rem 1.2rem;
+        }
+    }
+
+    &__content-wrap {
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    &__h4{
+        @include Inter-normal-font(1.2rem, $color-black, 20px);
+        padding-top: 0.6rem;
+    }
+
+    &_span {
+        @include Inter-bold-font(1.6rem);
+        color: $color-active;
+    }
+    &_span::before {
+        content: "\f155";
+        font-family: FontAwesome;
+        font-size: 1.2rem;
+        float: left;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        
+    }
+
+    &__button {
+        @include Inter-bold-font(1.4rem);
+        width: 86px;
+        height: 25px;
+        background: $color-white;
+        border-radius: 10px;
+        border: none;
+        margin-top: 1.2rem;
+    }
+}
+.is-active.basic {
+    max-height: 0px;
+    overflow: visible;
+}
+.is-active.standard {
+    max-height: 0px;
+    overflow: visible;
+}
+.is-active.procare {
+    max-height: 0px;
+    overflow: visible;
+}
+
+.is-active.accordion__content-wrap {
+    max-height: 100%;
+    overflow: visible;
+    // margin-bottom: 3.2rem;
+}
+.is-active.accordion__input {
+    content: "\f106";
+    border-bottom: 0.5px solid $color-top-line;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: $background-accordion;
+
+}
+.is-active.accordion {
+    height: 33rem;
 }
 .contacts {
     padding-top: 5.3rem;
