@@ -988,17 +988,17 @@ li {
 }
 
 .is-active.basic {
-  max-height: 0px;
+  max-height: 0;
   overflow: visible;
 }
 
 .is-active.standard {
-  max-height: 0px;
+  max-height: 0;
   overflow: visible;
 }
 
 .is-active.procare {
-  max-height: 0px;
+  max-height: 0;
   overflow: visible;
 }
 

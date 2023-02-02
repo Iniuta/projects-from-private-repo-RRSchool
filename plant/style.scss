@@ -981,22 +981,21 @@ li {
     }
 }
 .is-active.basic {
-    max-height: 0px;
+    max-height: 0;
     overflow: visible;
 }
 .is-active.standard {
-    max-height: 0px;
+    max-height: 0;
     overflow: visible;
 }
 .is-active.procare {
-    max-height: 0px;
+    max-height: 0;
     overflow: visible;
 }
 
 .is-active.accordion__content-wrap {
     max-height: 100%;
     overflow: visible;
-    // margin-bottom: 3.2rem;
 }
 .is-active.accordion__input {
     content: "\f106";
@@ -1006,7 +1005,6 @@ li {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     background-color: $background-accordion;
-
 }
 .is-active.accordion {
     height: 33rem;

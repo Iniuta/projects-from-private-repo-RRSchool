@@ -138,7 +138,7 @@ serviceButtons.addEventListener("click", (event) => {
                 btnStandard.classList.remove('is-active');
             }
     
-            if (accordion.style.height) {
+            if (!btns.classList.contains('is-active')) {
                 accordion.style.height = null;
             } else {
                 accordion.style.height = accordion.scrollHeight + "px";
