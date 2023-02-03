@@ -15,7 +15,6 @@ let blurGardenCards = document.querySelectorAll('.garden-care');
 let blurPlantingCards = document.querySelectorAll('.planting');
 
 let accordionButtons = document.querySelectorAll('.accordion__input');
-let accordionContent = document.querySelectorAll('.accordion__content-wrap');
 let btnBasic = document.querySelector('.btn-basic');
 let btnStandard = document.querySelector('.btn-standard');
 let btnProcare = document.querySelector('.btn-procare');

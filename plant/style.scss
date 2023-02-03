@@ -931,11 +931,9 @@ li {
     }
 
     &__content {
-        @include Inter-normal-font(1rem, $color-title, 10px);
-        font-weight:300;
         background-color: $background-accordion;
         width: 68%;
-        padding: 0.6rem 4rem 1.2rem;
+        padding: 0 4rem 1.2rem;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
 
@@ -979,33 +977,41 @@ li {
         border: none;
         margin-top: 1.2rem;
     }
+
+    &__content-line{
+        @include Inter-normal-font(1rem, $color-title, 10px);
+        font-weight:300;
+        padding-top: 0.6rem;
+        border-top: 0.5px solid $color-top-line;
+        width: 169px;
+    }
 }
 .is-active.basic {
-    max-height: 0;
-    overflow: visible;
-}
-.is-active.standard {
-    max-height: 0;
-    overflow: visible;
-}
-.is-active.procare {
-    max-height: 0;
-    overflow: visible;
-}
-
-.is-active.accordion__content-wrap {
     max-height: 100%;
     overflow: visible;
 }
+.is-active.standard {
+    max-height: 100%;
+    overflow: visible;
+}
+.is-active.procare {
+    max-height: 100%;
+    overflow: visible;
+}
+
 .is-active.accordion__input {
     content: "\f106";
-    border-bottom: 0.5px solid $color-top-line;
+    // border-bottom: 0.5px solid $color-top-line;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     background-color: $background-accordion;
 }
+.is-active.accordion__input::after {
+    content: "\f106";
+}
+
 .is-active.accordion {
     height: 33rem;
 }
