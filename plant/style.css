@@ -604,6 +604,17 @@ li {
     min-height: 37px;
   }
 }
+.buttons_contacts-popup {
+  font-family: "Inika";
+  font-weight: 700;
+  font-size: 1rem;
+  color: #717171;
+  width: 122px;
+  height: 26px;
+  min-height: 0;
+  border-radius: 5px;
+  margin: 2rem auto 3rem;
+}
 
 .is-active.button-lawn {
   background-color: #E06733;
@@ -1130,6 +1141,54 @@ li {
 .detail_summary-unactive:hover {
   color: #717171;
   border-color: #717171;
+}
+
+.pop-up {
+  margin-top: 4.7rem;
+  overflow: hidden;
+  max-height: 0;
+}
+.pop-up__wrapper {
+  padding-top: 1.2rem;
+  width: 448px;
+  background: #EDF2EC;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+.pop-up__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pop-up__discribe-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3.3rem;
+  width: 322.15px;
+}
+.pop-up__title {
+  width: 127.49px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 40px;
+  color: #000000;
+  letter-spacing: 0.05em;
+}
+.pop-up__text {
+  width: 190.15px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 20px;
+  color: #717171;
+  letter-spacing: 0.05em;
+}
+
+.is-active.pop-up {
+  overflow: visible;
 }
 
 .footer {

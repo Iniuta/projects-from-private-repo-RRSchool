@@ -626,6 +626,15 @@ li {
         min-height: 37px;
     }
 
+    &_contacts-popup{
+        @include Inika-font(1rem, 700, $color-title);
+        width: 122px;
+        height: 26px;
+        min-height: 0;
+        border-radius: 5px;
+        margin: 2rem auto 3rem;
+    }
+
 }
 .is-active.button-lawn{
     background-color: $color-active;
@@ -1113,10 +1122,59 @@ li {
         border-bottom: 1px solid #D9D9D9;
         
         &:hover {
-            color: #717171;
-            border-color: #717171;
+            color: $color-title;
+            border-color: $color-title;
         }
     }
+}
+
+.pop-up {
+    margin-top: 4.7rem;
+    overflow: hidden;
+    max-height: 0;
+
+    // .pop-up__wrapper
+
+    &__wrapper {
+        padding-top: 1.2rem;
+        width: 448px;
+        background: $background-color;
+        border: 1px solid $color-black;
+        border-radius: 20px;
+    }
+
+    // .pop-up__container
+
+    &__container {
+        @include flex-column();
+    }
+
+    // .pop-up__city
+
+    &__discribe-title {
+        @include flex-container();
+        padding-left: 3.3rem;
+        width: 322.15px;
+    }
+
+    // .pop-up__title
+
+    &__title {
+        width: 127.49px;
+        @include Inter-normal-font(1.6rem, $color-black, 40px);
+        letter-spacing: 0.05em;
+    }
+
+    // .pop-up__text
+
+    &__text {
+        width: 190.15px;
+        @include Inter-normal-font(1.6rem, $color-title, 20px);
+        letter-spacing: 0.05em;
+    }
+}
+.is-active.pop-up{
+    overflow: visible;
 }
 
 .footer {
