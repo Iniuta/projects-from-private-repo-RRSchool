@@ -196,5 +196,5 @@ for (let i = 0; i < selectCity.length; i++) {
 summary.addEventListener('click', () =>  popUp.classList.remove('is-active'));
 
 popUpCall.addEventListener("click", (event) => {
-  window.location = popUpPhone.textContent;
+  window.location.href = "tel:" + popUpPhone.textContent;
 });
