@@ -174,35 +174,27 @@ for (let i = 0; i < selectCity.length; i++) {
         event.currentTarget.firstChild.textContent;
       if (event.currentTarget.firstChild.data === "New York City") {
         popUpCity.innerHTML = "New York City";
-        popUpPhone.innerHTML = "234 123 456";
+        popUpPhone.innerHTML = "234123456";
         popUpAddress.innerHTML = "937 Godfrey Road";
       } else if (event.currentTarget.firstChild.data === "Yonkers, NY") {
         popUpCity.innerHTML = "Yonkers";
-        popUpPhone.innerHTML = "212 235 456";
+        popUpPhone.innerHTML = "212235456";
         popUpAddress.innerHTML = "3965 Pallet Street";
       } else if (event.currentTarget.firstChild.data === "Sherrill, NY") {
         popUpCity.innerHTML = "Sherrill";
-        popUpPhone.innerHTML = "546 868 967";
+        popUpPhone.innerHTML = "54686967";
         popUpAddress.innerHTML = "377 Sherrill Road";
       } else if (event.currentTarget.firstChild.data === "Canandaigua, NY") {
         popUpCity.innerHTML = "Canandaigua, NY";
-        popUpPhone.innerHTML = "+1 585 393 0001";
+        popUpPhone.innerHTML = "+15853930001";
         popUpAddress.innerHTML = "151 Charlotte Street";
       }
     })
   )
 }
 
-// function closeSelect() {
-//     if(popUp.classList.contains('is-active')){
-//         console.log('hello');
-//         // popUp.classList.remove('is-active');
-//     }
-// }
-// closeSelect()
 summary.addEventListener('click', () =>  popUp.classList.remove('is-active'));
 
 popUpCall.addEventListener("click", (event) => {
-  window.location = "tel:495898694";
+  window.location = popUpPhone.textContent;
 });
-// detail.hasAttribute('open') && 
