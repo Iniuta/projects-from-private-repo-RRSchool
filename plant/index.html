@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link href="reset.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
@@ -17,27 +18,29 @@
 
 <body>
     <header class="header header_bckg">
-            <div class="wrapper">
-                <div class="header__container ">
-                        <a href="#" class="logo"><img src="img/logo.png" alt="logo" class="header-logo"></a>
-                    <nav class="header__navigation">
-                        <ul class="navigation">
-                            <li class="menu-li"><a href="#" class="navigation__item_color navigation_links">Home</a></li>
-                            <li class="menu-li"><a href="#about" class="navigation__item navigation_links">About us</a></li>
-                            <li class="menu-li"><a href="#service" class="navigation__item navigation_links">Service</a></li>
-                            <li class="menu-li"><a href="#price" class="navigation__item navigation_links">Price</a></li>
-                            <li class="menu-li"><a href="#contacts" class="navigation__item navigation_links">Contacts</a></li>
-                        </ul>
-                        <div class="hamburger" id="hamburger-active">
-                            <span class="hamburger__line"></span>
-                            <span class="hamburger__line"></span>
-                            <span class="hamburger__line"></span>
-                            <span class="hamburger__line"></span> 
-                        </div>
-                        
-                    </nav>
+        <div class="wrapper">
+            <div class="header__container ">
+                <a href="#" class="logo"><img src="img/logo.png" alt="logo" class="header-logo"></a>
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li class="menu-li"><a href="#" class="navigation__item_color navigation_links">Home</a></li>
+                        <li class="menu-li"><a href="#about" class="navigation__item navigation_links">About us</a></li>
+                        <li class="menu-li"><a href="#service" class="navigation__item navigation_links">Service</a>
+                        </li>
+                        <li class="menu-li"><a href="#price" class="navigation__item navigation_links">Price</a></li>
+                        <li class="menu-li"><a href="#contacts" class="navigation__item navigation_links">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger" id="hamburger-active">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
                     </div>
-                </div>
+
+                </nav>
+            </div>
+        </div>
     </header>
     <main class="main">
         <section class="welcome welcome_bckg">
@@ -61,7 +64,8 @@
             <div class="wrapper">
                 <div class="about__container">
                     <div class="about__content">
-                        <h2 class="h2 about_inika">We are <span class="h2_color">professional experienced</span> gardeners
+                        <h2 class="h2 about_inika">We are <span class="h2_color">professional experienced</span>
+                            gardeners
                         </h2>
                         <p class="describe about__describe">Lorem Ipsum is simply dummy text of the printing and
                             typesetting
@@ -80,13 +84,13 @@
                 <div class="service-navigation">
                     <h2 class="h2 h2_inika h2_width">Service and our projects</h2>
                     <div class="service__buttons">
-                        <button class="buttons button_normal-text">Gardens</button>
-                        <button class="buttons button_normal-text">Lawn</button>
-                        <button class="buttons button_normal-text">Planting</button>
+                        <button class="buttons button_normal-text button-gardens">Gardens</button>
+                        <button class="buttons button_normal-text button-lawn">Lawn</button>
+                        <button class="buttons button_normal-text button-planting">Planting</button>
                     </div>
                 </div>
                 <div class="grid">
-                    <div class="grid-item">
+                    <div class="grid-item garden-care">
                         <img src="img/1.png" alt="photo" class="service__img">
                         <img src="img/1-tablet.png" alt="photo" class="service__img-tablet">
                         <div class="item__wrap">
@@ -96,7 +100,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item planting">
                         <img src="img/2.png" alt="photo" class="service__img">
                         <img src="img/2-tablet.png" alt="photo" class="service__img-tablet">
                         <div class="item__wrap">
@@ -106,7 +110,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item lawn-care">
                         <img src="img/3.png" alt="photo" class="service__img">
                         <img src="img/3-tablet.png" alt="photo" class="service__img-tablet">
                         <div class="item__wrap">
@@ -116,7 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item planting">
                         <img src="img/4.png" alt="photo" class="service__img">
                         <img src="img/4-tablet.png" alt="photo" class="service__img-tablet">
                         <div class="item__wrap">
@@ -126,7 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item garden-care">
                         <img src="img/5.png" alt="photo" class="service__img">
                         <img src="img/5-tablet.png" alt="photo" class="service__img-tablet">
                         <div class="item__wrap">
@@ -136,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item planting">
                         <img src="img/6.png" alt="photo" class="service__img">
                         <img src="img/6-tablet.png" alt="photo" class="service__img-tablet">
                         <div class="item__wrap">
@@ -156,23 +160,52 @@
                         <h2 class="h2 h2_inter h2_inter-bold">Prices</h2>
                         <div class="accordion">
                             <div class="accordion__wrap">
-                                <div class="accordion__input">
+                                <div class="accordion__input btn-basic">
                                     <h3 class="h3 h3_color-black">Basics</h3>
-                                    <img src="img/accordion_btn_1.png" alt="button">
                                 </div>
-                                <div class="accordion__input">
+                                <div class="accordion__content-wrap basic">
+                                    <div class="accordion__content">
+                                        <p class="accordion__content-line">Release of Letraset sheets containing Lorem
+                                            Ipsum passages, and more recently</p>
+                                        <h4 class="accordion__h4"><span class="accordion_span">15 </span> / per hour
+                                        </h4>
+                                        <button class="accordion__button">
+                                            <a href="#contacts" class="">Order</a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="accordion__input btn-standard">
                                     <h3 class="h3 h3_color-black">Standard</h3>
-                                    <img src="img/accordion_btn_1.png" alt="button">
                                 </div>
-                                <div class="accordion__input">
+                                <div class="accordion__content-wrap standard">
+                                    <div class="accordion__content">
+                                        <p class="accordion__content-line">Release of Letraset sheets containing Lorem
+                                            Ipsum passages, and more recently</p>
+                                        <h4 class="accordion__h4"><span class="accordion_span">25</span> / per hour</h4>
+                                        <button class="accordion__button">
+                                            <a href="#contacts" class="">Order</a>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="accordion__input btn-procare">
                                     <h3 class="h3 h3_color-black">Pro care</h3>
-                                    <img src="img/accordion_btn_1.png" alt="button">
+                                </div>
+                                <div class="accordion__content-wrap procare">
+                                    <div class="accordion__content">
+                                        <p class="accordion__content-line">Release of Letraset sheets containing Lorem
+                                            Ipsum passages, and more recently</p>
+                                        <h4 class="accordion__h4"><span class="accordion_span">35</span> / per hour</h4>
+                                        <button class="accordion__button">
+                                            <a href="#contacts" class="">Order</a>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="prices__col-2">
-                        <h2 class="h2 h2_inter prices_inter-bold-tablet ">Our best <span class="title_color-active">gardeners</span>
+                        <h2 class="h2 h2_inter prices_inter-bold-tablet ">Our best <span
+                                class="title_color-active">gardeners</span>
                             are ready to help you</h2>
                         <div class="prices__button">
                             <button class="buttons button_bold-text">Contact us</button>
@@ -190,11 +223,30 @@
                     <div class="contacts__select-wrap">
                         <details class="detail select__detail">
                             <summary class="detail__summary detail_summary-active">City</summary>
-                            <p class="detail__summary detail_summary-unactive">Canandaigua, NY</p>
-                            <p class="detail__summary detail_summary-unactive">New York City</p>
-                            <p class="detail__summary detail_summary-unactive">Yonkers, NY</p>
-                            <p class="detail__summary detail_summary-unactive">Sherrill, NY</p>
+                            <p class="detail__summary detail_summary-unactive select-city">Canandaigua, NY</p>
+                            <p class="detail__summary detail_summary-unactive select-city">New York City</p>
+                            <p class="detail__summary detail_summary-unactive select-city">Yonkers, NY</p>
+                            <p class="detail__summary detail_summary-unactive select-city">Sherrill, NY</p>
                         </details>
+                        <div class="pop-up">
+                            <div class="pop-up__wrapper">
+                                <div class="pop-up__container">
+                                    <div class="pop-up__discribe-title">
+                                        <p class="pop-up__title">City:</p>
+                                        <p class="pop-up__text city">Canandaigua, NY</p>
+                                    </div>
+                                    <div class="pop-up__discribe-title">
+                                        <p class="pop-up__title">Phone:</p>
+                                        <p class="pop-up__text phone">+1	585	393 0001</p>
+                                    </div>
+                                    <div class="pop-up__discribe-title">
+                                        <p class="pop-up__title">Office address:</p>
+                                        <p class="pop-up__text address">151 Charlotte Street</p>
+                                    </div>
+                                    <button class="buttons buttons_contacts-popup">Call us</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

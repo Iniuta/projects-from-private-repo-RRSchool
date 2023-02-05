@@ -7,6 +7,9 @@ $color-black: #000000;
 $color-tex-describe: #636060;
 $size-h3: 2rem;
 $line-heigh-h3: 20px;
+$background-accordion: #D6E7D2;
+$color-white: #FFFFFF;
+$color-top-line: #AEA1A1;
 
 @mixin buttons-hover {
         background-color: $color-active;
@@ -611,16 +614,59 @@ li {
     border: 1px solid $color-active;
     border-radius: 5px;
     transition: 0.4s;
-
+    
     &:hover {
         @include buttons-hover;
+        box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+        transform: translate3d(0, 2px, 0);
+
     }
 
     @media (max-width: 380px) {
         min-height: 37px;
     }
 
+    &_contacts-popup{
+        @include Inika-font(1rem, 700, $color-title);
+        width: 122px;
+        height: 26px;
+        min-height: 0;
+        border-radius: 5px;
+        margin: 2rem auto 3rem;
+    }
+
 }
+.is-active.button-lawn{
+    background-color: $color-active;
+    color: white;
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+    
+}
+.is-active.button-lawn:active{
+    box-shadow: rgb(0 0 0 / 30%) 2px 8px 4px -6px;
+    
+}
+.is-active.button-gardens{
+    background-color: $color-active;
+    color: white;
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+    
+}
+.is-active.button-gardens:active{
+    box-shadow: rgb(0 0 0 / 30%) 2px 8px 4px -6px;
+    
+}
+.is-active.button-planting{
+    background-color: $color-active;
+    color: white;
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+    
+}
+.is-active.button-planting:active{
+    box-shadow: rgb(0 0 0 / 30%) 2px 8px 4px -6px;
+    
+}
+
 .button {
 
     // .button_normal-text
@@ -664,13 +710,32 @@ li {
     }
 }
 .grid-item {
-    // width: 27%;
     min-height: 450px;
     border-radius: 20px 20px 0px 0px;
 
     @media (max-width: 609px) {
         margin: 0 auto;
+        // filter: blur(2px);
     }
+}
+
+.planting,
+.garden-care,
+.lawn-care {
+    transition: 0.4s;
+}
+
+.is-active.planting {
+    filter: blur(2px);
+    transition: 0.4s;
+}
+.is-active.garden-care {
+    filter: blur(2px);
+    transition: 0.4s;
+}
+.is-active.lawn-care {
+    filter: blur(2px);
+    transition: 0.4s;
 }
 .item {
 
@@ -707,9 +772,12 @@ li {
 
     &_color-black {
         color: $color-black;
+        padding-left: 4rem;
+        width: 100px;
 
         @media (max-width: 380px) {
             font-size: 1.5rem;
+            padding-left: 3rem;
         }
     }
 }
@@ -849,7 +917,6 @@ li {
         border-radius: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         align-items: center;
         cursor: pointer;
 
@@ -857,6 +924,105 @@ li {
             min-height: 49px;
         }
     }
+    &__input::after {
+        content: "\f107";
+        font-family: FontAwesome;
+        font-size: 10px;
+        float: right;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        padding-left: 6rem;
+
+        @media (max-width: 380px) {
+            padding-left: 0;
+        }
+    }
+
+    &__content {
+        background-color: $background-accordion;
+        width: 68%;
+        padding: 0 4rem 1.2rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        @media (max-width: 380px) {
+            width: 67%;
+            padding: 0.6rem 3rem 1.2rem;
+        }
+    }
+
+    &__content-wrap {
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    &__h4{
+        @include Inter-normal-font(1.2rem, $color-black, 20px);
+        padding-top: 0.6rem;
+    }
+
+    &_span {
+        @include Inter-bold-font(1.6rem);
+        color: $color-active;
+    }
+    &_span::before {
+        content: "\f155";
+        font-family: FontAwesome;
+        font-size: 1.2rem;
+        float: left;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        
+    }
+
+    &__button {
+        @include Inter-bold-font(1.4rem);
+        width: 86px;
+        height: 25px;
+        background: $color-white;
+        border-radius: 10px;
+        border: none;
+        margin-top: 1.2rem;
+    }
+
+    &__content-line{
+        @include Inter-normal-font(1rem, $color-title, 10px);
+        font-weight:300;
+        padding-top: 0.6rem;
+        border-top: 0.5px solid $color-top-line;
+        width: 169px;
+    }
+}
+.is-active.basic {
+    max-height: 100%;
+    overflow: visible;
+}
+.is-active.standard {
+    max-height: 100%;
+    overflow: visible;
+}
+.is-active.procare {
+    max-height: 100%;
+    overflow: visible;
+}
+
+.is-active.accordion__input {
+    content: "\f106";
+    // border-bottom: 0.5px solid $color-top-line;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: $background-accordion;
+}
+.is-active.accordion__input::after {
+    content: "\f106";
+}
+
+.is-active.accordion {
+    height: 33rem;
 }
 .contacts {
     padding-top: 5.3rem;
@@ -956,10 +1122,59 @@ li {
         border-bottom: 1px solid #D9D9D9;
         
         &:hover {
-            color: #717171;
-            border-color: #717171;
+            color: $color-title;
+            border-color: $color-title;
         }
     }
+}
+
+.pop-up {
+    margin-top: 4.7rem;
+    overflow: hidden;
+    max-height: 0;
+
+    // .pop-up__wrapper
+
+    &__wrapper {
+        padding-top: 1.2rem;
+        width: 448px;
+        background: $background-color;
+        border: 1px solid $color-black;
+        border-radius: 20px;
+    }
+
+    // .pop-up__container
+
+    &__container {
+        @include flex-column();
+    }
+
+    // .pop-up__city
+
+    &__discribe-title {
+        @include flex-container();
+        padding-left: 3.3rem;
+        width: 322.15px;
+    }
+
+    // .pop-up__title
+
+    &__title {
+        width: 127.49px;
+        @include Inter-normal-font(1.6rem, $color-black, 40px);
+        letter-spacing: 0.05em;
+    }
+
+    // .pop-up__text
+
+    &__text {
+        width: 190.15px;
+        @include Inter-normal-font(1.6rem, $color-title, 20px);
+        letter-spacing: 0.05em;
+    }
+}
+.is-active.pop-up{
+    overflow: visible;
 }
 
 .footer {
