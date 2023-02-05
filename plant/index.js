@@ -23,6 +23,7 @@ let contentProcare = document.querySelector(".procare");
 let accordion = document.querySelector(".accordion");
 
 let detail = document.querySelector(".detail");
+let summary = document.querySelector(".detail_summary-active")
 let popUp = document.querySelector(".pop-up");
 let selectCity = document.querySelectorAll(".select-city");
 let popUpCity = document.querySelector(".city");
@@ -192,14 +193,14 @@ for (let i = 0; i < selectCity.length; i++) {
   )
 }
 
-function closeSelect() {
-    if(popUp.classList.contains('is-active')){
-        console.log('hello');
-        // popUp.classList.remove('is-active');
-    }
-}
-closeSelect()
-// detail.addEventListener('click', closeSelect())
+// function closeSelect() {
+//     if(popUp.classList.contains('is-active')){
+//         console.log('hello');
+//         // popUp.classList.remove('is-active');
+//     }
+// }
+// closeSelect()
+summary.addEventListener('click', () =>  popUp.classList.remove('is-active'));
 
 popUpCall.addEventListener("click", (event) => {
   window.location = "tel:495898694";
