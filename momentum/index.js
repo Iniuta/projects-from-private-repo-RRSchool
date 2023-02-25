@@ -6,7 +6,8 @@ function addZero(num){
     return (num < 10) ? '0' + num : num;
 }
 
-const days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const daysRu = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
 const month = ['January', 'February', 'March', 'April', 'May', 'Jun', 'July', 'August', 'September', 'October', 'November', 'December']
 
 function getTime(t) {
@@ -19,7 +20,7 @@ function getTime(t) {
 
 function getData(d) {
     let n = days[d.getDay()];
-    let mon = month[(d.getMonth() + 1)];
+    let mon = month[(d.getMonth())];
     let day = addZero(d.getDate());
 
     return `${n}, ${mon} ${day}`
@@ -187,7 +188,7 @@ btnPrevImg.addEventListener('click', () =>  setBg());
 
 // THE WEATHER
 
-const weatherIcon = document.querySelector('.owf');
+const weatherIcon = document.querySelector('.weather-icon');
 const weatherError = document.querySelector('.weather-error');
 const temperature = document.querySelector('.temperature');
 const weatherDescription = document.querySelector('.weather-description');
@@ -198,10 +199,11 @@ const city = document.querySelector('.city');
 
 async function getWeather() {
     try{
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value || "Minsk"}&lang=ru&appid=3b8864b2f0d5c724b521422fb0fe9880&units=metric`;
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=Минск&lang=ru&appid=ca4af210682b591393bd3545bb222d41&units=metric`;
         const res = await fetch(url);
         const data = await res.json();
         
+        weatherError.textContent = '';
         weatherIcon.classList.add(`owf-${data.weather[0].id}`);
         temperature.textContent = `${Math.round(data.main.temp)}°C`;
         weatherDescription.textContent = data.weather[0].description;
