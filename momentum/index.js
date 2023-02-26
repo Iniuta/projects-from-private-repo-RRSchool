@@ -298,8 +298,8 @@ async function getQuotes() {
   const data = await res.json(); 
 
   let randomQuote = randomNum(0, data.length - 1);
-  Quote.textContent = `${data[randomQuote].text}`;
-  Author.textContent = `${data[randomQuote].author}`;
+  Quote.textContent = data[randomQuote].text;
+  Author.textContent = data[randomQuote].author;
 }
 getQuotes();
 changeQuote.addEventListener('click', getQuotes)
