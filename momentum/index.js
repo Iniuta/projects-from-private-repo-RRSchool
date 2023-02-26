@@ -285,8 +285,8 @@ window.addEventListener("load", getLocalStorage);
 // QUOTES
 
 const changeQuote = document.querySelector('.change-quote');
-const Quote = document.querySelector('.quote__text');
-const Author = document.querySelector('.quote__author');
+const Quote = document.querySelector('.quote');
+const Author = document.querySelector('.author');
 
 const randomNum = (min, max) => {
 	return Math.floor(min + Math.random() * (max + 1 - min));
@@ -297,7 +297,7 @@ async function getQuotes() {
   const res = await fetch(quotes);
   const data = await res.json(); 
 
-  let randomQuote = getRandomNum(0, data.length - 1);
+  let randomQuote = randomNum(0, data.length - 1);
   Quote.textContent = `${data[randomQuote].text}`;
   Author.textContent = `${data[randomQuote].author}`;
 }
