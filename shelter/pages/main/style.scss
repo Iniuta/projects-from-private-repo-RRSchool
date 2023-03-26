@@ -7,6 +7,7 @@ $color-pink-btn: #f1cdb3;
 $color-main-btn-text: #292929;
 $color-cards-background: #fafafa;
 $color-text-about: #4c4c4c;
+$color-hover: #fddcc4;
 $sections-paddings: 8rem 0 10rem 0;
 $in-addition-paddings: 8rem 14.2rem 10rem 14.3rem;
 $width-container: 1200px;
@@ -78,12 +79,20 @@ $wrapper-padding: 0 4rem;
   font-weight: 400;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 body {
+  overflow: scroll;
+  overflow-x: hidden;
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
   width: 100%;
@@ -115,16 +124,9 @@ body {
 }
 
 .logo {
-  // .logo__title
-
-  &__title {
-    // .logo__title_h1
-  }
-}
-
-.logo {
   @include flex-container(column);
   height: 6rem;
+  cursor: pointer;
   // .logo__title
 
   &__title {
@@ -154,6 +156,7 @@ body {
   &__list-item {
     @include font-Arial(1.5rem);
     color: $color-light-grey;
+    cursor: pointer;
   }
 }
 .list-item {
@@ -162,7 +165,29 @@ body {
   &_active {
     @include font-Arial(1.5rem);
     color: $color-cards-background;
-    text-decoration: underline 3px $color-pink-btn;
+    cursor: default;
+  }
+
+  &_active::after {
+    position: absolute;
+    content: "";
+    width: 11.4rem;
+    height: 3px;
+    display: block;
+    background: $color-pink-btn;
+  }
+
+  &_hover::after {
+    content: "";
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: $color-pink-btn;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  &_hover:hover::after {
+    width: 100%;
   }
 }
 .not-only {
@@ -259,12 +284,18 @@ body {
   @include font-Georgia(1.7rem, 130%);
   color: $color-main-btn-text;
   text-align: center;
+  transition: 0.4s;
+  &:hover{
+    background: #FDDCC4;
+    transition: 0.4s;
+  }
 
   &_lern-more {
     width: 100%;
     align-items: center;
     border: 2px solid $color-pink-btn;
     background: transparent;
+    transition: 0.8s;
   }
 
   &_get-rest {
@@ -273,6 +304,7 @@ body {
     align-items: center;
   }
 }
+
 .img-puppi {
   height: auto;
   width: 58.2%;
@@ -343,11 +375,19 @@ body {
 .btn-aside {
   @include flex-container(row, center);
   align-items: center;
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   border: 2px solid $color-pink-btn;
   border-radius: 100px;
+  transition: 0.4s;
+  cursor: pointer;
+  &:hover {
+    background: $color-hover;
+    border: 2px solid $color-hover;
+    transition: 0.4s;
+  }
 }
+
 .cards-items {
   width: 82.5%;
   @include flex-container();
@@ -357,10 +397,33 @@ body {
 
   &__item-element {
     width: 27.3%;
+    transition: 0.4s;
+    border-radius: 9px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      transition: 0.4s;
+    }
+    &:hover .cards-items__background {
+      background: $color-white;
+      transition: 0.4s;
+    }
+    &:hover .main-button_lern-more {
+      border: 2px solid $color-hover;
+      background: $color-hover;
+      transition: 0.4s;
+    }
   }
+
+  // .cards-items__animals
 
   &__animals {
     width: 100%;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    transition: 0.4s;
   }
 
   // .cards-items__background
@@ -368,7 +431,10 @@ body {
   &__background {
     width: 100%;
     padding-top: 3rem;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
     background: $color-cards-background;
+    transition: 0.4s;
   }
 
   // .cards-items__pets-name
@@ -502,6 +568,12 @@ body {
     gap: 1.5rem;
     background: $color-pink-btn;
     border-radius: 9px;
+    transition: 0.4s;
+    cursor: pointer;
+    &:hover {
+      background: $color-hover;
+      transition: 0.4s;
+    }
   }
 
   // .donation-info__card-number
@@ -541,6 +613,7 @@ body {
   &__column {
     @include flex-container(column, start);
     align-items: start;
+
     &_col-1 {
       width: 279px;
       row-gap: 4rem;
@@ -564,8 +637,6 @@ body {
   }
 }
 .items-links {
-  // @include flex-container(row, center);
-  // gap: 2rem;
 }
 .link {
   @include flex-container(row, center);
