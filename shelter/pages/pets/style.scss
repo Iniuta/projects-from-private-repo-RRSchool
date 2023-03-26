@@ -1,0 +1,395 @@
+$color-white: #ffffff;
+$color-dark-sections: #f6f6f6;
+$color-dark-grey: #545454;
+$color-middle-grey: #b2b2b2;
+$color-light-grey: #cdcdcd;
+$color-pink-btn: #f1cdb3;
+$color-main-btn-text: #292929;
+$color-cards-background: #fafafa;
+$color-text-about: #4c4c4c;
+$color-hover: #fddcc4;
+$sections-paddings: 8rem 0 10.2rem 0;
+$in-addition-paddings: 8rem 14.2rem 10rem 14.3rem;
+$width-container: 1200px;
+$wrapper-padding: 0 4rem;
+
+@mixin flex-container($flex-direction: row, $justify-content: space-between) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+}
+
+@mixin font-Arial-letter-spacing(
+  $font-size: 1.3rem,
+  $line-height: 160%,
+  $letter-spacing: 0.1em
+) {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $font-size;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin font-Arial($font-size: 1.3rem, $line-height: 160%) {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin font-Arial-italic() {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+
+@mixin font-Georgia(
+  $font-size: 32px,
+  $line-height: 110%,
+  $letter-spacing: 0.06em
+) {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../../assets/fonts/fonts/fonts/arial/arial-regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Arial-Italic";
+  src: url("../../assets/fonts/fonts/fonts/arial/arial-italic.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/fonts/fonts/georgia/georgia-regular.ttf");
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  overflow: scroll;
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+
+.header {
+  // .header__menu-padding
+
+  &__menu-padding {
+    padding: 3rem 0;
+  }
+}
+.wrapper {
+  max-width: $width-container;
+  margin: auto;
+  padding: $wrapper-padding;
+}
+.menu {
+  @include flex-container();
+  align-items: center;
+}
+.logo {
+  @include flex-container(column);
+  height: 6rem;
+  cursor: pointer;
+  // .logo__title
+
+  &__title {
+    @include font-Georgia();
+    color: $color-dark-grey;
+  }
+
+  // .logo__discribe
+
+  &__discribe {
+    @include font-Arial-letter-spacing(1.3rem, 1.5rem);
+    color: $color-main-btn-text;
+  }
+}
+.navigation {
+  width: 37%;
+  // .navigation__list
+
+  &__list {
+    @include flex-container();
+    align-items: center;
+    max-width: 44.3rem;
+  }
+
+  // .navigation__list-item
+
+  &__list-item {
+    @include font-Arial(1.5rem);
+    color: $color-dark-grey;
+    cursor: pointer;
+  }
+}
+.list-item {
+  // .list-item_active
+
+  &_active {
+    @include font-Arial(1.5rem);
+    color: $color-main-btn-text;
+    cursor: default;
+  }
+
+  &_active::after {
+    position: absolute;
+    content: "";
+    width: 6rem;
+    height: 3px;
+    display: block;
+    background: $color-pink-btn;
+  }
+
+  &_hover::after {
+    content: "";
+    width: 0px;
+    height: 3px;
+    display: block;
+    background: $color-pink-btn;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  &_hover:hover::after {
+    width: 100%;
+  }
+}
+.our-friends-section {
+  background: $color-dark-sections;
+  // .our-friends-section__friends-padding
+
+  &__friends-padding {
+    padding: $sections-paddings;
+  }
+}
+.friends {
+  @include flex-container(column);
+  // .friends__friends-items-padding
+
+  &__cards-items-padding {
+    padding: 6rem 0;
+  }
+}
+.section-titles {
+  @include font-Georgia(4.4rem, 130%, 0);
+  color: $color-white;
+  width: 80%;
+  // .section-titles_space-letters
+
+  &_space-letters {
+    font-size: 3.5rem;
+    letter-spacing: 0.06em;
+    color: $color-dark-grey;
+  }
+
+  // .section-titles_our-friends
+
+  &_our-friends {
+    width: 100%;
+    text-align: center;
+  }
+
+  // .section-titles_footer-txt-color
+
+  &_footer-txt-color {
+    width: 100%;
+    color: $color-white;
+  }
+}
+// .friends-items {
+//     width: 100%;
+//     @include flex-container();
+// }
+.cards-items {
+  @include flex-container(row, center);
+  width: 100%;
+  flex-wrap: wrap;
+  row-gap: 3.1rem;
+  column-gap: 4rem;
+
+  // .cards-items__item-element
+
+  &__item-element {
+    width: 22.5%;
+    transition: 0.4s;
+    border-radius: 9px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      transition: 0.4s;
+    }
+    &:hover .cards-items__background {
+      background: $color-white;
+      transition: 0.4s;
+    }
+    &:hover .main-button_lern-more {
+      border: 2px solid $color-hover;
+      background: $color-hover;
+      transition: 0.4s;
+    }
+  }
+
+  // .cards-items__animals
+
+  &__animals {
+    width: 100%;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    transition: 0.4s;
+  }
+
+  // .cards-items__background
+
+  &__background {
+    width: 100%;
+    padding-top: 3rem;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    background: $color-cards-background;
+    transition: 0.4s;
+  }
+
+  // .cards-items__pets-name
+
+  &__pets-name {
+    @include font-Georgia(2rem, 2.3rem);
+    font-family: "Georgia";
+    text-align: center;
+    color: $color-dark-grey;
+  }
+
+  // .cards-items__btn-padding
+
+  &__btn-padding {
+    padding: 2.9rem 4rem;
+  }
+}
+.main-button {
+  @include flex-container(column, center);
+  width: 207px;
+  height: 52px;
+  background: $color-pink-btn;
+  border-radius: 100px;
+  border: none;
+  @include font-Georgia(1.7rem, 130%);
+  color: $color-main-btn-text;
+  text-align: center;
+
+  // .main-button_lern-more
+
+  &_lern-more {
+    width: 100%;
+    align-items: center;
+    border: 2px solid $color-pink-btn;
+    background: transparent;
+    transition: 0.4s;
+  }
+
+  // .main-button_get-rest
+
+  &_get-rest {
+    margin: auto;
+    width: 52px;
+    align-items: center;
+    transition: 0.4s;
+  }
+
+  &_get-rest:hover {
+    background: $color-hover;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  &_disabled:hover {
+    background: $color-pink-btn;
+    cursor: default;
+  }
+}
+.pagination {
+  width: 30%;
+  @include flex-container(row, space-between);
+  align-items: center;
+  margin: 0 auto;
+}
+.footer {
+  background-image: url(../../assets/images/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-items {
+  @include flex-container();
+  // .footer-items__column
+
+  &__column {
+    @include flex-container(column, start);
+    align-items: start;
+    // .footer-items__column_col-1
+
+    &_col-1 {
+      width: 279px;
+      row-gap: 4rem;
+    }
+
+    // .footer-items__column_col-2
+
+    &_col-2 {
+      width: 302px;
+      row-gap: 3.2rem;
+    }
+  }
+
+  // .footer-items__padding
+
+  &__padding {
+    margin-top: 5.6rem;
+  }
+}
+.items-links {
+}
+.link {
+  @include flex-container(row, center);
+  align-items: center;
+  gap: 2rem;
+}
+.item-links {
+  // .item-links_text
+
+  &_text {
+    @include font-Georgia(2rem, 115%);
+    color: $color-pink-btn;
+  }
+}
+.img-footer-puppi {
+  width: 25%;
+  margin-top: 4rem;
+}

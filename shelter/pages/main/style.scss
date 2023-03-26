@@ -1,0 +1,588 @@
+$color-white: #ffffff;
+$color-dark-sections: #f6f6f6;
+$color-dark-grey: #545454;
+$color-middle-grey: #b2b2b2;
+$color-light-grey: #cdcdcd;
+$color-pink-btn: #f1cdb3;
+$color-main-btn-text: #292929;
+$color-cards-background: #fafafa;
+$color-text-about: #4c4c4c;
+$sections-paddings: 8rem 0 10rem 0;
+$in-addition-paddings: 8rem 14.2rem 10rem 14.3rem;
+$width-container: 1200px;
+$wrapper-padding: 0 4rem;
+
+@mixin flex-container($flex-direction: row, $justify-content: space-between) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+}
+
+@mixin font-Arial-letter-spacing(
+  $font-size: 1.3rem,
+  $line-height: 160%,
+  $letter-spacing: 0.1em
+) {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $font-size;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin font-Arial($font-size: 1.3rem, $line-height: 160%) {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin font-Arial-italic() {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+
+@mixin font-Georgia(
+  $font-size: 32px,
+  $line-height: 110%,
+  $letter-spacing: 0.06em
+) {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../../assets/fonts/fonts/fonts/arial/arial-regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Arial-Italic";
+  src: url("../../assets/fonts/fonts/fonts/arial/arial-italic.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/fonts/fonts/georgia/georgia-regular.ttf");
+  font-weight: 400;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+
+.header {
+  padding-top: 6rem;
+}
+
+.background-wrap {
+  background-image: url(../../assets/images/start-screen-gradient-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  // .header__menu-padding
+
+  &__menu-padding {
+    padding: 6rem 0;
+  }
+}
+.wrapper {
+  max-width: $width-container;
+  margin: auto;
+  padding: $wrapper-padding;
+}
+.menu {
+  @include flex-container();
+  align-items: center;
+}
+
+.logo {
+  // .logo__title
+
+  &__title {
+    // .logo__title_h1
+  }
+}
+
+.logo {
+  @include flex-container(column);
+  height: 6rem;
+  // .logo__title
+
+  &__title {
+    @include font-Georgia();
+    color: $color-pink-btn;
+  }
+
+  // .logo__discribe
+
+  &__discribe {
+    @include font-Arial-letter-spacing(1.3rem, 1.5rem);
+    color: $color-white;
+  }
+}
+.navigation {
+  width: 37%;
+  // .navigation__list
+
+  &__list {
+    @include flex-container();
+    align-items: center;
+    max-width: 44.3rem;
+  }
+
+  // .navigation__list-item
+
+  &__list-item {
+    @include font-Arial(1.5rem);
+    color: $color-light-grey;
+  }
+}
+.list-item {
+  // .list-item_active
+
+  &_active {
+    @include font-Arial(1.5rem);
+    color: $color-cards-background;
+    text-decoration: underline 3px $color-pink-btn;
+  }
+}
+.not-only {
+  padding-top: 6rem;
+
+  // .not-only__items-padding
+
+  &__items-padding {
+  }
+}
+.items {
+  // @include flex-container();
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // align-items: end;
+
+  // .items__main-discribe-padding
+
+  &__main-discribe-padding {
+    padding-top: 16.3rem;
+  }
+
+  // .items__img-padding
+
+  &__img-padding {
+  }
+
+  // .items__column
+
+  &__column {
+  }
+}
+.main-discribe {
+  display: flex;
+  width: 39%;
+  flex-direction: column;
+  row-gap: 4.2rem;
+
+  // .main-discribe__text
+
+  &__text {
+    @include font-Arial(1.5rem);
+    color: $color-light-grey;
+  }
+
+  // .main-discribe__btn-padding
+
+  &__btn-padding {
+  }
+}
+.section-titles {
+  @include font-Georgia(4.4rem, 130%, 0);
+  color: $color-white;
+  width: 80%;
+
+  // .section-titles_space-letters
+
+  &_space-letters {
+    font-size: 3.5rem;
+    letter-spacing: 0.06em;
+    color: $color-dark-grey;
+  }
+
+  // .section-titles_our-friends
+
+  &_our-friends {
+    width: 100%;
+    text-align: center;
+  }
+
+  // .section-titles_help
+
+  &_help {
+    width: 31%;
+    margin: auto;
+    text-align: center;
+  }
+
+  // .section-titles_footer-txt-color
+
+  &_footer-txt-color {
+    width: 100%;
+    color: $color-white;
+  }
+}
+.main-button {
+  @include flex-container(column, center);
+  width: 207px;
+  height: 52px;
+  background: $color-pink-btn;
+  border-radius: 100px;
+  border: none;
+  @include font-Georgia(1.7rem, 130%);
+  color: $color-main-btn-text;
+  text-align: center;
+
+  &_lern-more {
+    width: 100%;
+    align-items: center;
+    border: 2px solid $color-pink-btn;
+    background: transparent;
+  }
+
+  &_get-rest {
+    margin: auto;
+    width: 21.9%;
+    align-items: center;
+  }
+}
+.img-puppi {
+  height: auto;
+  width: 58.2%;
+}
+.about-section {
+  background: $color-white;
+  // .about-section__about-padding
+
+  &__about-padding {
+    padding: $sections-paddings;
+  }
+}
+.about {
+  @include flex-container(row, center);
+  gap: 12rem;
+  // .about__img-padding
+
+  &__img-padding {
+  }
+
+  // .about__discribe-about-padding
+
+  &__discribe-about-padding {
+    margin-top: 1.4rem;
+  }
+}
+.img-puppi-cat {
+  width: 25%;
+  height: 25%;
+}
+
+.discribe-about {
+  @include flex-container(column);
+  width: 36%;
+  padding-bottom: 1.4rem;
+  // .discribe-about__text-discribe
+
+  &__text-discribe {
+    width: 100%;
+    @include font-Arial(1.5rem);
+    color: $color-text-about;
+  }
+}
+.our-friends-section {
+  background: $color-dark-sections;
+  // .our-friends-section__friends-padding
+
+  &__friends-padding {
+    padding: $sections-paddings;
+  }
+}
+.friends {
+  @include flex-container(column);
+  // .friends__friends-items-padding
+
+  &__friends-items-padding {
+    padding: 6rem 0;
+  }
+
+  &__btn-aside-padding {
+    margin-top: 19rem;
+  }
+}
+.friends-items {
+  width: 100%;
+  @include flex-container();
+}
+.btn-aside {
+  @include flex-container(row, center);
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border: 2px solid $color-pink-btn;
+  border-radius: 100px;
+}
+.cards-items {
+  width: 82.5%;
+  @include flex-container();
+  flex-wrap: wrap;
+
+  // .cards-items__item-element
+
+  &__item-element {
+    width: 27.3%;
+  }
+
+  &__animals {
+    width: 100%;
+  }
+
+  // .cards-items__background
+
+  &__background {
+    width: 100%;
+    padding-top: 3rem;
+    background: $color-cards-background;
+  }
+
+  // .cards-items__pets-name
+
+  &__pets-name {
+    @include font-Georgia(2rem, 2.3rem);
+    font-family: "Georgia";
+    text-align: center;
+    color: $color-dark-grey;
+  }
+
+  // .cards-items__btn-padding
+
+  &__btn-padding {
+    padding: 2.9rem 4rem;
+  }
+}
+.lern-more {
+}
+.btn-section-3 {
+}
+.help-section {
+  background: $color-white;
+}
+.help {
+  width: 100%;
+
+  margin: $sections-paddings;
+  // .help__help-items-padding
+
+  &__help-items-padding {
+    margin: 6rem 8.2rem;
+  }
+}
+
+.help-items {
+  @include flex-container(row, center);
+  flex-wrap: wrap;
+  row-gap: 5.5rem;
+  column-gap: 11.7rem;
+
+  // .help-items__icons
+
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_food {
+      width: 8%;
+    }
+    &_transport {
+      width: 15%;
+    }
+    &_toys {
+      width: 6%;
+    }
+    &_bowls {
+      width: 15.5%;
+    }
+    &_shampoos {
+      width: 10%;
+    }
+    &_vitamins {
+      width: 8.9%;
+    }
+    &_medicines {
+      width: 10%;
+    }
+    &_collars {
+      width: 16%;
+    }
+    &_sleeping {
+      width: 14.4%;
+    }
+  }
+
+  // .help-items__icon
+
+  &__icon {
+  }
+
+  // .help-items__discribe
+
+  &__discribe {
+    @include font-Georgia(2rem, 115%);
+    text-align: center;
+    color: $color-dark-grey;
+    padding-top: 3rem;
+  }
+}
+.in-addition-section {
+  background: $color-dark-sections;
+  // .in-addition-section__donation-padding
+
+  &__donation-padding {
+    padding: $in-addition-paddings;
+  }
+}
+.donation {
+  @include flex-container(row, space-between);
+  // .donation__donation-info-padding
+
+  &__donation-info-padding {
+  }
+}
+.donation-img {
+  margin: 1.1rem 0 1rem 0;
+}
+.img-dog-donation {
+  width: 100%;
+}
+.donation-info {
+  width: 41.5%;
+  @include flex-container(column, space-between);
+
+  // .donation-info__bank
+
+  &__bank {
+    @include font-Georgia(1.5rem);
+    color: $color-dark-grey;
+  }
+
+  // .donation-info__field-credit-card
+
+  &__field-credit-card {
+    width: 91.8%;
+    height: 44px;
+    @include flex-container(row, center);
+    align-items: center;
+    gap: 1.5rem;
+    background: $color-pink-btn;
+    border-radius: 9px;
+  }
+
+  // .donation-info__card-number
+
+  &__card-number {
+    @include font-Georgia(2rem, 115%);
+    color: $color-dark-grey;
+  }
+
+  // .donation-info__discribe
+
+  &__discribe {
+    @include font-Arial-italic();
+    color: $color-middle-grey;
+  }
+}
+
+//nnnnnnnnnnnnnnnnnnnnnnnnn
+.footer {
+  background-image: url(../../assets/images/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper {
+}
+.footer-items {
+  @include flex-container();
+
+  //footer-items__padding
+
+  &__padding {
+    margin-top: 5.6rem;
+  }
+
+  // .footer-items__column
+
+  &__column {
+    @include flex-container(column, start);
+    align-items: start;
+    &_col-1 {
+      width: 279px;
+      row-gap: 4rem;
+    }
+
+    &_col-2 {
+      width: 302px;
+      row-gap: 3.2rem;
+    }
+  }
+}
+.section-titles {
+  // .section-titles_space-letters
+
+  &_space-letters {
+  }
+
+  // .section-titles_footer-txt-color
+
+  &_footer-txt-color {
+  }
+}
+.items-links {
+  // @include flex-container(row, center);
+  // gap: 2rem;
+}
+.link {
+  @include flex-container(row, center);
+  align-items: center;
+  gap: 2rem;
+}
+.item-links {
+  // .item-links_text
+
+  &_text {
+    @include font-Georgia(2rem, 115%);
+    color: $color-pink-btn;
+  }
+}
+.img-footer-puppi {
+  width: 25%;
+  margin-top: 4rem;
+}
+
+//nnnnnnnnnnnnnnnnnnnnnnnnn
