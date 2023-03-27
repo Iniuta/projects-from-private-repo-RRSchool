@@ -123,6 +123,11 @@ body {
   &__title {
     @include font-Georgia();
     color: $color-dark-grey;
+    transition: 1s;
+    &:hover {
+      color: $color-pink-btn;
+      transition: 0.4s;
+    }
   }
 
   // .logo__discribe
@@ -181,6 +186,13 @@ body {
   &_hover:hover::after {
     width: 100%;
   }
+
+  &_hover-link:hover {
+    color: $color-main-btn-text;
+  }
+  &_hover:hover {
+    color: $color-main-btn-text;
+  }
 }
 .our-friends-section {
   background: $color-dark-sections;
@@ -224,10 +236,7 @@ body {
     color: $color-white;
   }
 }
-// .friends-items {
-//     width: 100%;
-//     @include flex-container();
-// }
+
 .cards-items {
   @include flex-container(row, center);
   width: 100%;
@@ -244,8 +253,8 @@ body {
     cursor: pointer;
     &:hover {
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
       transition: 0.4s;
     }
     &:hover .cards-items__background {
@@ -321,18 +330,36 @@ body {
     margin: auto;
     width: 52px;
     align-items: center;
+    background: transparent;
+    border: 2px solid $color-pink-btn;
     transition: 0.4s;
+    &:hover {
+      background: $color-hover;
+      border: 2px solid $color-hover;
+      transition: 0.4s;
+      cursor: pointer;
+    }
   }
 
-  &_get-rest:hover {
-    background: $color-hover;
-    transition: 0.4s;
-    cursor: pointer;
-  }
-
-  &_disabled:hover {
+  &_disabled {
     background: $color-pink-btn;
+    &:hover {
+      background: $color-pink-btn;
+      border: 2px solid $color-pink-btn;
+      cursor: default;
+    }
+  }
+
+  &_disabled-left {
+    background: transparent;
+    border: 2px solid $color-light-grey;
+    color: $color-light-grey;
     cursor: default;
+    &:hover {
+      cursor: default;
+      background: transparent;
+      border: 2px solid $color-light-grey;
+    }
   }
 }
 .pagination {

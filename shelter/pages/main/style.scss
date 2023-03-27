@@ -132,6 +132,11 @@ body {
   &__title {
     @include font-Georgia();
     color: $color-pink-btn;
+    transition: 1s;
+    &:hover {
+      color: $color-hover;
+      transition: 0.4s;
+    }
   }
 
   // .logo__discribe
@@ -188,6 +193,13 @@ body {
   }
   &_hover:hover::after {
     width: 100%;
+  }
+
+  &_hover-link:hover {
+    color: $color-cards-background;
+  }
+  &_hover:hover {
+    color: $color-cards-background;
   }
 }
 .not-only {
@@ -285,8 +297,8 @@ body {
   color: $color-main-btn-text;
   text-align: center;
   transition: 0.4s;
-  &:hover{
-    background: #FDDCC4;
+  &:hover {
+    background: #fddcc4;
     transition: 0.4s;
   }
 
@@ -591,7 +603,6 @@ body {
   }
 }
 
-//nnnnnnnnnnnnnnnnnnnnnnnnn
 .footer {
   background-image: url(../../assets/images/footer-background.png);
   background-repeat: no-repeat;
@@ -656,4 +667,3 @@ body {
   margin-top: 4rem;
 }
 
-//nnnnnnnnnnnnnnnnnnnnnnnnn

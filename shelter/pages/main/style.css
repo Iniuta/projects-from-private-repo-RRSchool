@@ -74,6 +74,11 @@ body {
   line-height: 110%;
   letter-spacing: 0.06em;
   color: #f1cdb3;
+  transition: 1s;
+}
+.logo__title:hover {
+  color: #fddcc4;
+  transition: 0.4s;
 }
 .logo__discribe {
   font-family: "Arial";
@@ -133,6 +138,12 @@ body {
 }
 .list-item_hover:hover::after {
   width: 100%;
+}
+.list-item_hover-link:hover {
+  color: #fafafa;
+}
+.list-item_hover:hover {
+  color: #fafafa;
 }
 
 .not-only {
