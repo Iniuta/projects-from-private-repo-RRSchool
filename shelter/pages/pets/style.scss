@@ -183,15 +183,17 @@ body {
     cursor: pointer;
   }
 
-  &_hover:hover::after {
-    width: 100%;
-  }
+  // &_hover:hover::after {
+  //   width: 100%;
+  // }
 
   &_hover-link:hover {
     color: $color-main-btn-text;
+    transition: 0.4s;
   }
   &_hover:hover {
     color: $color-main-btn-text;
+    transition: 0.4s;
   }
 }
 .our-friends-section {

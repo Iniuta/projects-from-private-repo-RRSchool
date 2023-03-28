@@ -191,15 +191,24 @@ body {
     transition: 0.3s;
     cursor: pointer;
   }
-  &_hover:hover::after {
-    width: 100%;
+  // &_hover:hover::after {
+  //   width: 100%;
+  // }
+
+  &_hover-link {
+    transition: 0.4s;
+  }
+  &_hover {
+    transition: 0.4s;
   }
 
   &_hover-link:hover {
     color: $color-cards-background;
+    transition: 0.4s;
   }
   &_hover:hover {
     color: $color-cards-background;
+    transition: 0.4s;
   }
 }
 .not-only {

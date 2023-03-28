@@ -126,14 +126,13 @@ body {
   transition: 0.3s;
   cursor: pointer;
 }
-.list-item_hover:hover::after {
-  width: 100%;
-}
 .list-item_hover-link:hover {
   color: #292929;
+  transition: 0.4s;
 }
 .list-item_hover:hover {
   color: #292929;
+  transition: 0.4s;
 }
 
 .our-friends-section {
